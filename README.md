@@ -1,5 +1,6 @@
 # AI Enterprise Architecture Library
 
+![Enterprise AI Architecture](enterprise_ai_architecture.jpg)
 > A practitioner-grade, research-backed reference for Enterprise Architects, Chief AI Officers, Strategy Leaders, and Governance professionals building and scaling AI in large organisations.
 
 ---
