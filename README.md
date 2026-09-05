@@ -20,12 +20,12 @@ The library is designed to be read section-by-section or used as a reference. Ev
 
 | Your Role | Recommended Starting Point |
 |---|---|
-| Chief AI Officer / CDO | [02-AI-Strategy/01-Business-Value.md](02-AI-Strategy/01-Business-Value.md) |
-| Enterprise Architect | [03-EA-Practice/01-Driving-Adoption.md](03-EA-Practice/01-Driving-Adoption.md) |
-| AI Governance / Risk | [01-AI-Governance/02-Governance-Framework.md](01-AI-Governance/02-Governance-Framework.md) |
-| CTO / CIO | [03-EA-Practice/02-AI-Design-Decisions.md](03-EA-Practice/02-AI-Design-Decisions.md) |
-| Finance / FinOps | [01-AI-Governance/01-FinOps.md](01-AI-Governance/01-FinOps.md) |
-| Indian Enterprise Context | [02-AI-Strategy/04-Indian-Enterprise-Context.md](02-AI-Strategy/04-Indian-Enterprise-Context.md) |
+| Chief AI Officer / CDO | [02-AI-Strategy/01-Business-Value.md](ai-ea-library/02-AI-Strategy/01-Business-Value.md) |
+| Enterprise Architect | [03-EA-Practice/01-Driving-Adoption.md](ai-ea-library/03-EA-Practice/01-Driving-Adoption.md) |
+| AI Governance / Risk | [01-AI-Governance/02-Governance-Framework.md](ai-ea-library/01-AI-Governance/02-Governance-Framework.md) |
+| CTO / CIO | [03-EA-Practice/02-AI-Design-Decisions.md](ai-ea-library/03-EA-Practice/02-AI-Design-Decisions.md) |
+| Finance / FinOps | [01-AI-Governance/01-FinOps.md](ai-ea-library/01-AI-Governance/01-FinOps.md) |
+| Indian Enterprise Context | [02-AI-Strategy/04-Indian-Enterprise-Context.md](ai-ea-library/02-AI-Strategy/04-Indian-Enterprise-Context.md) |
 
 ---
 
@@ -33,10 +33,10 @@ The library is designed to be read section-by-section or used as a reference. Ev
 
 | Document | What It Covers |
 |---|---|
-| [01-FinOps.md](01-AI-Governance/01-FinOps.md) | AI spend governance, token economics, cost attribution, model tiering, chargeback frameworks |
-| [02-Governance-Framework.md](01-AI-Governance/02-Governance-Framework.md) | NIST AI RMF, ISO/IEC 42001, EU AI Act, enterprise governance operating models |
-| [03-Responsible-AI.md](01-AI-Governance/03-Responsible-AI.md) | Microsoft, IBM, Google RAI implementations, fairness, bias, transparency — as actually deployed |
-| [04-Risk-Mitigation.md](01-AI-Governance/04-Risk-Mitigation.md) | OWASP LLM Top 10 (2025/2026), red teaming, secure AI patterns, resilience design |
+| [01-FinOps.md](ai-ea-library/01-AI-Governance/01-FinOps.md) | AI spend governance, token economics, cost attribution, model tiering, chargeback frameworks |
+| [02-Governance-Framework.md](ai-ea-library/01-AI-Governance/02-Governance-Framework.md) | NIST AI RMF, ISO/IEC 42001, EU AI Act, enterprise governance operating models |
+| [03-Responsible-AI.md](ai-ea-library/01-AI-Governance/03-Responsible-AI.md) | Microsoft, IBM, Google RAI implementations, fairness, bias, transparency — as actually deployed |
+| [04-Risk-Mitigation.md](ai-ea-library/01-AI-Governance/04-Risk-Mitigation.md) | OWASP LLM Top 10 (2025/2026), red teaming, secure AI patterns, resilience design |
 
 ---
 
@@ -44,10 +44,10 @@ The library is designed to be read section-by-section or used as a reference. Ev
 
 | Document | What It Covers |
 |---|---|
-| [01-Business-Value.md](02-AI-Strategy/01-Business-Value.md) | KPIs, OKRs, ROI frameworks, pilot-to-production patterns, the productivity J-curve |
-| [02-Agentic-AI-Use-Cases.md](02-AI-Strategy/02-Agentic-AI-Use-Cases.md) | 40+ enterprise functions mapped across HR, Finance, IT, Legal, Sales, Operations, and more |
-| [03-Education-and-Defence.md](02-AI-Strategy/03-Education-and-Defence.md) | AI adoption patterns in education (K-12, HED) and defence (NATO, DoD, Five Eyes) |
-| [04-Indian-Enterprise-Context.md](02-AI-Strategy/04-Indian-Enterprise-Context.md) | DPDPA/DPDP Rules 2025, IndiaAI Mission, MeitY AI Governance Guidelines, localized hosting |
+| [01-Business-Value.md](ai-ea-library/02-AI-Strategy/01-Business-Value.md) | KPIs, OKRs, ROI frameworks, pilot-to-production patterns, the productivity J-curve |
+| [02-Agentic-AI-Use-Cases.md](ai-ea-library/02-AI-Strategy/02-Agentic-AI-Use-Cases.md) | 40+ enterprise functions mapped across HR, Finance, IT, Legal, Sales, Operations, and more |
+| [03-Education-and-Defence.md](ai-ea-library/02-AI-Strategy/03-Education-and-Defence.md) | AI adoption patterns in education (K-12, HED) and defence (NATO, DoD, Five Eyes) |
+| [04-Indian-Enterprise-Context.md](ai-ea-library/02-AI-Strategy/04-Indian-Enterprise-Context.md) | DPDPA/DPDP Rules 2025, IndiaAI Mission, MeitY AI Governance Guidelines, localized hosting |
 
 ---
 
@@ -55,10 +55,10 @@ The library is designed to be read section-by-section or used as a reference. Ev
 
 | Document | What It Covers |
 |---|---|
-| [01-Driving-Adoption.md](03-EA-Practice/01-Driving-Adoption.md) | EA's role bridging business and tech, TOGAF ADM for AI, governance vs enablement |
-| [02-AI-Design-Decisions.md](03-EA-Practice/02-AI-Design-Decisions.md) | When AI makes architecture decisions: agentic EA tools, the architect's evolving role |
-| [03-Strategic-Runbooks.md](03-EA-Practice/03-Strategic-Runbooks.md) | Playbooks for evaluating, onboarding, and retiring AI services — gate checklists, templates |
-| [04-Hands-on-Workshops.md](03-EA-Practice/04-Hands-on-Workshops.md) | Facilitated workshop designs that move beyond slides — labs, red teams, design sprints |
+| [01-Driving-Adoption.md](ai-ea-library/03-EA-Practice/01-Driving-Adoption.md) | EA's role bridging business and tech, TOGAF ADM for AI, governance vs enablement |
+| [02-AI-Design-Decisions.md](ai-ea-library/03-EA-Practice/02-AI-Design-Decisions.md) | When AI makes architecture decisions: agentic EA tools, the architect's evolving role |
+| [03-Strategic-Runbooks.md](ai-ea-library/03-EA-Practice/03-Strategic-Runbooks.md) | Playbooks for evaluating, onboarding, and retiring AI services — gate checklists, templates |
+| [04-Hands-on-Workshops.md](ai-ea-library/03-EA-Practice/04-Hands-on-Workshops.md) | Facilitated workshop designs that move beyond slides — labs, red teams, design sprints |
 
 ---
 
