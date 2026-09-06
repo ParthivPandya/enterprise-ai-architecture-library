@@ -37,6 +37,8 @@ This library was built to close the gap between AI hype and enterprise reality. 
 |---|---|
 | [01-How-LLMs-Work.md](ai-ea-library/00-Foundations/01-How-LLMs-Work.md) | Tokens, transformers, attention, hallucination, context windows — explained for architects, not data scientists |
 | [02-Foundation-Model-Landscape.md](ai-ea-library/00-Foundations/02-Foundation-Model-Landscape.md) | The ecosystem map: GPT, Claude, Gemini, Llama, Mistral, DeepSeek — evaluation framework and build/buy/fine-tune decision tree |
+| [03-Data-Architecture-for-AI.md](ai-ea-library/00-Foundations/03-Data-Architecture-for-AI.md) | Data lakes/lakehouses, feature stores, vector DB selection guide, data quality for AI, data contracts, the data flywheel |
+| [04-Multi-Agent-Orchestration.md](ai-ea-library/00-Foundations/04-Multi-Agent-Orchestration.md) | Agent topology patterns (sequential, hierarchical, debate, network), LangGraph vs AutoGen vs CrewAI, governance non-negotiables |
 
 ---
 
@@ -62,6 +64,7 @@ This library was built to close the gap between AI hype and enterprise reality. 
 | [04-Indian-Enterprise-Context.md](ai-ea-library/02-AI-Strategy/04-Indian-Enterprise-Context.md) | DPDPA + DPDP Rules 2025, IndiaAI Mission, MeitY AI Governance Guidelines, localized hosting patterns |
 | [05-Industry-Playbooks.md](ai-ea-library/02-AI-Strategy/05-Industry-Playbooks.md) | Deep playbooks for BFSI (HDFC, SBI, JPMorgan), Healthcare (Watson lessons, imaging AI), Manufacturing (predictive maintenance, quality control) |
 | [06-AI-Change-Management.md](ai-ea-library/02-AI-Strategy/06-AI-Change-Management.md) | The people side: resistance types, ADKAR for AI, the change plan structure, measuring real adoption not login rates |
+| [07-AI-Procurement-and-Contracts.md](ai-ea-library/02-AI-Strategy/07-AI-Procurement-and-Contracts.md) | TCO model, critical contract clauses (data training, IP, model versioning, SLA, data residency, exit), India-specific vendor landscape |
 
 ---
 
@@ -76,6 +79,16 @@ This library was built to close the gap between AI hype and enterprise reality. 
 | [05-LLMOps.md](ai-ea-library/03-EA-Practice/05-LLMOps.md) | Shipping AI to production: MLOps maturity ladder, the full LLMOps stack, CI/CD pipeline for LLMs, production failure modes |
 | [06-Prompt-Engineering-Enterprise.md](ai-ea-library/03-EA-Practice/06-Prompt-Engineering-Enterprise.md) | The craft and the system: all 8 core techniques with enterprise examples, prompt library governance, team training programme |
 | [07-AI-Center-of-Excellence.md](ai-ea-library/03-EA-Practice/07-AI-Center-of-Excellence.md) | Hub-and-spoke operating model, full role definitions, CoE charter template, 6-month rollout plan, two failure modes to avoid |
+| [08-AI-Reference-Architectures.md](ai-ea-library/03-EA-Practice/08-AI-Reference-Architectures.md) | Six production architectures: Enterprise RAG, Text-to-SQL, Document Intelligence, Customer Service AI, Sovereign On-Premises, AI Gateway |
+
+---
+
+## Part 04 — Future of AI
+
+| Document | What It Covers |
+|---|---|
+| [01-Future-of-Work-with-AI.md](ai-ea-library/04-Future/01-Future-of-Work-with-AI.md) | Three job trajectories (augmentation/transformation/disruption), new skills that matter, India workforce specifics, reskilling investment model |
+| [02-Sovereign-AI-and-Geopolitics.md](ai-ea-library/04-Future/02-Sovereign-AI-and-Geopolitics.md) | The AI Cold War, data sovereignty, standards wars (US/EU/China/India approaches), Global South AI moment, what architects must do |
 
 ---
 
@@ -150,32 +163,6 @@ This library was built to close the gap between AI hype and enterprise reality. 
 ---
 
 *Library version: 2.0 | 21 documents across 4 sections | Research current as of September 2026 | Built for practitioners, not consultants.*
-
----
-
-## Updates in v3.0 — Expanded Chapters
-
-### New Foundations (Part 00)
-| Document | What It Covers |
-|---|---|
-| [03-Data-Architecture-for-AI.md](ai-ea-library/00-Foundations/03-Data-Architecture-for-AI.md) | Data lakes/lakehouses, feature stores, vector DB selection guide, data quality for AI, data contracts, the data flywheel |
-| [04-Multi-Agent-Orchestration.md](ai-ea-library/00-Foundations/04-Multi-Agent-Orchestration.md) | Agent topology patterns (sequential, hierarchical, debate, network), LangGraph vs AutoGen vs CrewAI, governance non-negotiables |
-
-### New Strategy Chapters (Part 02)
-| Document | What It Covers |
-|---|---|
-| [07-AI-Procurement-and-Contracts.md](ai-ea-library/02-AI-Strategy/07-AI-Procurement-and-Contracts.md) | TCO model, critical contract clauses (data training, IP, model versioning, SLA, data residency, exit), India-specific vendor landscape |
-
-### New EA Practice Chapters (Part 03)
-| Document | What It Covers |
-|---|---|
-| [08-AI-Reference-Architectures.md](ai-ea-library/03-EA-Practice/08-AI-Reference-Architectures.md) | Six production architectures: Enterprise RAG, Text-to-SQL, Document Intelligence, Customer Service AI, Sovereign On-Premises, AI Gateway |
-
-### New Future Section (Part 04)
-| Document | What It Covers |
-|---|---|
-| [01-Future-of-Work-with-AI.md](ai-ea-library/04-Future/01-Future-of-Work-with-AI.md) | Three job trajectories (augmentation/transformation/disruption), new skills that matter, India workforce specifics, reskilling investment model |
-| [02-Sovereign-AI-and-Geopolitics.md](ai-ea-library/04-Future/02-Sovereign-AI-and-Geopolitics.md) | The AI Cold War, data sovereignty, standards wars (US/EU/China/India approaches), Global South AI moment, what architects must do |
 
 ---
 
