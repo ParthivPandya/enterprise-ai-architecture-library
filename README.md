@@ -162,8 +162,4 @@ This library was built to close the gap between AI hype and enterprise reality. 
 
 ---
 
-*Library version: 2.0 | 21 documents across 4 sections | Research current as of September 2026 | Built for practitioners, not consultants.*
-
----
-
-*Library version: 3.0 | 27 documents | ~61,000 words | Research current as of September 2026*
+*Library version: 1.0 | 27 documents | ~61,000 words | Research current as of September 2026 | Built for practitioners, not consultants.*
