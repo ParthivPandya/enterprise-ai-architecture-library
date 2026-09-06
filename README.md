@@ -7,12 +7,74 @@
 
 ## About This Library
 
-This library was built to close the gap between AI hype and enterprise reality. Every section is grounded in real-world case studies, established frameworks, and actionable patterns. It is structured as a book across four parts:
+This library was built to close the gap between AI hype and enterprise reality. Every section is grounded in real-world case studies, established frameworks, and actionable patterns. It comprises two primary components:
 
+### 1. The Core Architecture Library (Parts 0–4)
 - **Part 0 — Foundations:** How AI actually works, and the model landscape you're navigating
 - **Part 1 — AI Governance & Responsible AI:** How to govern AI spend, quality, ethics, risk, and failure at scale
 - **Part 2 — AI Strategy & Enterprise Adoption:** How to create measurable business value across industries and contexts
 - **Part 3 — AI in EA Practice:** How Enterprise Architects must evolve their practice, tools, and teams
+- **Part 4 — Future of AI:** Sovereign AI, geopolitics, and organizational transformation
+
+### 2. The Official [AIEA® Standard](ai-ea-library/05-Standards/README.md) (Parts 1–7 & Series Guides)
+A comprehensive, formal standard for AI Enterprise Architecture extending TOGAF 10 with normative precision:
+- **Part 1 (AIEA-101):** [Introduction and Core Concepts](ai-ea-library/05-Standards/AIEA-101-Introduction-Core-Concepts.md)
+- **Part 2 (AIEA-201):** [AI Architecture Development Method (AI-ADM)](ai-ea-library/05-Standards/AIEA-201-AI-ADM.md)
+- **Part 3 (AIEA-301):** [AI Architecture Content Framework](ai-ea-library/05-Standards/AIEA-301-Content-Framework.md)
+- **Part 4 (AIEA-401):** [AI Enterprise Architecture Capability & Governance](ai-ea-library/05-Standards/AIEA-401-Capability-Governance.md)
+- **Part 5 (AIEA-501):** [AI Reference Models & Technical Standards](ai-ea-library/05-Standards/AIEA-501-Reference-Models.md)
+- **Part 6 (AIEA-601):** [Definitions and Glossary](ai-ea-library/05-Standards/AIEA-601-Definitions-Glossary.md)
+- **Part 7 (AIEA-701):** [A Practitioner's Approach to Developing AI Enterprise Architecture](ai-ea-library/05-Standards/AIEA-701-Practitioners-Guide.md)
+- **Series Guides (06-Series Guide):** [AIEA-G01: Financial Services](ai-ea-library/06-Series%20Guide/AIEA-G01-Financial-Services.md) | [AIEA-G02: Healthcare](ai-ea-library/06-Series%20Guide/AIEA-G02-Healthcare.md) | [AIEA-G03: Indian Enterprises](ai-ea-library/06-Series%20Guide/AIEA-G03-Indian-Enterprises.md) | [AIEA-G04: Responsible AI](ai-ea-library/06-Series%20Guide/AIEA-G04-Responsible-AI-in-Practice.md) | [AIEA-G05: Agentic AI](ai-ea-library/06-Series%20Guide/AIEA-G05-Agentic-AI-Architecture.md) | [AIEA-G06: Sovereign AI](ai-ea-library/06-Series%20Guide/AIEA-G06-Sovereign-AI.md) | [AIEA-G07: AI FinOps](ai-ea-library/06-Series%20Guide/AIEA-G07-AI-FinOps.md) | [AIEA-G08: LLMOps](ai-ea-library/06-Series%20Guide/AIEA-G08-LLMOps-Enterprise.md)
+
+### 3. [Practitioner Toolkits & Playbooks](ai-ea-library/07-Toolkits-and-Playbooks/README.md) (Section 07)
+Actionable execution toolkits, diagnostic surveys, modeling catalogs, and operating playbooks:
+- **Toolkit 01 (AIEA-TK-01):** [AI Readiness Assessment Toolkit](ai-ea-library/07-Toolkits-and-Playbooks/01-AI-Readiness-Assessment-Toolkit.md)
+- **Toolkit 02 (AIEA-TK-02):** [Enterprise AI Metamodel Catalog](ai-ea-library/07-Toolkits-and-Playbooks/02-Enterprise-AI-Metamodel-Catalog.md)
+- **Toolkit 03 (AIEA-TK-03):** [Architecture Principles Catalog](ai-ea-library/07-Toolkits-and-Playbooks/03-Architecture-Principles-Catalog.md)
+- **Playbook 04 (AIEA-TK-04):** [AI Governance Operating Playbook](ai-ea-library/07-Toolkits-and-Playbooks/04-AI-Governance-Operating-Playbook.md)
+- **Playbook 05 (AIEA-TK-05):** [AI Strategy Execution Playbook](ai-ea-library/07-Toolkits-and-Playbooks/05-AI-Strategy-Execution-Playbook.md)
+- **Playbook 06 (AIEA-TK-06):** [EA Practice Evolution Playbook](ai-ea-library/07-Toolkits-and-Playbooks/06-EA-Practice-Evolution-Playbook.md)
+---
+
+## Repository Structure & Hierarchy
+
+```text
+AI Enterprise Architecture/
+├── README.md                      <-- Root Master Portal
+└── ai-ea-library/
+    ├── 00-Foundations/            <-- Practitioner Book (Part 0: How LLMs work, models, data, agents)
+    ├── 01-AI-Governance/          <-- Practitioner Book (Part 1: FinOps, governance, safety, risks)
+    ├── 02-AI-Strategy/            <-- Practitioner Book (Part 2: Value, use cases, industry playbooks)
+    ├── 03-EA-Practice/            <-- Practitioner Book (Part 3: ADM integration, runbooks, CoE)
+    ├── 04-Future/                 <-- Practitioner Book (Part 4: Future of work, sovereign AI)
+    ├── 05-Standards/              <-- The Core AIEA® Standards Specification (Parts 1–7)
+    │   ├── README.md              <-- AIEA-001 Official Standard Overview & Charter
+    │   ├── AIEA-101-...           <-- Part 1: Introduction and Core Concepts
+    │   ├── AIEA-201-...           <-- Part 2: AI-ADM Method
+    │   ├── AIEA-301-...           <-- Part 3: Content Framework
+    │   ├── AIEA-401-...           <-- Part 4: Capability and Governance
+    │   ├── AIEA-501-...           <-- Part 5: Reference Models and Technical Standards
+    │   ├── AIEA-601-...           <-- Part 6: Definitions and Glossary
+    │   └── AIEA-701-...           <-- Part 7: A Practitioner's Approach to Developing AI-EA
+    ├── 06-Series Guide/           <-- Specialized Implementation Manuals (AIEA-G01 to G08)
+    │   ├── AIEA-G01-...           <-- Financial Services (BFSI)
+    │   ├── AIEA-G02-...           <-- Healthcare & Life Sciences
+    │   ├── AIEA-G03-...           <-- Indian Enterprise Context (DPDPA)
+    │   ├── AIEA-G04-...           <-- Responsible AI in Practice
+    │   ├── AIEA-G05-...           <-- Agentic AI Architecture & Swarms
+    │   ├── AIEA-G06-...           <-- Sovereign AI Architecture
+    │   ├── AIEA-G07-...           <-- AI FinOps & Token Economics
+    │   └── AIEA-G08-...           <-- LLMOps for Enterprise
+    └── 07-Toolkits-and-Playbooks/ <-- Practitioner Toolkits & Playbooks (AIEA-TK-01 to TK-06)
+        ├── README.md              <-- Catalog Overview & Workflow Map
+        ├── 01-AI-Readiness-...    <-- 30-Question Diagnostic & Scoring Rubric
+        ├── 02-Enterprise-AI-...   <-- ArchiMate 3.2 Metamodel & JSON Schema
+        ├── 03-Architecture-...    <-- 15 Normative Principles & Audit Tests
+        ├── 04-AI-Governance-...   <-- AIAB Charters & Statutory Runbooks
+        ├── 05-AI-Strategy-...     <-- Capability Heatmaps & 3-Year TCO/NPV
+        └── 06-EA-Practice-...     <-- 4 Architect Personas & Modern Tooling
+```
 
 ---
 
@@ -28,6 +90,12 @@ This library was built to close the gap between AI hype and enterprise reality. 
 | Indian Enterprise Context | [02-AI-Strategy/04-Indian-Enterprise-Context.md](ai-ea-library/02-AI-Strategy/04-Indian-Enterprise-Context.md) |
 | New to AI | [00-Foundations/01-How-LLMs-Work.md](ai-ea-library/00-Foundations/01-How-LLMs-Work.md) |
 | Evaluating AI vendors | [03-EA-Practice/03-Strategic-Runbooks.md](ai-ea-library/03-EA-Practice/03-Strategic-Runbooks.md) |
+| Conducting AI Readiness Audit | [07-Toolkits-and-Playbooks/01-AI-Readiness-Assessment-Toolkit.md](ai-ea-library/07-Toolkits-and-Playbooks/01-AI-Readiness-Assessment-Toolkit.md) |
+| Enterprise AI Metamodeling | [07-Toolkits-and-Playbooks/02-Enterprise-AI-Metamodel-Catalog.md](ai-ea-library/07-Toolkits-and-Playbooks/02-Enterprise-AI-Metamodel-Catalog.md) |
+| AI Architecture Principles | [07-Toolkits-and-Playbooks/03-Architecture-Principles-Catalog.md](ai-ea-library/07-Toolkits-and-Playbooks/03-Architecture-Principles-Catalog.md) |
+| AI Governance Operating Cadence | [07-Toolkits-and-Playbooks/04-AI-Governance-Operating-Playbook.md](ai-ea-library/07-Toolkits-and-Playbooks/04-AI-Governance-Operating-Playbook.md) |
+| Strategy & Business Case TCO/NPV | [07-Toolkits-and-Playbooks/05-AI-Strategy-Execution-Playbook.md](ai-ea-library/07-Toolkits-and-Playbooks/05-AI-Strategy-Execution-Playbook.md) |
+| EA Team Skills & Tooling Evolution | [07-Toolkits-and-Playbooks/06-EA-Practice-Evolution-Playbook.md](ai-ea-library/07-Toolkits-and-Playbooks/06-EA-Practice-Evolution-Playbook.md) |
 
 ---
 
@@ -89,6 +157,19 @@ This library was built to close the gap between AI hype and enterprise reality. 
 |---|---|
 | [01-Future-of-Work-with-AI.md](ai-ea-library/04-Future/01-Future-of-Work-with-AI.md) | Three job trajectories (augmentation/transformation/disruption), new skills that matter, India workforce specifics, reskilling investment model |
 | [02-Sovereign-AI-and-Geopolitics.md](ai-ea-library/04-Future/02-Sovereign-AI-and-Geopolitics.md) | The AI Cold War, data sovereignty, standards wars (US/EU/China/India approaches), Global South AI moment, what architects must do |
+
+---
+
+## Section 07 — Practitioner Toolkits & Playbooks
+
+| Toolkit Document | Reference | What It Covers |
+|---|---|---|
+| [01-AI-Readiness-Assessment-Toolkit.md](ai-ea-library/07-Toolkits-and-Playbooks/01-AI-Readiness-Assessment-Toolkit.md) | AIEA-TK-01 | 30-question diagnostic survey across 6 pillars, quantitative scoring rubric, radar chart mapping, and C-level board pitch deck template |
+| [02-Enterprise-AI-Metamodel-Catalog.md](ai-ea-library/07-Toolkits-and-Playbooks/02-Enterprise-AI-Metamodel-Catalog.md) | AIEA-TK-02 | ArchiMate 3.2 mapping specification, entity dictionary (AI-ABBs, Checkpoints, Prompt Templates), and CMDB/EA repository JSON schema |
+| [03-Architecture-Principles-Catalog.md](ai-ea-library/07-Toolkits-and-Playbooks/03-Architecture-Principles-Catalog.md) | AIEA-TK-03 | Complete catalog of all 15 normative principles with statements, rationales, implications, anti-patterns, and compliance audit tests |
+| [04-AI-Governance-Operating-Playbook.md](ai-ea-library/07-Toolkits-and-Playbooks/04-AI-Governance-Operating-Playbook.md) | AIEA-TK-04 | AIAB meeting rhythms and standing agendas, architectural variance request workflows, and statutory regulatory filing runbooks (EU AI Act, DPDPA) |
+| [05-AI-Strategy-Execution-Playbook.md](ai-ea-library/07-Toolkits-and-Playbooks/05-AI-Strategy-Execution-Playbook.md) | AIEA-TK-05 | Translating corporate OKRs to AI use cases, capability heatmapping matrix, 3-year TCO/NPV financial model template, and 90-day pilot-to-production schedule |
+| [06-EA-Practice-Evolution-Playbook.md](ai-ea-library/07-Toolkits-and-Playbooks/06-EA-Practice-Evolution-Playbook.md) | AIEA-TK-06 | Evolving the EA practice: the four modern AI architect personas, architecture-as-code workbench, competency skills matrix, and day-in-the-life operating procedures |
 
 ---
 
@@ -162,4 +243,4 @@ This library was built to close the gap between AI hype and enterprise reality. 
 
 ---
 
-*Library version: 1.0 | 27 documents | ~61,000 words | Research current as of September 2026 | Built for practitioners, not consultants.*
+*Library version: 1.0 | 33 documents | ~95,000 words | Research current as of September 2026 | Built for practitioners, not consultants.*
