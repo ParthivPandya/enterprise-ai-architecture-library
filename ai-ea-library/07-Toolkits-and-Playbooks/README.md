@@ -26,6 +26,12 @@ Each toolkit is designed to be adapted, copied, and utilized directly by practic
 | [**04: AI Governance Operating Playbook**](04-AI-Governance-Operating-Playbook.md) | AIEA-TK-04 | AIAB meeting rhythms and standing agendas, architectural variance request workflows, and statutory regulatory filing runbooks (EU AI Act, DPDPA) | AI Governance Leads, DPOs |
 | [**05: AI Strategy Execution Playbook**](05-AI-Strategy-Execution-Playbook.md) | AIEA-TK-05 | Translating corporate OKRs to AI use cases, capability heatmapping matrix, 3-year TCO/NPV financial model template, and 90-day pilot-to-production schedule | Strategy Leads, Product Owners |
 | [**06: EA Practice Evolution Playbook**](06-EA-Practice-Evolution-Playbook.md) | AIEA-TK-06 | Evolving the EA practice: the four modern AI architect personas, architecture-as-code workbench, competency skills matrix, and day-in-the-life operating procedures | Chief Architects, EA Team Leads |
+| [**07: AI Vendor Evaluation Scorecard**](07-AI-Vendor-Evaluation-Scorecard.md) | AIEA-TK-07 | Structured, quantitative matrix for evaluating AI vendors across 6 dimensions (Data Sovereignty, Arch Flexibility, Safety, TCO, Integration, Viability) | Enterprise Architects, Procurement |
+| [**08: Reusable Governance Patterns**](08-Reusable-Governance-Patterns.md) | AIEA-TK-08 | Transitioning from review-oriented governance to reusable architectural patterns. Defines pre-approved blueprints and boundary conditions for scaling AI safely | CAIOs, AI Governance Boards |
+| [**09: AI Architecture Review Checklist**](09-AI-Architecture-Review-Checklist.md) | AIEA-TK-09 | Comprehensive Gate 0 to 4 architecture review checklist with practical banking, healthcare, and e-commerce scenarios | Architecture Review Boards, Lead Architects |
+| [**10: Executive AI Pitch Deck**](10-Executive-AI-Pitch-Deck.md) | AIEA-TK-10 | C-Suite and Boardroom pitch deck on enterprise AI strategy, value realization, 4-pillar architecture, and FinOps controls | CIOs, CTOs, Chief Architects |
+| [**11: AI in EA Practice Slide Deck**](11-AI-in-EA-Practice-Slide-Deck.md) | AIEA-TK-11 | Architecture team technical slide deck detailing AI-augmented ADM, modern tools, evaluation metrics, and skills evolution | EA Practice Leads, Domain Architects |
+| [**12: AI Governance and Guardrails Deck**](12-AI-Governance-and-Guardrails-Deck.md) | AIEA-TK-12 | Risk & compliance slide deck establishing reusable governance patterns, input/output guardrail pipelines, and automated assurance | CISOs, CROs, AI Governance Boards |
 
 ---
 

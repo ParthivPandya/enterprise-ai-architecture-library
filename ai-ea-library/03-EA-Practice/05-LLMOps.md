@@ -2,7 +2,7 @@
 
 > *85% of AI models never make it to production. Of those that do, most degrade within months and no one notices until someone complains. This chapter is about the engineering discipline that closes both gaps.*
 
-> **Related:** [../01-AI-Governance/04-Risk-Mitigation.md](../01-AI-Governance/04-Risk-Mitigation.md) | [06-Prompt-Engineering-for-Enterprise.md](06-Prompt-Engineering-for-Enterprise.md) | [../03-EA-Practice/03-Strategic-Runbooks.md](03-Strategic-Runbooks.md)
+> **Related:** [../01-AI-Governance/04-Risk-Mitigation.md](../01-AI-Governance/04-Risk-Mitigation.md) | [06-Prompt-Engineering-Enterprise.md](06-Prompt-Engineering-Enterprise.md) | [03-Strategic-Runbooks.md](03-Strategic-Runbooks.md)
 
 ---
 

@@ -2,7 +2,7 @@
 
 > *The history of enterprise computing is full of cautionary tales. The history of enterprise AI is shorter, but it's catching up fast. These failures are not someone else's problem — they are the playbook for what will happen to you if you skip the governance.*
 
-> **Related:** [../01-AI-Governance/03-Responsible-AI.md](../01-AI-Governance/03-Responsible-AI.md) | [../01-AI-Governance/02-Governance-Framework.md](../01-AI-Governance/02-Governance-Framework.md)
+> **Related:** [03-Responsible-AI.md](03-Responsible-AI.md) | [02-Governance-Framework.md](02-Governance-Framework.md)
 
 ---
 

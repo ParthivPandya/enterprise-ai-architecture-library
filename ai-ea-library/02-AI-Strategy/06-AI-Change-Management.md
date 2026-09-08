@@ -2,7 +2,7 @@
 
 > *You can buy the best AI in the world and deploy it on perfect infrastructure with solid governance. And then watch it fail because nobody changed how people work. This chapter is about the hardest part of AI adoption — and the part that gets the least attention.*
 
-> **Related:** [../02-AI-Strategy/01-Business-Value.md](01-Business-Value.md) | [07-AI-Center-of-Excellence.md](../03-EA-Practice/07-AI-Center-of-Excellence.md)
+> **Related:** [01-Business-Value.md](01-Business-Value.md) | [07-AI-Center-of-Excellence.md](../03-EA-Practice/07-AI-Center-of-Excellence.md)
 
 ---
 

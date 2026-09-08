@@ -2,7 +2,7 @@
 
 > *You've evaluated the technology. You've run the pilot. The vendor has been enthusiastic, the demo was excellent, and now someone sends you a 47-page Master Service Agreement. This chapter is about what happens next — and why getting it wrong is expensive in ways that won't show up for eighteen months.*
 
-> **Related:** [../03-EA-Practice/03-Strategic-Runbooks.md](03-Strategic-Runbooks.md) | [../01-AI-Governance/01-FinOps.md](../01-AI-Governance/01-FinOps.md) | [../02-AI-Strategy/04-Indian-Enterprise-Context.md](../02-AI-Strategy/04-Indian-Enterprise-Context.md)
+> **Related:** [03-Strategic-Runbooks.md](../03-EA-Practice/03-Strategic-Runbooks.md) | [01-FinOps.md](../01-AI-Governance/01-FinOps.md) | [04-Indian-Enterprise-Context.md](04-Indian-Enterprise-Context.md)
 
 ---
 
@@ -168,7 +168,7 @@ Under DPDPA, if you are processing personal data of Indian residents, you need c
 
 ## The Vendor Due Diligence Process
 
-Before contract negotiation begins, run the vendor through Runbook 2 from [03-Strategic-Runbooks.md](03-Strategic-Runbooks.md). Additionally, conduct this AI-specific due diligence:
+Before contract negotiation begins, run the vendor through Runbook 2 from [03-Strategic-Runbooks.md](../03-EA-Practice/03-Strategic-Runbooks.md). Additionally, conduct this AI-specific due diligence:
 
 **Technical due diligence:**
 - Request the vendor's AI system card or model card for the specific model you'll be using
