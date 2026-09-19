@@ -1,5 +1,5 @@
-# AIEA® Special Interest Group (SIG) Portfolios
-## Master Directory & Cross-SIG Asset Matrix
+# AIEA® Enterprise Architecture Domain Portfolios
+## Master Directory & Cross-Domain Asset Matrix
 ### Section 08 — Enterprise AI Architecture Portfolios
 #### Version 1.0 | 2026
 
@@ -7,24 +7,24 @@
 
 ## Executive Overview
 
-The **Enterprise AI Architecture Library (AIEA)** is organized into three dedicated **Special Interest Groups (SIGs)** to address the primary dimensions of modern enterprise transformation:
+The **Enterprise AI Architecture Library (AIEA)** is organized into three dedicated **Domain Portfolios (DPs)** to address the primary dimensions of modern enterprise transformation:
 
-1. **[SIG-01: AI in EA Practice](SIG-01-AI-in-EA-Practice.md)**  
+1. **[DP-01: AI in EA Practice](DP-01-AI-in-EA-Practice.md)**  
    *Domain Focus: Modernizing the Enterprise Architecture discipline itself through AI-augmented methods, intelligent tooling, and evolving practitioner skills.*
-2. **[SIG-02: AI Strategy and Enterprise Adoption](SIG-02-AI-Strategy-and-Enterprise-Adoption.md)**  
+2. **[DP-02: AI Strategy and Enterprise Adoption](DP-02-AI-Strategy-and-Enterprise-Adoption.md)**  
    *Domain Focus: Corporate value realization, executive alignment, sovereign cloud and compute strategy, procurement diligence, and multi-speed adoption.*
-3. **[SIG-03: AI Governance](SIG-03-AI-Governance.md)**  
+3. **[DP-03: AI Governance](DP-03-AI-Governance.md)**  
    *Domain Focus: Making governance reusable, not review-oriented. Codifying architectural patterns, decision boundaries, runtime guardrails, and regulatory compliance.*
 
-Each Special Interest Group maintains a dedicated, comprehensive portfolio document that explicitly maps and links across **8 core asset types**.
+Each Domain Portfolio maintains a dedicated, comprehensive portfolio document that explicitly maps and links across **8 core asset types**.
 
 ---
 
-## Master Cross-SIG Asset Matrix (3 SIGs × 8 Asset Types)
+## Master Cross-Domain Asset Matrix (3 Domains × 8 Asset Types)
 
-Every required asset type is explicitly instantiated with dedicated, publication-grade artifacts across all three SIG domains:
+Every required asset type is explicitly instantiated with dedicated, publication-grade artifacts across all three architecture domains:
 
-| Asset Type | SIG-01: AI in EA Practice (Methods, Tools, Skills) | SIG-02: AI Strategy & Enterprise Adoption | SIG-03: AI Governance (Reusable Patterns & Guardrails) |
+| Asset Type | DP-01: AI in EA Practice (Methods, Tools, Skills) | DP-02: AI Strategy & Enterprise Adoption | DP-03: AI Governance (Reusable Patterns & Guardrails) |
 | :--- | :--- | :--- | :--- |
 | **1. White Paper** | [**WP-01: Modernizing EA with AI**](WP-01-Modernizing-EA-with-AI.md) | [**WP-02: Architecting the AI-First Enterprise**](WP-02-Architecting-the-AI-First-Enterprise.md) | [**WP-03: Reusable AI Governance Patterns**](WP-03-Reusable-AI-Governance-Patterns.md) |
 | **2. Playbook** | [**AIEA-TK-06: EA Practice Evolution Playbook**](../07-Toolkits-and-Playbooks/06-EA-Practice-Evolution-Playbook.md) & [**Strategic Runbooks**](../03-EA-Practice/03-Strategic-Runbooks.md) | [**AIEA-TK-05: AI Strategy Execution Playbook**](../07-Toolkits-and-Playbooks/05-AI-Strategy-Execution-Playbook.md) & [**Industry Playbooks**](../02-AI-Strategy/05-Industry-Playbooks.md) | [**AIEA-TK-04: AI Governance Operating Playbook**](../07-Toolkits-and-Playbooks/04-AI-Governance-Operating-Playbook.md) & [**AIEA-TK-08: Reusable Governance Patterns**](../07-Toolkits-and-Playbooks/08-Reusable-Governance-Patterns.md) |
@@ -37,15 +37,15 @@ Every required asset type is explicitly instantiated with dedicated, publication
 
 ---
 
-## Cross-SIG Domain Completeness: Methods, Tools, and Skills
+## Cross-Domain Completeness: Methods, Tools, and Skills
 
-To guarantee that no Special Interest Group is missing core capabilities, the following cross-cutting alignment is enforced across the library:
+To guarantee that no domain is missing core capabilities, the following cross-cutting alignment is enforced across the library:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                      AIEA CROSS-SIG CAPABILITY MODEL                        │
+│                    AIEA CROSS-DOMAIN CAPABILITY MODEL                       │
 ├─────────────────┬─────────────────────┬───────────────────┬─────────────────┤
-│ CAPABILITY AXIS │ SIG-01: EA PRACTICE │ SIG-02: STRATEGY  │ SIG-03: GOVERN  │
+│ CAPABILITY AXIS │ DP-01: EA PRACTICE  │ DP-02: STRATEGY   │ DP-03: GOVERN   │
 ├─────────────────┼─────────────────────┼───────────────────┼─────────────────┤
 │ METHODS         │ • AI-Augmented ADM  │ • Value Trees     │ • Bounded Contxt│
 │                 │ • Semantic Modeling │ • ADKAR for AI    │ • Pattern FastTr│
@@ -65,11 +65,11 @@ To guarantee that no Special Interest Group is missing core capabilities, the fo
 
 ## Detailed Portfolio Documentation
 
-For deep-dive operational blueprints, practical implementation scenarios, and asset access, navigate to the individual SIG portfolio documents:
+For deep-dive operational blueprints, practical implementation scenarios, and asset access, navigate to the individual domain portfolio documents:
 
-- **[SIG-01: AI in EA Practice — Methods, Tools, and Skills](SIG-01-AI-in-EA-Practice.md)**
-- **[SIG-02: AI Strategy and Enterprise Adoption — Value, Strategy, and Sovereign Scale](SIG-02-AI-Strategy-and-Enterprise-Adoption.md)**
-- **[SIG-03: AI Governance — Reusable Patterns, Decision Boundaries, and Guardrails](SIG-03-AI-Governance.md)**
+- **[DP-01: AI in EA Practice — Methods, Tools, and Skills](DP-01-AI-in-EA-Practice.md)**
+- **[DP-02: AI Strategy and Enterprise Adoption — Value, Strategy, and Sovereign Scale](DP-02-AI-Strategy-and-Enterprise-Adoption.md)**
+- **[DP-03: AI Governance — Reusable Patterns, Decision Boundaries, and Guardrails](DP-03-AI-Governance.md)**
 
 ---
-*AIEA® Special Interest Group Portfolios, Version 1.0. Copyright © 2026 AI Enterprise Architecture Forum.*
+*AIEA® Domain Portfolios, Version 1.0. Copyright © 2026 AI Enterprise Architecture Forum.*

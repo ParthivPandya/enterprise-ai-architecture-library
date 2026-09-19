@@ -1,13 +1,13 @@
-# SIG-01 Portfolio: AI in Enterprise Architecture Practice
+# DP-01 Portfolio: AI in Enterprise Architecture Practice
 ## Methods, Tooling, and Competencies for Modern Enterprise Architects
-### Special Interest Group Dedicated Portfolio Document | Document Ref: AIEA-SIG-01
+### Enterprise Architecture Domain Portfolio Document | Document Ref: AIEA-DP-01
 #### Version 1.0 | 2026
 
 ---
 
-## 1. SIG Charter & Mission
+## 1. Domain Charter & Mission
 
-The **AI in EA Practice Special Interest Group (SIG-01)** is dedicated to the systematic evolution of the Enterprise Architecture discipline itself. As artificial intelligence transforms organizational operating models, architects cannot remain passive observers or bureaucratic reviewers. 
+The **AI in EA Practice Domain Portfolio (DP-01)** is dedicated to the systematic evolution of the Enterprise Architecture discipline itself. As artificial intelligence transforms organizational operating models, architects cannot remain passive observers or bureaucratic reviewers. 
 
 ### Mission Statement
 > *"To empower enterprise, domain, and solution architects with AI-augmented methods, intelligent toolchains, and modern competencies—transforming the architecture practice from static document custodians into active, continuous orchestrators of the intelligent enterprise."*
@@ -21,7 +21,7 @@ The **AI in EA Practice Special Interest Group (SIG-01)** is dedicated to the sy
 
 ## 2. Practical Implementation Scenarios
 
-To demonstrate how SIG-01 assets are operationalized in complex organizations, consider these practical enterprise scenarios:
+To demonstrate how DP-01 assets are operationalized in complex organizations, consider these practical enterprise scenarios:
 
 ### Scenario 1.1: Automated Microservice Architecture Topology Mining
 - **Enterprise Context**: A Tier-1 retail conglomerate managing 3,500 backend microservices with severe architectural drift and undocumented API dependencies.
@@ -43,11 +43,11 @@ To demonstrate how SIG-01 assets are operationalized in complex organizations, c
 
 ## 3. Dedicated Portfolio of the 8 Core Asset Types
 
-SIG-01 explicitly provides and maintains production-grade assets across all 8 required categories:
+DP-01 explicitly provides and maintains production-grade assets across all 8 required categories:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                    SIG-01 CORE ASSET REPOSITORY MAPPING                     │
+│                    DP-01 CORE ASSET REPOSITORY MAPPING                      │
 ├─────────────────────────────────────────────────────────────────────────────┤
 │ 1. WHITE PAPER  ──► [WP-01: Modernizing EA with AI]                         │
 │ 2. PLAYBOOK     ──► [AIEA-TK-06: EA Practice Evolution Playbook]            │
@@ -109,11 +109,11 @@ SIG-01 explicitly provides and maintains production-grade assets across all 8 re
 
 ## 4. Domain Completeness Audit: Methods, Tools, and Skills
 
-To ensure that SIG-01 provides comprehensive coverage without operational gaps, we review the three core domain pillars:
+To ensure that DP-01 provides comprehensive coverage without operational gaps, we review the three core domain pillars:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                       SIG-01 DOMAIN COMPLETENESS AUDIT                      │
+│                       DP-01 DOMAIN COMPLETENESS AUDIT                       │
 ├───────────────────┬─────────────────────────────────────────────────────────┤
 │ DOMAIN PILLAR     │ SPECIFIC CAPABILITIES & ASSETS INCLUDED                │
 ├───────────────────┼─────────────────────────────────────────────────────────┤
@@ -147,4 +147,4 @@ To ensure that SIG-01 provides comprehensive coverage without operational gaps, 
 4. **Present the Technical Strategy**: Present **[AIEA-TK-11: Slide Deck](../07-Toolkits-and-Playbooks/11-AI-in-EA-Practice-Slide-Deck.md)** to the Architecture Review Board.
 
 ---
-*AIEA® Special Interest Group Portfolios. Published under Open Framework Licence for organizational adoption.*
+*AIEA® Domain Portfolios. Published under Open Framework Licence for organizational adoption.*

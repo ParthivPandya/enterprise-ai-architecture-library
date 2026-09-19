@@ -1,7 +1,7 @@
 # Reusable AI Governance Patterns
 ## Scaling Enterprise Intelligence Through Architectural Guardrails and Decision Boundaries
 ### AIEA Technical White Paper | Ref: AIEA-WP-03 | Version 1.0 | 2026
-#### Special Interest Group: AI Governance
+#### Architecture Domain: AI Governance
 
 ---
 
@@ -225,4 +225,4 @@ By shifting to reusable governance, the enterprise transforms the role of the Ar
 4. **Reserve Board Meetings for Exceptions**: Apply the [AI Architecture Review Checklist (AIEA-TK-09)](../07-Toolkits-and-Playbooks/09-AI-Architecture-Review-Checklist.md) only to high-risk, novel architectures that fall outside established boundaries.
 
 ---
-*Published by the AI Governance Special Interest Group (SIG-03). Associated with the AIEA Enterprise Architecture Standard.*
+*Published by the AI Governance Domain Portfolio (DP-03). Associated with the AIEA Enterprise Architecture Standard.*

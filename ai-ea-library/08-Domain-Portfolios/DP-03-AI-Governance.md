@@ -1,13 +1,13 @@
-# SIG-03 Portfolio: AI Governance
+# DP-03 Portfolio: AI Governance
 ## Reusable Patterns, Decision Boundaries, and Continuous Assurance
-### Special Interest Group Dedicated Portfolio Document | Document Ref: AIEA-SIG-03
+### Enterprise Architecture Domain Portfolio Document | Document Ref: AIEA-DP-03
 #### Version 1.0 | 2026
 
 ---
 
-## 1. SIG Charter & Mission
+## 1. Domain Charter & Mission
 
-The **AI Governance Special Interest Group (SIG-03)** is dedicated to eliminating the chronic conflict between enterprise innovation and organizational safety. The traditional approach to enterprise governance is **review-oriented**: every project submits static documentation to a human committee that reviews it from scratch. For artificial intelligence, this model fails—creating massive project bottlenecks, exhausting leadership bandwidth, and driving engineering teams toward unsanctioned "shadow AI."
+The **AI Governance Domain Portfolio (DP-03)** is dedicated to eliminating the chronic conflict between enterprise innovation and organizational safety. The traditional approach to enterprise governance is **review-oriented**: every project submits static documentation to a human committee that reviews it from scratch. For artificial intelligence, this model fails—creating massive project bottlenecks, exhausting leadership bandwidth, and driving engineering teams toward unsanctioned "shadow AI."
 
 ### Guiding Architectural Principle
 > *"The opportunity is making governance reusable, not review-oriented. Clear architectural patterns and decision boundaries can help enterprises scale AI consistently without reinventing governance for every use case."*
@@ -30,7 +30,7 @@ To demonstrate how reusable governance operates in enterprise production, consid
 ### Scenario 3.1: Tier-1 Wealth Management Financial Copilot
 - **Enterprise Context**: An investment advisory firm deploying a GenAI assistant to synthesize market research and recommend portfolio rebalancing for high-net-worth clients.
 - **The Review-Oriented Bottleneck**: The project spent four months trapped in legal and compliance reviews due to fears of unauthorized investment advice and fabricated bond yields.
-- **Practical Application of SIG-03 Assets**:
+- **Practical Application of DP-03 Assets**:
   - The team adopted **[WP-03: Reusable AI Governance Patterns](WP-03-Reusable-AI-Governance-Patterns.md)** and **[AIEA-TK-08: Reusable Governance Patterns](../07-Toolkits-and-Playbooks/08-Reusable-Governance-Patterns.md)** (Pattern 1: Internal Knowledge Retrieval).
   - Enforced a hard Decision Boundary: Read-only access to SEC filings; output restricted to summarizing; hard refusal guardrail blocking speculative price predictions.
   - Mandatory Dual-Key Gate: The copilot cannot execute trades; all portfolio memos require the advisor's digital signature.
@@ -39,7 +39,7 @@ To demonstrate how reusable governance operates in enterprise production, consid
 ### Scenario 3.2: Clinical Encounter Note Transcription in Emergency Care
 - **Enterprise Context**: A hospital network deploying an ambient clinical scribe to capture doctor-patient dialogue and generate EHR encounter notes in emergency departments.
 - **The Review-Oriented Bottleneck**: Blocked by the hospital ethics board due to HIPAA privacy risks and hallucinated prescription dosages.
-- **Practical Application of SIG-03 Assets**:
+- **Practical Application of DP-03 Assets**:
   - Implemented the in-flight tokenization pattern from **[AI Data Privacy and PII Specification](../01-AI-Governance/06-AI-Data-Privacy-and-PII.md)**.
   - Deployed an on-premise, air-gapped model (zero external network transmission).
   - Applied the **[AI Architecture Review Checklist (AIEA-TK-09)](../07-Toolkits-and-Playbooks/09-AI-Architecture-Review-Checklist.md)** (Gate 1 & Gate 3 criteria).
@@ -49,7 +49,7 @@ To demonstrate how reusable governance operates in enterprise production, consid
 ### Scenario 3.3: E-Commerce Autonomous Support & Refund Concierge
 - **Enterprise Context**: A global online retailer authorizing an autonomous agent to issue refunds, cancel subscriptions, and issue discount vouchers.
 - **The Review-Oriented Bottleneck**: Rejected by the risk committee fearing prompt injection attacks could drain corporate bank accounts.
-- **Practical Application of SIG-03 Assets**:
+- **Practical Application of DP-03 Assets**:
   - Deployed **[AIEA-TK-08: Reusable Governance Patterns](../07-Toolkits-and-Playbooks/08-Reusable-Governance-Patterns.md)** (Pattern 3: Autonomous Agent with Circuit Breakers).
   - Established parameterized tool boundaries: Refunds capped at **$50.00 max per transaction**; maximum of **1 refund per customer per 90 days**.
   - Integrated NeMo Guardrails blocking adversarial jailbreak attempts.
@@ -59,11 +59,11 @@ To demonstrate how reusable governance operates in enterprise production, consid
 
 ## 3. Dedicated Portfolio of the 8 Core Asset Types
 
-SIG-03 explicitly provides and maintains production-grade assets across all 8 required categories:
+DP-03 explicitly provides and maintains production-grade assets across all 8 required categories:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                    SIG-03 CORE ASSET REPOSITORY MAPPING                     │
+│                    DP-03 CORE ASSET REPOSITORY MAPPING                      │
 ├─────────────────────────────────────────────────────────────────────────────┤
 │ 1. WHITE PAPER  ──► [WP-03: Reusable AI Governance Patterns]                │
 │ 2. PLAYBOOK     ──► [AIEA-TK-08: Reusable Governance Patterns Playbook]     │
@@ -125,11 +125,11 @@ SIG-03 explicitly provides and maintains production-grade assets across all 8 re
 
 ## 4. Domain Completeness Audit: Methods, Tools, and Skills
 
-To guarantee that SIG-03 provides complete governance coverage without operational blind spots, we review the core domain pillars:
+To guarantee that DP-03 provides complete governance coverage without operational blind spots, we review the core domain pillars:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                       SIG-03 DOMAIN COMPLETENESS AUDIT                      │
+│                       DP-03 DOMAIN COMPLETENESS AUDIT                       │
 ├───────────────────┬─────────────────────────────────────────────────────────┤
 │ DOMAIN PILLAR     │ SPECIFIC CAPABILITIES & ASSETS INCLUDED                │
 ├───────────────────┼─────────────────────────────────────────────────────────┤
@@ -163,4 +163,4 @@ To guarantee that SIG-03 provides complete governance coverage without operation
 4. **Conduct Red-Team Simulation**: Schedule **[Hands-on Workshop 3](../03-EA-Practice/04-Hands-on-Workshops.md)** for security and architecture leads.
 
 ---
-*AIEA® Special Interest Group Portfolios. Published under Open Framework Licence for organizational adoption.*
+*AIEA® Domain Portfolios. Published under Open Framework Licence for organizational adoption.*

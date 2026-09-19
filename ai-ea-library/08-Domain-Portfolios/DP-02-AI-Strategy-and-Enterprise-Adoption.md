@@ -1,13 +1,13 @@
-# SIG-02 Portfolio: AI Strategy and Enterprise Adoption
+# DP-02 Portfolio: AI Strategy and Enterprise Adoption
 ## Business Value Realization, Sovereign Scale, and Enterprise Transformation
-### Special Interest Group Dedicated Portfolio Document | Document Ref: AIEA-SIG-02
+### Enterprise Architecture Domain Portfolio Document | Document Ref: AIEA-DP-02
 #### Version 1.0 | 2026
 
 ---
 
-## 1. SIG Charter & Mission
+## 1. Domain Charter & Mission
 
-The **AI Strategy and Enterprise Adoption Special Interest Group (SIG-02)** is dedicated to bridging the divide between corporate executive vision and tangible architectural execution. While technical experimentation is abundant, enterprises routinely struggle to escape "pilot hell" and realize measurable EBITDA improvements from artificial intelligence.
+The **AI Strategy and Enterprise Adoption Domain Portfolio (DP-02)** is dedicated to bridging the divide between corporate executive vision and tangible architectural execution. While technical experimentation is abundant, enterprises routinely struggle to escape "pilot hell" and realize measurable EBITDA improvements from artificial intelligence.
 
 ### Mission Statement
 > *"To provide business, technology, and architecture leaders with the strategic frameworks, financial modeling instruments, sovereign deployment architectures, and change management playbooks required to scale artificial intelligence from fragmented experiments into an enduring enterprise competitive advantage."*
@@ -22,7 +22,7 @@ The **AI Strategy and Enterprise Adoption Special Interest Group (SIG-02)** is d
 
 ## 2. Practical Implementation Scenarios
 
-To demonstrate the real-world utility of SIG-02 assets, consider these enterprise transformation scenarios:
+To demonstrate the real-world utility of DP-02 assets, consider these enterprise transformation scenarios:
 
 ### Scenario 2.1: Sovereign AI Intake Assistant for a National Healthcare Provider
 - **Enterprise Context**: A national healthcare consortium operating across multi-tier hospitals required an automated patient triage system processing six regional languages while complying strictly with statutory data protection laws.
@@ -44,11 +44,11 @@ To demonstrate the real-world utility of SIG-02 assets, consider these enterpris
 
 ## 3. Dedicated Portfolio of the 8 Core Asset Types
 
-SIG-02 explicitly provides and maintains production-grade assets across all 8 required categories:
+DP-02 explicitly provides and maintains production-grade assets across all 8 required categories:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                    SIG-02 CORE ASSET REPOSITORY MAPPING                     │
+│                    DP-02 CORE ASSET REPOSITORY MAPPING                      │
 ├─────────────────────────────────────────────────────────────────────────────┤
 │ 1. WHITE PAPER  ──► [WP-02: Architecting the AI-First Enterprise]           │
 │ 2. PLAYBOOK     ──► [AIEA-TK-05: AI Strategy Execution Playbook]            │
@@ -111,11 +111,11 @@ SIG-02 explicitly provides and maintains production-grade assets across all 8 re
 
 ## 4. Domain Completeness Audit: Methods, Tools, and Skills
 
-To guarantee that SIG-02 provides comprehensive strategic coverage, we review the core domain pillars:
+To guarantee that DP-02 provides comprehensive strategic coverage, we review the core domain pillars:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                       SIG-02 DOMAIN COMPLETENESS AUDIT                      │
+│                       DP-02 DOMAIN COMPLETENESS AUDIT                       │
 ├───────────────────┬─────────────────────────────────────────────────────────┤
 │ DOMAIN PILLAR     │ SPECIFIC CAPABILITIES & ASSETS INCLUDED                │
 ├───────────────────┼─────────────────────────────────────────────────────────┤
@@ -149,4 +149,4 @@ To guarantee that SIG-02 provides comprehensive strategic coverage, we review th
 4. **Secure Board Approval**: Tailor and present the **[Executive AI Pitch Deck (AIEA-TK-10)](../07-Toolkits-and-Playbooks/10-Executive-AI-Pitch-Deck.md)**.
 
 ---
-*AIEA® Special Interest Group Portfolios. Published under Open Framework Licence for organizational adoption.*
+*AIEA® Domain Portfolios. Published under Open Framework Licence for organizational adoption.*

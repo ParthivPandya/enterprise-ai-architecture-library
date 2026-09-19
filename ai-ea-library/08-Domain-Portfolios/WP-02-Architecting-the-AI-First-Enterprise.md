@@ -1,7 +1,7 @@
 # Architecting the AI-First Enterprise
 ## Strategy, Business Value Realization, and Sovereign Scale
 ### AIEA Technical White Paper | Ref: AIEA-WP-02 | Version 1.0 | 2026
-#### Special Interest Group: AI Strategy and Enterprise Adoption
+#### Architecture Domain: AI Strategy and Enterprise Adoption
 
 ---
 
@@ -152,4 +152,4 @@ Scaling AI is fundamentally an organizational challenge. We recommend the **AIEA
 4. **Present the Executive AI Pitch Deck ([AIEA-TK-10](../07-Toolkits-and-Playbooks/10-Executive-AI-Pitch-Deck.md)) to the Board**: Align corporate leadership on a unified 18-month architectural transformation roadmap.
 
 ---
-*Published by the AI Strategy and Enterprise Adoption Special Interest Group (SIG-02). Associated with the AIEA Enterprise Architecture Standard.*
+*Published by the AI Strategy and Enterprise Adoption Domain Portfolio (DP-02). Associated with the AIEA Enterprise Architecture Standard.*

@@ -42,15 +42,15 @@ Twelve actionable execution toolkits, diagnostic surveys, modeling catalogs, che
 - **AIEA-TK-11:** [AI in EA Practice Slide Deck](ai-ea-library/07-Toolkits-and-Playbooks/11-AI-in-EA-Practice-Slide-Deck.md)
 - **AIEA-TK-12:** [AI Governance & Guardrails Presentation Deck](ai-ea-library/07-Toolkits-and-Playbooks/12-AI-Governance-and-Guardrails-Deck.md)
 
-### 4. [Special Interest Group (SIG) Portfolios](ai-ea-library/08-SIG-Portfolios/README.md) (Section 08)
-Dedicated portfolio documents organizing the library across 3 domain-focused Special Interest Groups, explicitly linking **8 core asset types** (White paper, playbook, reference model, case study, assessment, checklist, workshop, slide deck):
-- **SIG-01:** [AI in Enterprise Architecture Practice (Methods, Tools, Skills)](ai-ea-library/08-SIG-Portfolios/SIG-01-AI-in-EA-Practice.md)
-- **SIG-02:** [AI Strategy and Enterprise Adoption](ai-ea-library/08-SIG-Portfolios/SIG-02-AI-Strategy-and-Enterprise-Adoption.md)
-- **SIG-03:** [AI Governance — Reusable Patterns & Boundaries](ai-ea-library/08-SIG-Portfolios/SIG-03-AI-Governance.md)
+### 4. [Enterprise Architecture Domain Portfolios](ai-ea-library/08-Domain-Portfolios/README.md) (Section 08)
+Dedicated portfolio documents organizing the library across 3 core architecture domains, explicitly linking **8 core asset types** (White paper, playbook, reference model, case study, assessment, checklist, workshop, slide deck):
+- **DP-01:** [AI in Enterprise Architecture Practice (Methods, Tools, Skills)](ai-ea-library/08-Domain-Portfolios/DP-01-AI-in-EA-Practice.md)
+- **DP-02:** [AI Strategy and Enterprise Adoption](ai-ea-library/08-Domain-Portfolios/DP-02-AI-Strategy-and-Enterprise-Adoption.md)
+- **DP-03:** [AI Governance — Reusable Patterns & Boundaries](ai-ea-library/08-Domain-Portfolios/DP-03-AI-Governance.md)
 - **Dedicated Standalone White Papers:**
-  - [WP-01: Modernizing EA with AI](ai-ea-library/08-SIG-Portfolios/WP-01-Modernizing-EA-with-AI.md)
-  - [WP-02: Architecting the AI-First Enterprise](ai-ea-library/08-SIG-Portfolios/WP-02-Architecting-the-AI-First-Enterprise.md)
-  - [WP-03: Reusable AI Governance Patterns](ai-ea-library/08-SIG-Portfolios/WP-03-Reusable-AI-Governance-Patterns.md)
+  - [WP-01: Modernizing EA with AI](ai-ea-library/08-Domain-Portfolios/WP-01-Modernizing-EA-with-AI.md)
+  - [WP-02: Architecting the AI-First Enterprise](ai-ea-library/08-Domain-Portfolios/WP-02-Architecting-the-AI-First-Enterprise.md)
+  - [WP-03: Reusable AI Governance Patterns](ai-ea-library/08-Domain-Portfolios/WP-03-Reusable-AI-Governance-Patterns.md)
 
 ---
 
@@ -97,11 +97,11 @@ AI Enterprise Architecture/
     │   ├── 10-Executive-AI-Pitch-Deck.md
     │   ├── 11-AI-in-EA-Practice-Slide-Deck.md
     │   └── 12-AI-Governance-and-Guardrails-Deck.md
-    └── 08-SIG-Portfolios/                  <-- Special Interest Group Portfolios & White Papers
-        ├── README.md                       <-- Master SIG Directory & 3 SIGs × 8 Asset Types Matrix
-        ├── SIG-01-AI-in-EA-Practice.md     <-- Dedicated Portfolio: Methods, Tools, Skills
-        ├── SIG-02-AI-Strategy-and-Enterprise-Adoption.md
-        ├── SIG-03-AI-Governance.md         <-- Dedicated Portfolio: Reusable Governance
+    └── 08-Domain-Portfolios/               <-- Enterprise Architecture Domain Portfolios & White Papers
+        ├── README.md                       <-- Master Domain Directory & 3 Domains × 8 Asset Types Matrix
+        ├── DP-01-AI-in-EA-Practice.md      <-- Dedicated Portfolio: Methods, Tools, Skills
+        ├── DP-02-AI-Strategy-and-Enterprise-Adoption.md
+        ├── DP-03-AI-Governance.md          <-- Dedicated Portfolio: Reusable Governance
         ├── WP-01-Modernizing-EA-with-AI.md
         ├── WP-02-Architecting-the-AI-First-Enterprise.md
         └── WP-03-Reusable-AI-Governance-Patterns.md
@@ -109,13 +109,13 @@ AI Enterprise Architecture/
 
 ---
 
-## Master Cross-SIG Asset Matrix (3 SIGs × 8 Asset Types)
+## Master Cross-Domain Asset Matrix (3 Domains × 8 Asset Types)
 
-Every required asset type is explicitly instantiated with dedicated, production-grade artifacts across all three SIG domains:
+Every required asset type is explicitly instantiated with dedicated, production-grade artifacts across all three architecture domains:
 
-| Asset Type | SIG-01: EA Practice (Methods, Tools, Skills) | SIG-02: AI Strategy & Adoption | SIG-03: AI Governance (Reusable Patterns) |
+| Asset Type | DP-01: EA Practice (Methods, Tools, Skills) | DP-02: AI Strategy & Adoption | DP-03: AI Governance (Reusable Patterns) |
 | :--- | :--- | :--- | :--- |
-| **1. White Paper** | [**WP-01: Modernizing EA**](ai-ea-library/08-SIG-Portfolios/WP-01-Modernizing-EA-with-AI.md) | [**WP-02: AI-First Enterprise**](ai-ea-library/08-SIG-Portfolios/WP-02-Architecting-the-AI-First-Enterprise.md) | [**WP-03: Reusable Governance**](ai-ea-library/08-SIG-Portfolios/WP-03-Reusable-AI-Governance-Patterns.md) |
+| **1. White Paper** | [**WP-01: Modernizing EA**](ai-ea-library/08-Domain-Portfolios/WP-01-Modernizing-EA-with-AI.md) | [**WP-02: AI-First Enterprise**](ai-ea-library/08-Domain-Portfolios/WP-02-Architecting-the-AI-First-Enterprise.md) | [**WP-03: Reusable Governance**](ai-ea-library/08-Domain-Portfolios/WP-03-Reusable-AI-Governance-Patterns.md) |
 | **2. Playbook** | [**AIEA-TK-06**](ai-ea-library/07-Toolkits-and-Playbooks/06-EA-Practice-Evolution-Playbook.md) & [**Runbooks**](ai-ea-library/03-EA-Practice/03-Strategic-Runbooks.md) | [**AIEA-TK-05**](ai-ea-library/07-Toolkits-and-Playbooks/05-AI-Strategy-Execution-Playbook.md) & [**Industry Playbooks**](ai-ea-library/02-AI-Strategy/05-Industry-Playbooks.md) | [**AIEA-TK-08**](ai-ea-library/07-Toolkits-and-Playbooks/08-Reusable-Governance-Patterns.md) & [**TK-04**](ai-ea-library/07-Toolkits-and-Playbooks/04-AI-Governance-Operating-Playbook.md) |
 | **3. Reference Model** | [**AIEA-501 (AI-TRM)**](ai-ea-library/05-Standards/AIEA-501-Reference-Models.md) | [**Value Trees**](ai-ea-library/02-AI-Strategy/01-Business-Value.md) & [**TK-02**](ai-ea-library/07-Toolkits-and-Playbooks/02-Enterprise-AI-Metamodel-Catalog.md) | [**01-02 Framework**](ai-ea-library/01-AI-Governance/02-Governance-Framework.md) & [**TK-08 Blueprints**](ai-ea-library/07-Toolkits-and-Playbooks/08-Reusable-Governance-Patterns.md) |
 | **4. Case Study** | [**AIEA-G05**](ai-ea-library/06-Series%20Guide/AIEA-G05-Agentic-AI-Architecture.md) & [**G08**](ai-ea-library/06-Series%20Guide/AIEA-G08-LLMOps-Enterprise.md) | [**AIEA-G06 Sovereign**](ai-ea-library/06-Series%20Guide/AIEA-G06-Sovereign-AI.md) & [**G01 BFSI**](ai-ea-library/06-Series%20Guide/AIEA-G01-Financial-Services.md) | [**01-05 Failures**](ai-ea-library/01-AI-Governance/05-When-AI-Goes-Wrong.md) & [**G04**](ai-ea-library/06-Series%20Guide/AIEA-G04-Responsible-AI-in-Practice.md) |
@@ -130,9 +130,9 @@ Every required asset type is explicitly instantiated with dedicated, production-
 
 | Your Role | Recommended Starting Point | Key Assets |
 |---|---|---|
-| **Chief AI Officer / CDO** | [02-AI-Strategy/01-Business-Value.md](ai-ea-library/02-AI-Strategy/01-Business-Value.md) | [WP-02](ai-ea-library/08-SIG-Portfolios/WP-02-Architecting-the-AI-First-Enterprise.md), [AIEA-TK-05](ai-ea-library/07-Toolkits-and-Playbooks/05-AI-Strategy-Execution-Playbook.md), [TK-10](ai-ea-library/07-Toolkits-and-Playbooks/10-Executive-AI-Pitch-Deck.md) |
-| **Enterprise / Chief Architect** | [03-EA-Practice/01-Driving-Adoption.md](ai-ea-library/03-EA-Practice/01-Driving-Adoption.md) | [SIG-01](ai-ea-library/08-SIG-Portfolios/SIG-01-AI-in-EA-Practice.md), [WP-01](ai-ea-library/08-SIG-Portfolios/WP-01-Modernizing-EA-with-AI.md), [AIEA-TK-09 Checklist](ai-ea-library/07-Toolkits-and-Playbooks/09-AI-Architecture-Review-Checklist.md) |
-| **AI Governance / CISO / DPO** | [01-AI-Governance/02-Governance-Framework.md](ai-ea-library/01-AI-Governance/02-Governance-Framework.md) | [SIG-03](ai-ea-library/08-SIG-Portfolios/SIG-03-AI-Governance.md), [WP-03](ai-ea-library/08-SIG-Portfolios/WP-03-Reusable-AI-Governance-Patterns.md), [AIEA-TK-08](ai-ea-library/07-Toolkits-and-Playbooks/08-Reusable-Governance-Patterns.md), [TK-12](ai-ea-library/07-Toolkits-and-Playbooks/12-AI-Governance-and-Guardrails-Deck.md) |
+| **Chief AI Officer / CDO** | [02-AI-Strategy/01-Business-Value.md](ai-ea-library/02-AI-Strategy/01-Business-Value.md) | [WP-02](ai-ea-library/08-Domain-Portfolios/WP-02-Architecting-the-AI-First-Enterprise.md), [AIEA-TK-05](ai-ea-library/07-Toolkits-and-Playbooks/05-AI-Strategy-Execution-Playbook.md), [TK-10](ai-ea-library/07-Toolkits-and-Playbooks/10-Executive-AI-Pitch-Deck.md) |
+| **Enterprise / Chief Architect** | [03-EA-Practice/01-Driving-Adoption.md](ai-ea-library/03-EA-Practice/01-Driving-Adoption.md) | [DP-01](ai-ea-library/08-Domain-Portfolios/DP-01-AI-in-EA-Practice.md), [WP-01](ai-ea-library/08-Domain-Portfolios/WP-01-Modernizing-EA-with-AI.md), [AIEA-TK-09 Checklist](ai-ea-library/07-Toolkits-and-Playbooks/09-AI-Architecture-Review-Checklist.md) |
+| **AI Governance / CISO / DPO** | [01-AI-Governance/02-Governance-Framework.md](ai-ea-library/01-AI-Governance/02-Governance-Framework.md) | [DP-03](ai-ea-library/08-Domain-Portfolios/DP-03-AI-Governance.md), [WP-03](ai-ea-library/08-Domain-Portfolios/WP-03-Reusable-AI-Governance-Patterns.md), [AIEA-TK-08](ai-ea-library/07-Toolkits-and-Playbooks/08-Reusable-Governance-Patterns.md), [TK-12](ai-ea-library/07-Toolkits-and-Playbooks/12-AI-Governance-and-Guardrails-Deck.md) |
 | **CTO / Engineering Lead** | [03-EA-Practice/05-LLMOps.md](ai-ea-library/03-EA-Practice/05-LLMOps.md) | [09-AI-Testing](ai-ea-library/03-EA-Practice/09-AI-Testing-and-Evaluation.md), [10-Observability](ai-ea-library/03-EA-Practice/10-AI-Observability-and-Monitoring.md), [AIEA-G05](ai-ea-library/06-Series%20Guide/AIEA-G05-Agentic-AI-Architecture.md) |
 | **Finance / Cloud FinOps Lead** | [01-AI-Governance/01-FinOps.md](ai-ea-library/01-AI-Governance/01-FinOps.md) | [AIEA-G07 FinOps](ai-ea-library/06-Series%20Guide/AIEA-G07-AI-FinOps.md), [AIEA-TK-10 Pitch Deck](ai-ea-library/07-Toolkits-and-Playbooks/10-Executive-AI-Pitch-Deck.md) |
 | **Procurement & Legal Counsel** | [02-AI-Strategy/07-AI-Procurement-and-Contracts.md](ai-ea-library/02-AI-Strategy/07-AI-Procurement-and-Contracts.md) | [AIEA-TK-07 Vendor Scorecard](ai-ea-library/07-Toolkits-and-Playbooks/07-AI-Vendor-Evaluation-Scorecard.md), [01-06 Privacy & PII](ai-ea-library/01-AI-Governance/06-AI-Data-Privacy-and-PII.md) |
@@ -208,16 +208,16 @@ Every required asset type is explicitly instantiated with dedicated, production-
 | [**11-AI-in-EA-Practice-Slide-Deck.md**](ai-ea-library/07-Toolkits-and-Playbooks/11-AI-in-EA-Practice-Slide-Deck.md) | AIEA-TK-11 | Architecture team technical presentation deck detailing AI-augmented ADM, modern tools, evaluation metrics, and skills evolution |
 | [**12-AI-Governance-and-Guardrails-Deck.md**](ai-ea-library/07-Toolkits-and-Playbooks/12-AI-Governance-and-Guardrails-Deck.md) | AIEA-TK-12 | Risk & compliance slide deck establishing reusable governance patterns, input/output guardrails, and continuous assurance |
 
-### Section 08 — Special Interest Group (SIG) Portfolios
+### Section 08 — Enterprise Architecture Domain Portfolios
 | Portfolio Document | Reference | What It Covers |
 |---|---|---|
-| [**README.md**](ai-ea-library/08-SIG-Portfolios/README.md) | AIEA-SIG-00 | Master SIG Directory, cross-SIG capability model, and the complete 3 SIGs × 8 Asset Types matrix |
-| [**SIG-01-AI-in-EA-Practice.md**](ai-ea-library/08-SIG-Portfolios/SIG-01-AI-in-EA-Practice.md) | AIEA-SIG-01 | Dedicated portfolio for EA practice evolution, methods, tools, skills, and practical topology discovery scenarios |
-| [**SIG-02-AI-Strategy-and-Enterprise-Adoption.md**](ai-ea-library/08-SIG-Portfolios/SIG-02-AI-Strategy-and-Enterprise-Adoption.md) | AIEA-SIG-02 | Dedicated portfolio for corporate strategy, value realization, sovereign scale, and vendor contract rationalization |
-| [**SIG-03-AI-Governance.md**](ai-ea-library/08-SIG-Portfolios/SIG-03-AI-Governance.md) | AIEA-SIG-03 | Dedicated portfolio codifying reusable governance patterns, bounded contexts, runtime guardrails, and exception boards |
-| [**WP-01-Modernizing-EA-with-AI.md**](ai-ea-library/08-SIG-Portfolios/WP-01-Modernizing-EA-with-AI.md) | AIEA-WP-01 | Technical white paper: Modernizing Enterprise Architecture with AI (Methods, Tooling, and Competencies) |
-| [**WP-02-Architecting-the-AI-First-Enterprise.md**](ai-ea-library/08-SIG-Portfolios/WP-02-Architecting-the-AI-First-Enterprise.md) | AIEA-WP-02 | Strategic white paper: Architecting the AI-First Enterprise (Strategy, Business Value Realization, and Sovereign Scale) |
-| [**WP-03-Reusable-AI-Governance-Patterns.md**](ai-ea-library/08-SIG-Portfolios/WP-03-Reusable-AI-Governance-Patterns.md) | AIEA-WP-03 | Technical white paper: Reusable AI Governance Patterns (Architectural Guardrails, Decision Boundaries, Fast-Tracks) |
+| [**README.md**](ai-ea-library/08-Domain-Portfolios/README.md) | AIEA-DP-00 | Master Domain Directory, cross-domain capability model, and the complete 3 Domains × 8 Asset Types matrix |
+| [**DP-01-AI-in-EA-Practice.md**](ai-ea-library/08-Domain-Portfolios/DP-01-AI-in-EA-Practice.md) | AIEA-DP-01 | Dedicated portfolio for EA practice evolution, methods, tools, skills, and practical topology discovery scenarios |
+| [**DP-02-AI-Strategy-and-Enterprise-Adoption.md**](ai-ea-library/08-Domain-Portfolios/DP-02-AI-Strategy-and-Enterprise-Adoption.md) | AIEA-DP-02 | Dedicated portfolio for corporate strategy, value realization, sovereign scale, and vendor contract rationalization |
+| [**DP-03-AI-Governance.md**](ai-ea-library/08-Domain-Portfolios/DP-03-AI-Governance.md) | AIEA-DP-03 | Dedicated portfolio codifying reusable governance patterns, bounded contexts, runtime guardrails, and exception boards |
+| [**WP-01-Modernizing-EA-with-AI.md**](ai-ea-library/08-Domain-Portfolios/WP-01-Modernizing-EA-with-AI.md) | AIEA-WP-01 | Technical white paper: Modernizing Enterprise Architecture with AI (Methods, Tooling, and Competencies) |
+| [**WP-02-Architecting-the-AI-First-Enterprise.md**](ai-ea-library/08-Domain-Portfolios/WP-02-Architecting-the-AI-First-Enterprise.md) | AIEA-WP-02 | Strategic white paper: Architecting the AI-First Enterprise (Strategy, Business Value Realization, and Sovereign Scale) |
+| [**WP-03-Reusable-AI-Governance-Patterns.md**](ai-ea-library/08-Domain-Portfolios/WP-03-Reusable-AI-Governance-Patterns.md) | AIEA-WP-03 | Technical white paper: Reusable AI Governance Patterns (Architectural Guardrails, Decision Boundaries, Fast-Tracks) |
 
 ---
 
@@ -228,7 +228,7 @@ Every required asset type is explicitly instantiated with dedicated, production-
 | **NIST AI RMF 1.0 + Generative AI Profile (AI 600-1)** | 01-02, 01-04, 03-03, 08-WP-03, TK-09 |
 | **ISO/IEC 42001:2023 (AI Management System)** | 01-02, 05-401, TK-04 |
 | **OWASP Top 10 for LLM Applications 2025/2026** | 01-04, 03-05, 08-WP-03, TK-09 |
-| **EU AI Act (2024)** | 01-02, 01-03, 01-05, 01-06, 08-SIG-03, TK-04 |
+| **EU AI Act (2024)** | 01-02, 01-03, 01-05, 01-06, 08-DP-03, TK-04 |
 | **India DPDPA 2023 + DPDP Rules 2025** | 01-06, 02-04, 06-G03, 08-WP-02, TK-09 |
 | **IndiaAI Mission + MeitY AI Governance Guidelines** | 02-04, 06-G03, 06-G06 |
 | **TOGAF® 10 / Architecture Development Method (ADM)** | 03-01, 03-02, 05-201, 07-TK-06, 08-WP-01 |
@@ -248,10 +248,10 @@ Every required asset type is explicitly instantiated with dedicated, production-
 | **Air Canada Chatbot Ruling** | Legal liability for ungrounded hallucinated bereavement fare policy | [01-05](ai-ea-library/01-AI-Governance/05-When-AI-Goes-Wrong.md) |
 | **DPD Viral Crisis** | Accidental bypass of system prompts and customer support guardrails | [01-05](ai-ea-library/01-AI-Governance/05-When-AI-Goes-Wrong.md) |
 | **NYC MyCity Chatbot** | Hallucinated guidance misrepresenting municipal housing regulations | [01-05](ai-ea-library/01-AI-Governance/05-When-AI-Goes-Wrong.md) |
-| **GlobalPay Microservice Discovery** | Semantic AI discovery across 4,200 services generating live Neo4j graph | [08-WP-01](ai-ea-library/08-SIG-Portfolios/WP-01-Modernizing-EA-with-AI.md), [08-SIG-01](ai-ea-library/08-SIG-Portfolios/SIG-01-AI-in-EA-Practice.md) |
-| **BharatHealth Multilingual Scribe** | Sovereign local edge-cloud processing 6 Indic languages under DPDP Act at ₹0.42/pt | [08-WP-02](ai-ea-library/08-SIG-Portfolios/WP-02-Architecting-the-AI-First-Enterprise.md), [08-SIG-02](ai-ea-library/08-SIG-Portfolios/SIG-02-AI-Strategy-and-Enterprise-Adoption.md) |
-| **Tier-1 Bank Wealth Management Copilot** | 48-hour fast-track approval via bounded context and dual-key sign-off | [08-WP-03](ai-ea-library/08-SIG-Portfolios/WP-03-Reusable-AI-Governance-Patterns.md), [08-SIG-03](ai-ea-library/08-SIG-Portfolios/SIG-03-AI-Governance.md) |
-| **Retail Bank Chatbot Rationalization** | Consolidating 14 siloed SaaS chatbot contracts to save $2.7M annually | [08-SIG-02](ai-ea-library/08-SIG-Portfolios/SIG-02-AI-Strategy-and-Enterprise-Adoption.md), [TK-07](ai-ea-library/07-Toolkits-and-Playbooks/07-AI-Vendor-Evaluation-Scorecard.md) |
+| **GlobalPay Microservice Discovery** | Semantic AI discovery across 4,200 services generating live Neo4j graph | [08-WP-01](ai-ea-library/08-Domain-Portfolios/WP-01-Modernizing-EA-with-AI.md), [08-DP-01](ai-ea-library/08-Domain-Portfolios/DP-01-AI-in-EA-Practice.md) |
+| **BharatHealth Multilingual Scribe** | Sovereign local edge-cloud processing 6 Indic languages under DPDP Act at ₹0.42/pt | [08-WP-02](ai-ea-library/08-Domain-Portfolios/WP-02-Architecting-the-AI-First-Enterprise.md), [08-DP-02](ai-ea-library/08-Domain-Portfolios/DP-02-AI-Strategy-and-Enterprise-Adoption.md) |
+| **Tier-1 Bank Wealth Management Copilot** | 48-hour fast-track approval via bounded context and dual-key sign-off | [08-WP-03](ai-ea-library/08-Domain-Portfolios/WP-03-Reusable-AI-Governance-Patterns.md), [08-DP-03](ai-ea-library/08-Domain-Portfolios/DP-03-AI-Governance.md) |
+| **Retail Bank Chatbot Rationalization** | Consolidating 14 siloed SaaS chatbot contracts to save $2.7M annually | [08-DP-02](ai-ea-library/08-Domain-Portfolios/DP-02-AI-Strategy-and-Enterprise-Adoption.md), [TK-07](ai-ea-library/07-Toolkits-and-Playbooks/07-AI-Vendor-Evaluation-Scorecard.md) |
 | **JPMorgan COIN + LLM Suite** | 360,000 legal hours saved; 140,000-employee enterprise deployment | [02-02](ai-ea-library/02-AI-Strategy/02-Agentic-AI-Use-Cases.md), [02-05](ai-ea-library/02-AI-Strategy/05-Industry-Playbooks.md) |
 | **HDFC Bank & SBI YONO** | Multilingual conversational banking, automated fraud reduction | [02-05](ai-ea-library/02-AI-Strategy/05-Industry-Playbooks.md), [06-G03](ai-ea-library/06-Series%20Guide/AIEA-G03-Indian-Enterprises.md) |
 | **Tata Steel Hot Rolling Mill** | Computer vision quality inspection and edge predictive maintenance | [02-05](ai-ea-library/02-AI-Strategy/05-Industry-Playbooks.md) |

@@ -1,7 +1,7 @@
 # Modernizing Enterprise Architecture with Artificial Intelligence
 ## Methods, Tooling, and Competencies for the Intelligent Enterprise
 ### AIEA Technical White Paper | Ref: AIEA-WP-01 | Version 1.0 | 2026
-#### Special Interest Group: AI in EA Practice
+#### Architecture Domain: AI in EA Practice
 
 ---
 
@@ -144,4 +144,4 @@ To modernize your enterprise architecture practice over the next 90 days:
 4. **Shift from Committee Bottlenecks to Reusable Patterns ([AIEA-TK-08](../07-Toolkits-and-Playbooks/08-Reusable-Governance-Patterns.md))**: Define pre-approved blueprints that allow engineering pods to fast-track compliant AI implementations.
 
 ---
-*Published by the AI in EA Practice Special Interest Group (SIG-01). Associated with the AIEA Enterprise Architecture Standard.*
+*Published by the AI in EA Practice Domain Portfolio (DP-01). Associated with the AIEA Enterprise Architecture Standard.*
