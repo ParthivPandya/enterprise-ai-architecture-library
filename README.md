@@ -251,6 +251,34 @@ Every required asset type is explicitly instantiated with dedicated, production-
 | [**WP-02-Architecting-the-AI-First-Enterprise.md**](ai-ea-library/08-Domain-Portfolios/WP-02-Architecting-the-AI-First-Enterprise.md) | AIEA-WP-02 | Strategic white paper: Architecting the AI-First Enterprise (Strategy, Business Value Realization, and Sovereign Scale) |
 | [**WP-03-Reusable-AI-Governance-Patterns.md**](ai-ea-library/08-Domain-Portfolios/WP-03-Reusable-AI-Governance-Patterns.md) | AIEA-WP-03 | Technical white paper: Reusable AI Governance Patterns (Architectural Guardrails, Decision Boundaries, Fast-Tracks) |
 
+### Section 09 — Operational Guide Outputs
+| Document | What It Covers |
+|---|---|
+| [**WG1-AI-Governance-Playbook**](ai-ea-library/09-WG-Outputs/WG1-AI-Governance-Playbook/README.md) | AI Governance Playbook, Risk Classification Framework, and Governance Control Library |
+| [**WG2-EA-AI-Native**](ai-ea-library/09-WG-Outputs/WG2-EA-AI-Native/README.md) | AI-Native EA White Paper, Principles and Guardrails, and Maturity Model |
+| [**WG3-AI-EA-Process**](ai-ea-library/09-WG-Outputs/WG3-AI-EA-Process/README.md) | AI in EA Lifecycle Playbook, Pattern Catalogue, and Reusable Prompt Library |
+| [**WG4-Maturity-Assessment**](ai-ea-library/09-WG-Outputs/WG4-Maturity-Assessment/README.md) | Self-Assessment Instrument, Scorecard, and Facilitation Playbook |
+| [**WG5-Scaling-Agentic-AI**](ai-ea-library/09-WG-Outputs/WG5-Scaling-Agentic-AI/README.md) | Scaling Agentic AI White Paper, Prioritisation Method, and TOGAF ADM Phase Mapping |
+
+### Section 10 — Use Cases & Case Studies
+| Document | What It Covers |
+|---|---|
+| [**01-WG1-Governance-Use-Cases**](ai-ea-library/10-Use-Cases-and-Case-Studies/01-WG1-Governance-Use-Cases/README.md) | Financial Services Governance and Healthcare AI Controls |
+| [**02-WG5-Agentic-AI-Use-Cases**](ai-ea-library/10-Use-Cases-and-Case-Studies/02-WG5-Agentic-AI-Use-Cases/README.md) | IT Operations Agent (BFSI), Contract Review (Legal), Customer Onboarding |
+| [**03-Case-Studies**](ai-ea-library/10-Use-Cases-and-Case-Studies/03-Case-Studies/README.md) | Enterprise AI Governance Rollout and Agentic Automation in Operations |
+
+### Section 11 — Architecture Diagrams
+| Document | What It Covers |
+|---|---|
+| [**ArchiMate Models**](ai-ea-library/11-Architecture-Diagrams/ArchiMate/README.md) | Agentic AI Operating Model and EA AI Reference Architecture (.archimate files) |
+| [**SVG Renderings**](ai-ea-library/11-Architecture-Diagrams/SVG/README.md) | AI Governance Operating Model and Enterprise AI Capability Map (.svg files) |
+
+### Section 12 — Templates
+| Document | What It Covers |
+|---|---|
+| [**Core Templates**](ai-ea-library/12-Templates/README.md) | AI System Card, Data Contract, ADR, Business Case, Incident Report, and Launch Gate templates |
+| [**Completed Examples**](ai-ea-library/12-Templates/Examples/README.md) | Fully populated examples of all templates for reference |
+
 ---
 
 ## Framework & Standard References

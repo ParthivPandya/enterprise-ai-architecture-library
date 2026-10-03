@@ -19,3 +19,6 @@ Read the [AI Governance Playbook](AI-Governance-Playbook.md) for the operating m
 - [WG1 scope note](../WG-Charters/WG1-AI-Governance-Playbook-Charter.md)
 - [Pre-Deployment Launch Gate](../../12-Templates/Pre-Deployment-Launch-Gate.md)
 - [Section 09 catalogue](../README.md)
+- [Financial Services Governance Use Case](../../10-Use-Cases-and-Case-Studies/01-WG1-Governance-Use-Cases/UC-01-Financial-Services-Governance.md)
+- [Healthcare AI Controls Use Case](../../10-Use-Cases-and-Case-Studies/01-WG1-Governance-Use-Cases/UC-02-Healthcare-AI-Controls.md)
+- [AI Governance Operating Model (SVG)](../../11-Architecture-Diagrams/SVG/AI-Governance-Operating-Model.svg)
