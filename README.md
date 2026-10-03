@@ -79,7 +79,14 @@ Repository history is tracked in [`CHANGELOG.md`](CHANGELOG.md), with GitHub iss
 ```text
 AI Enterprise Architecture/
 ├── README.md                               <-- Root Master Portal
+├── CHANGELOG.md                            <-- Revision history
+├── LEGAL-NOTICE.md                         <-- Independence and trademarks
 └── ai-ea-library/
+    ├── START-HERE.md                       <-- Role-based entry points
+    ├── DOCUMENT-TYPES.md                   <-- Document authority definitions
+    ├── SOURCE-REGISTER.md                  <-- Primary evidence links
+    ├── HOW-TO-CITE.md                      <-- Academic/professional citation guides
+    ├── index.md                            <-- MkDocs homepage
     ├── 00-Foundations/                     <-- Practitioner Book (Foundations of LLMs, data, models, agents)
     ├── 01-AI-Governance/                   <-- Governance, FinOps, Responsible AI, Risk, Privacy & Failures
     ├── 02-AI-Strategy/                     <-- Value realization, use cases, verticals, change, procurement
@@ -133,10 +140,21 @@ AI Enterprise Architecture/
     ├── 09-WG-Outputs/                       <-- Completed operational guides grouped by five topics
     │   ├── README.md                       <-- Operational guide directory
     │   ├── WG-Charters/                     <-- Reader-facing scope notes retained for traceability
-    │   └── WG1–WG5 topic folders/           <-- 20 completed guides, playbooks, and instruments
+    │   ├── WG1-AI-Governance-Playbook/      <-- Governance playbooks, risk frameworks, and controls
+    │   ├── WG2-EA-AI-Native/                <-- AI-native EA principles, reference architecture, and maturity
+    │   ├── WG3-AI-EA-Process/               <-- Lifecycle playbooks, prompts, and pattern catalogues
+    │   ├── WG4-Maturity-Assessment/         <-- Self-assessment instruments and scorecards
+    │   └── WG5-Scaling-Agentic-AI/          <-- Agentic AI scale guidance and ADM phase mapping
     ├── 10-Use-Cases-and-Case-Studies/       <-- Detailed use cases (UC-01..05) & worked examples
-    ├── 11-Architecture-Diagrams/            <-- ArchiMate (.archimate) models & rendered SVG views
+    │   ├── 01-WG1-Governance-Use-Cases/     <-- Financial Services and Healthcare AI controls
+    │   ├── 02-WG5-Agentic-AI-Use-Cases/     <-- IT Operations, Contract Review, and Customer Onboarding
+    │   └── 03-Case-Studies/                 <-- Real-world enterprise adoption rollouts
+    ├── 11-Architecture-Diagrams/            <-- Reference models and architectural views
+    │   ├── ArchiMate/                       <-- Importable ArchiMate (.archimate) models
+    │   └── SVG/                             <-- Rendered SVG reference views
     └── 12-Templates/                        <-- Fillable templates plus completed examples
+        ├── AI-System-Card-Template.md       <-- And 9 other core governance templates
+        └── Examples/                        <-- Fully populated examples for every template
 ```
 
 ---
@@ -217,6 +235,9 @@ Every required asset type is explicitly instantiated with dedicated, production-
 | [**08-AI-Reference-Architectures.md**](ai-ea-library/03-EA-Practice/08-AI-Reference-Architectures.md) | Six production architectures: Enterprise RAG, Text-to-SQL, Document Intelligence, Customer Service, Sovereign On-Premises, Gateway |
 | [**09-AI-Testing-and-Evaluation.md**](ai-ea-library/03-EA-Practice/09-AI-Testing-and-Evaluation.md) | Quantitative evaluation metrics (faithfulness, hallucination rate), Ragas & DeepEval harnesses, golden test set design |
 | [**10-AI-Observability-and-Monitoring.md**](ai-ea-library/03-EA-Practice/10-AI-Observability-and-Monitoring.md) | End-to-end tracing with OpenTelemetry, Arize Phoenix, Langfuse, drift detection, and automated alerting |
+| [**11-Agent-Interoperability-and-Identity.md**](ai-ea-library/03-EA-Practice/11-Agent-Interoperability-and-Identity.md) | Agent Identity, Delegated Authority, and Interoperability |
+| [**12-AI-Supply-Chain-and-Governance-as-Code.md**](ai-ea-library/03-EA-Practice/12-AI-Supply-Chain-and-Governance-as-Code.md) | AI Supply Chain and Governance as Code |
+| [**13-Context-Engineering-and-AI-Resilience.md**](ai-ea-library/03-EA-Practice/13-Context-Engineering-and-AI-Resilience.md) | Context Engineering and AI Resilience |
 
 ### Section 04 — Future of AI
 | Document | What It Covers |
