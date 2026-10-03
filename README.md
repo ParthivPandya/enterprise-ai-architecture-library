@@ -284,15 +284,15 @@ Every required asset type is explicitly instantiated with dedicated, production-
 ### Section 10 — Use Cases & Case Studies
 | Document | What It Covers |
 |---|---|
-| [**01-WG1-Governance-Use-Cases**](ai-ea-library/10-Use-Cases-and-Case-Studies/01-WG1-Governance-Use-Cases/README.md) | Financial Services Governance and Healthcare AI Controls |
-| [**02-WG5-Agentic-AI-Use-Cases**](ai-ea-library/10-Use-Cases-and-Case-Studies/02-WG5-Agentic-AI-Use-Cases/README.md) | IT Operations Agent (BFSI), Contract Review (Legal), Customer Onboarding |
-| [**03-Case-Studies**](ai-ea-library/10-Use-Cases-and-Case-Studies/03-Case-Studies/README.md) | Enterprise AI Governance Rollout and Agentic Automation in Operations |
+| [**01-WG1-Governance-Use-Cases**](ai-ea-library/10-Use-Cases-and-Case-Studies/01-WG1-Governance-Use-Cases/) | Financial Services Governance and Healthcare AI Controls |
+| [**02-WG5-Agentic-AI-Use-Cases**](ai-ea-library/10-Use-Cases-and-Case-Studies/02-WG5-Agentic-AI-Use-Cases/) | IT Operations Agent (BFSI), Contract Review (Legal), Customer Onboarding |
+| [**03-Case-Studies**](ai-ea-library/10-Use-Cases-and-Case-Studies/03-Case-Studies/) | Enterprise AI Governance Rollout and Agentic Automation in Operations |
 
 ### Section 11 — Architecture Diagrams
 | Document | What It Covers |
 |---|---|
-| [**ArchiMate Models**](ai-ea-library/11-Architecture-Diagrams/ArchiMate/README.md) | Agentic AI Operating Model and EA AI Reference Architecture (.archimate files) |
-| [**SVG Renderings**](ai-ea-library/11-Architecture-Diagrams/SVG/README.md) | AI Governance Operating Model and Enterprise AI Capability Map (.svg files) |
+| [**ArchiMate Models**](ai-ea-library/11-Architecture-Diagrams/ArchiMate/) | Agentic AI Operating Model and EA AI Reference Architecture (.archimate files) |
+| [**SVG Renderings**](ai-ea-library/11-Architecture-Diagrams/SVG/) | AI Governance Operating Model and Enterprise AI Capability Map (.svg files) |
 
 ### Section 12 — Templates
 | Document | What It Covers |
