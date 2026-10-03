@@ -278,4 +278,4 @@ Never update a model in production for all users simultaneously:
 
 ---
 
-*Sources: OWASP Top 10 for LLM Applications 2025/2026 (genai.owasp.org), MITRE ATLAS, NIST AI 600-1, Giskard OWASP Analysis 2025, Deepstrike.io LLM Security Guide, Trend Micro OWASP LLM 2025, Confident-AI OWASP 2025 Analysis, Microsoft PyRIT.*
+*Source leads (not publication-grade citations; verify exact title, edition, URL, page/section, methodology, and date under the [Editorial and Citation Policy](../EDITORIAL-AND-CITATION-POLICY.md)): OWASP Top 10 for LLM Applications 2025/2026 (genai.owasp.org), MITRE ATLAS, NIST AI 600-1, Giskard OWASP Analysis 2025, Deepstrike.io LLM Security Guide, Trend Micro OWASP LLM 2025, Confident-AI OWASP 2025 Analysis, Microsoft PyRIT.*

@@ -165,4 +165,4 @@ Hallucination happens on absent, conflicting, or out-of-distribution data. Injec
 
 ---
 
-*Sources: "Attention Is All You Need," Vaswani et al., Google Brain, NeurIPS 2017 (173,000+ citations as of 2025). Atlan Transformer Model Architecture Guide 2026. DataCamp How Transformers Work 2026. SaM Solutions LLM Transformer Architecture Explained. Stanford HAI AI Index 2025. NIST AI 600-1 Confabulation risk category. PromptMetrics AI FinOps Context Window Economics.*
+*Source leads (not publication-grade citations; verify exact title, edition, URL, page/section, methodology, and date under the [Editorial and Citation Policy](../EDITORIAL-AND-CITATION-POLICY.md)): "Attention Is All You Need," Vaswani et al., Google Brain, NeurIPS 2017 (173,000+ citations as of 2025). Atlan Transformer Model Architecture Guide 2026. DataCamp How Transformers Work 2026. SaM Solutions LLM Transformer Architecture Explained. Stanford HAI AI Index 2025. NIST AI 600-1 Confabulation risk category. PromptMetrics AI FinOps Context Window Economics.*

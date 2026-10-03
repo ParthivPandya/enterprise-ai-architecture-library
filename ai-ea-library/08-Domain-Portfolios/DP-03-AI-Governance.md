@@ -19,13 +19,13 @@ The **AI Governance Domain Portfolio (DP-03)** is dedicated to eliminating the c
 - **Reusable Governance Architecture**: Blueprint definitions, non-negotiable boundary conditions, embedded runtime controls, and fast-track certification workflows.
 - **Decision Boundaries & Bounded Contexts**: Cryptographic separation of probabilistic LLM reasoning from deterministic enterprise execution, tool parameter typing, and dual-key human-in-the-loop (HITL) gates.
 - **Runtime Guardrails & Observability**: Ingress prompt injection shielding, in-flight PII cryptographic tokenization, egress faithfulness measurement, and automated FinOps budget circuit breakers.
-- **Statutory Regulatory Mapping**: Turn-key compliance frameworks for the European Union AI Act, India's Digital Personal Data Protection (DPDP) Act, and the NIST AI Risk Management Framework (AI RMF 1.0).
+- **Regulatory and Framework Mapping**: Reusable evidence mappings for the European Union AI Act, India's Digital Personal Data Protection framework, and the NIST AI Risk Management Framework. Mappings support analysis; they do not establish compliance.
 
 ---
 
-## 2. Practical Implementation Scenarios
+## 2. Illustrative Implementation Scenarios
 
-To demonstrate how reusable governance operates in enterprise production, consider these real-world scenarios:
+The following composite scenarios demonstrate how reusable governance patterns can operate. They are not named real-world case studies; durations, volumes, and metrics are illustrative acceptance targets.
 
 ### Scenario 3.1: Tier-1 Wealth Management Financial Copilot
 - **Enterprise Context**: An investment advisory firm deploying a GenAI assistant to synthesize market research and recommend portfolio rebalancing for high-net-worth clients.
@@ -34,7 +34,7 @@ To demonstrate how reusable governance operates in enterprise production, consid
   - The team adopted **[WP-03: Reusable AI Governance Patterns](WP-03-Reusable-AI-Governance-Patterns.md)** and **[AIEA-TK-08: Reusable Governance Patterns](../07-Toolkits-and-Playbooks/08-Reusable-Governance-Patterns.md)** (Pattern 1: Internal Knowledge Retrieval).
   - Enforced a hard Decision Boundary: Read-only access to SEC filings; output restricted to summarizing; hard refusal guardrail blocking speculative price predictions.
   - Mandatory Dual-Key Gate: The copilot cannot execute trades; all portfolio memos require the advisor's digital signature.
-- **Outcome**: Fast-track approval granted in **48 hours**. Over 250,000 portfolio analyses executed with zero compliance violations.
+- **Acceptance Targets**: Complete the bounded-use review within two business days; achieve complete citation coverage; record every policy exception and prohibited-action attempt.
 
 ### Scenario 3.2: Clinical Encounter Note Transcription in Emergency Care
 - **Enterprise Context**: A hospital network deploying an ambient clinical scribe to capture doctor-patient dialogue and generate EHR encounter notes in emergency departments.
@@ -44,7 +44,7 @@ To demonstrate how reusable governance operates in enterprise production, consid
   - Deployed an on-premise, air-gapped model (zero external network transmission).
   - Applied the **[AI Architecture Review Checklist (AIEA-TK-09)](../07-Toolkits-and-Playbooks/09-AI-Architecture-Review-Checklist.md)** (Gate 1 & Gate 3 criteria).
   - Integrated in-line Presidio tokenization replacing patient names, dates of birth, and IDs before context is processed.
-- **Outcome**: Immediate security sign-off; zero PHI leakage; clinical documentation burden reduced by 62%.
+- **Acceptance Targets**: Verify through test evidence that prohibited data egress is blocked; require clinician approval before record commit; measure documentation-time change against a controlled baseline. No certification or zero-incident guarantee is implied.
 
 ### Scenario 3.3: E-Commerce Autonomous Support & Refund Concierge
 - **Enterprise Context**: A global online retailer authorizing an autonomous agent to issue refunds, cancel subscriptions, and issue discount vouchers.
@@ -53,7 +53,7 @@ To demonstrate how reusable governance operates in enterprise production, consid
   - Deployed **[AIEA-TK-08: Reusable Governance Patterns](../07-Toolkits-and-Playbooks/08-Reusable-Governance-Patterns.md)** (Pattern 3: Autonomous Agent with Circuit Breakers).
   - Established parameterized tool boundaries: Refunds capped at **$50.00 max per transaction**; maximum of **1 refund per customer per 90 days**.
   - Integrated NeMo Guardrails blocking adversarial jailbreak attempts.
-- **Outcome**: 65% of customer return inquiries resolved autonomously with zero fraudulent drain incidents.
+- **Acceptance Targets**: Establish an eligible-return automation target from historical data; enforce financial caps outside the model; monitor incorrect refunds, attempted abuse, escalation rate, and manual fallback availability.
 
 ---
 
@@ -163,4 +163,4 @@ To guarantee that DP-03 provides complete governance coverage without operationa
 4. **Conduct Red-Team Simulation**: Schedule **[Hands-on Workshop 3](../03-EA-Practice/04-Hands-on-Workshops.md)** for security and architecture leads.
 
 ---
-*AIEA® Domain Portfolios. Published under Open Framework Licence for organizational adoption.*
+*AIEA Domain Portfolios. Independent practitioner guidance; see the Legal Notice.*

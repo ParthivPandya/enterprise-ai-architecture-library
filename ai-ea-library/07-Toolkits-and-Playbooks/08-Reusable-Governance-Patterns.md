@@ -119,4 +119,4 @@ When a team uses the Gateway, they inherit these controls automatically, vastly 
 4. **Shift the Board's Focus**: The AI Architecture Board should stop reviewing standard RAG applications and spend its time (a) designing new reusable patterns and (b) reviewing high-risk exceptions (e.g., autonomous agents).
 
 *AIEA Toolkit AIEA-TK-08: Reusable Governance Patterns. Version 1.0, 2026.*  
-*AI Enterprise Architecture Forum (AIEAF).*
+*AIEA Reference Library.*

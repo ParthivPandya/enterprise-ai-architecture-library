@@ -6,7 +6,7 @@
 
 ## The Pilot Purgatory Problem
 
-A 2025 MIT NANDA initiative study analysed enterprise AI spending and concluded that **95% of generative AI pilot programs fail to produce measurable financial impact**. The failures stem not from model quality — they stem from poor workflow integration and misaligned organisational incentives.
+A 2025 MIT Project NANDA report found that approximately **95% of the enterprise GenAI initiatives in its study did not produce measurable profit-and-loss impact during the study window**. This is a narrower claim than "95% of all AI projects fail": the report focused on measurable financial outcomes, used a particular sample and time horizon, and does not exclude productivity, learning, risk-reduction, or longer-term value. Its findings emphasise workflow integration, organisational learning, and adoption rather than model quality alone.
 
 This is the defining challenge of AI adoption in 2025–2026: the technology works; the organisation doesn't know how to measure it. Enterprises are caught in "pilot purgatory" — launching disjointed projects that never scale to enterprise-wide value.
 
@@ -201,7 +201,7 @@ Use these as calibration points when building business cases, not as promises:
 | IEP preparation (Education) | Special education teachers | 90% reduction in preparation time | RaiseSummit 2026 |
 | Demand forecasting | Retail | 15–30% reduction in inventory holding cost | McKinsey 2025 |
 
-**Important caveat:** These benchmarks come from successful deployments. They are the upper bound, not the expected average. A realistic enterprise business case should apply a 40–60% discount to public benchmarks to account for real-world integration complexity.
+**Important caveat:** These are reported benchmarks, not promises or representative averages. Validate the original source, population, measurement method, and date before reusing any figure. Instead of applying a universal discount, build conservative/base/optimistic scenarios from the organisation's own baseline and run sensitivity analysis.
 
 ---
 
@@ -220,4 +220,11 @@ Use these as calibration points when building business cases, not as promises:
 
 ---
 
-*Sources: MIT NANDA Enterprise AI Study 2025, Stanford Digital Economy Lab Enterprise AI Playbook 2026, Google Cloud/Ipsos AI ROI Survey 2025, Worklytics AI ROI Guide 2026, McKinsey Global AI Survey 2025, Gartner AI Pilot to Production analysis, Agility-at-Scale AI ROI Framework.*
+## References
+
+1. MIT Project NANDA, [*The GenAI Divide: State of AI in Business 2025*](https://nanda.media.mit.edu/ai_report_2025.pdf), accessed 3 October 2026.
+2. GitHub, [research on GitHub Copilot's impact on developer productivity](https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-on-developer-productivity-and-happiness/), accessed 3 October 2026.
+3. Stanford Institute for Human-Centered AI, [AI Index Report](https://hai.stanford.edu/ai-index), use the edition applicable to the quoted benchmark.
+4. McKinsey & Company, [The State of AI](https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai), survey series; verify the exact edition and table before quoting.
+
+Company-reported outcomes in the benchmark table require verification against the originating disclosure before external reuse.

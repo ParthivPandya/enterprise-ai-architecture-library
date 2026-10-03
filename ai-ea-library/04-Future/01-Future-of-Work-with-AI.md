@@ -162,4 +162,4 @@ The enterprise architects who navigate this transition well will be more importa
 
 ---
 
-*Sources: WEF Future of Jobs Report 2025, Goldman Sachs AI Employment Report 2023, McKinsey Global AI Work Automation Study 2025, OECD AI Employment Impact Analysis 2025, IBM CEO AI Reskilling Survey 2023, IndiaAI FutureSkills Programme documentation, NASSCOM India IT Sector AI Impact Analysis 2025, Brookings Institution AI and Indian Labour Market study, GitHub Copilot Developer Productivity Research.*
+*Source leads (not publication-grade citations; verify exact title, edition, URL, page/section, methodology, and date under the [Editorial and Citation Policy](../EDITORIAL-AND-CITATION-POLICY.md)): WEF Future of Jobs Report 2025, Goldman Sachs AI Employment Report 2023, McKinsey Global AI Work Automation Study 2025, OECD AI Employment Impact Analysis 2025, IBM CEO AI Reskilling Survey 2023, IndiaAI FutureSkills Programme documentation, NASSCOM India IT Sector AI Impact Analysis 2025, Brookings Institution AI and Indian Labour Market study, GitHub Copilot Developer Productivity Research.*

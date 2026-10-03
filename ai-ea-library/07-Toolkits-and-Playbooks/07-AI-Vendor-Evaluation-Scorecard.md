@@ -83,4 +83,4 @@ Evaluate each vendor across the following six dimensions. Score each criterion f
 ---
 
 *AIEA Toolkit AIEA-TK-07: AI Vendor Evaluation Scorecard Toolkit. Version 1.0, 2026.*  
-*AI Enterprise Architecture Forum (AIEAF).*
+*AIEA Reference Library.*

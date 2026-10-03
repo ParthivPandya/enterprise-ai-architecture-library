@@ -1,4 +1,4 @@
-# AIEA® Enterprise Architecture Domain Portfolios
+# AIEA Enterprise Architecture Domain Portfolios
 ## Master Directory & Cross-Domain Asset Matrix
 ### Section 08 — Enterprise AI Architecture Portfolios
 #### Version 1.0 | 2026
@@ -72,4 +72,4 @@ For deep-dive operational blueprints, practical implementation scenarios, and as
 - **[DP-03: AI Governance — Reusable Patterns, Decision Boundaries, and Guardrails](DP-03-AI-Governance.md)**
 
 ---
-*AIEA® Domain Portfolios, Version 1.0. Copyright © 2026 AI Enterprise Architecture Forum.*
+*AIEA Domain Portfolios, Version 1.0. Copyright © 2026 AIEA Reference Library.*

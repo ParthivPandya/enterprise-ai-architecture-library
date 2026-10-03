@@ -1,4 +1,4 @@
-# AIEA® Standard
+# AIEA Reference Framework
 ## Part 6: Definitions and Glossary
 ### Document Number: AIEA-601 | Version 1.0 | 2026
 
@@ -6,17 +6,17 @@
 
 ## Preface
 
-This document is Part 6 of the AIEA Standard — AI Enterprise Architecture Standard. It provides the definitive, normative dictionary of terms, abbreviations, taxonomy definitions, and cross-framework mappings used across the entire AIEA documentation set (Parts 1 through 6 and associated Series Guides).
+This document is Part 6 of the AIEA Reference Framework — AI Enterprise Architecture Standard. It provides the definitive, normative dictionary of terms, abbreviations, taxonomy definitions, and cross-framework mappings used across the entire AIEA documentation set (Parts 1 through 6 and associated Series Guides).
 
 Consistent terminology is the prerequisite for clear architectural communication, contract drafting, regulatory compliance, and audit defense. When terms defined in this document are used within any AIEA architectural artifact, they carry the specific meanings established herein.
 
-This document MUST be referenced by all enterprise architects, system owners, legal counsel, and auditors interpreting or implementing the AIEA Standard.
+This document MUST be referenced by all enterprise architects, system owners, legal counsel, and auditors interpreting or implementing the AIEA Reference Framework.
 
 ---
 
-# Chapter 1: Normative Definitions
+## Chapter 1: Normative Definitions
 
-The terms defined in this chapter are normative for all parts of the AIEA Standard. Cross-references to other defined terms are indicated in **bold**.
+The terms defined in this chapter are normative for all parts of the AIEA Reference Framework. Cross-references to other defined terms are indicated in **bold**.
 
 ---
 
@@ -32,7 +32,7 @@ The permanent, cross-functional governance body chartered by enterprise executiv
 A technology-agnostic description of a required enterprise AI architectural capability (e.g., "Semantic Retrieval Capability," "Model Gateway Capability"). ABBs describe *what* the architecture must achieve.
 
 **AI Architecture Development Method (AI-ADM)**  
-The 12-phase, iterative lifecycle methodology defined in Part 2 of the AIEA Standard for developing, deploying, governing, and evolving AI-enabled enterprise architectures.
+The 12-phase, iterative lifecycle methodology defined in Part 2 of the AIEA Reference Framework for developing, deploying, governing, and evolving AI-enabled enterprise architectures.
 
 **AI Gateway**  
 A dedicated runtime middleware component positioned between enterprise client applications and upstream **foundation model** inference providers that enforces protocol normalization, dynamic routing, semantic caching, rate limiting, FinOps cost attribution, and real-time safety guardrails.
@@ -51,7 +51,7 @@ The process of conditioning a model's behavior to ensure its outputs reliably ad
 
 ---
 
-### B
+#### B
 
 **Batch Inference**  
 The non-real-time execution of model inference over large, pre-collected datasets (e.g., nightly document indexing, customer churn classification) optimized for high throughput rather than low latency.
@@ -61,7 +61,7 @@ Systematic and repeatable errors in model predictions or outputs that create unf
 
 ---
 
-### C
+#### C
 
 **Chunking**  
 The algorithmic segmentation of unstructured documents into discrete, semantically coherent text segments suitable for mathematical embedding and retrieval within a **RAG** architecture.
@@ -74,7 +74,7 @@ A secondary retrieval stage wherein a specialized neural model scores query-docu
 
 ---
 
-### D
+#### D
 
 **Data Contract**  
 A formal, auditable agreement between an upstream enterprise data producer and a downstream AI system that specifies data schema, delivery SLAs, freshness guarantees, quality thresholds, provenance metadata, and permitted regulatory uses.
@@ -87,7 +87,7 @@ A cybersecurity exploit wherein an adversary injects malicious natural language 
 
 ---
 
-### E
+#### E
 
 **Embeddings**  
 High-dimensional dense vector representations of textual, visual, or multimodal data wherein semantically similar concepts are positioned near one another in mathematical vector space.
@@ -100,7 +100,7 @@ The degree to which the internal reasoning, input feature contributions, or fact
 
 ---
 
-### F
+#### F
 
 **Fallback Router**  
 A resilient gateway mechanism that automatically redirects inference traffic to an alternative provider, region, or model checkpoint upon detecting timeouts, latency spikes, rate limits, or upstream service degradation.
@@ -113,7 +113,7 @@ A large-scale AI model trained on broad data at scale that can be adapted to a w
 
 ---
 
-### G
+#### G
 
 **General Purpose AI (GPAI)**  
 An AI model capable of competently performing a wide spectrum of distinct tasks across language, mathematics, reasoning, and multimodal domains (as defined under Article 3 of the EU AI Act).
@@ -126,7 +126,7 @@ Synchronous programmatic, heuristic, or neural filters deployed at input and out
 
 ---
 
-### H
+#### H
 
 **Hallucination**  
 An ungrounded, fabricated, or factually incorrect generation produced by a model with an authoritative, plausible presentation.
@@ -139,7 +139,7 @@ A retrieval architecture that simultaneously queries dense vector representation
 
 ---
 
-### I
+#### I
 
 **In-Context Learning (ICL)**  
 The capability of a foundation model to understand a task, format, or business logic dynamically at runtime using only the instructions and few-shot examples supplied within its prompt **context window**, without parameter weight modification.
@@ -149,21 +149,21 @@ An exploit wherein malicious instructions are embedded within untrusted external
 
 ---
 
-### J
+#### J
 
 **Jailbreak**  
 A specialized form of adversarial prompt attack designed to bypass or disable a model's embedded safety filters and content moderation policies.
 
 ---
 
-### K
+#### K
 
 **Knowledge Graph**  
 A structured data fabric representing real-world entities, concepts, and explicit semantic relationships as nodes and edges, providing deterministic factual grounding for AI retrieval.
 
 ---
 
-### L
+#### L
 
 **Large Language Model (LLM)**  
 A deep learning model based on the transformer architecture containing billions of parameters trained on vast corpora of textual data.
@@ -174,7 +174,7 @@ A deep learning model based on the transformer architecture containing billions 
 
 ---
 
-### M
+#### M
 
 **Model Drift**  
 The progressive degradation of an AI model's predictive accuracy, groundedness, or task performance over time due to shifts in external environment, data semantics, or upstream provider model changes.
@@ -184,14 +184,14 @@ A distributed architectural topology comprising multiple specialized **Agentic A
 
 ---
 
-### O
+#### O
 
 **Observability (AI Domain)**  
 The real-time instrumentation, telemetry collection, tracing, and analysis of model inputs, outputs, token consumption, inference latency, groundedness scores, and safety violations.
 
 ---
 
-### P
+#### P
 
 **Parameter-Efficient Fine-Tuning (PEFT)**  
 A model adaptation technique that freezes the vast majority of pre-trained model weights and trains only a small fraction of supplementary parameters (e.g., via **LoRA** or prefix tuning), reducing memory and compute requirements by up to 90%.
@@ -201,14 +201,14 @@ The discipline of structuring, formatting, constraining, and optimizing natural 
 
 ---
 
-### Q
+#### Q
 
 **Quantization**  
 The mathematical conversion of model weights from high-precision floating point representations (e.g., FP32, FP16) to lower-precision formats (e.g., INT8, INT4, NF4), dramatically reducing memory bandwidth and GPU compute requirements with negligible accuracy loss.
 
 ---
 
-### R
+#### R
 
 **Reciprocal Rank Fusion (RRF)**  
 A robust mathematical rank aggregation algorithm that merges ordered results from multiple disparate search algorithms (e.g., dense vector search + BM25 lexical search) into a single unified relevance ranking.
@@ -221,7 +221,7 @@ An architecture pattern that supplements an AI model's internal parametric knowl
 
 ---
 
-### S
+#### S
 
 **Safetensors**  
 A secure, open file format for storing machine learning model tensors that prohibits arbitrary code execution during deserialization, replacing insecure legacy formats (such as Python `.pickle`).
@@ -240,7 +240,7 @@ The named individual holding direct organizational and legal accountability for 
 
 ---
 
-### T
+#### T
 
 **Token**  
 The basic unit of data processed by a foundation model's tokenizer, typically corresponding to roughly 3 to 4 characters of English text.
@@ -250,21 +250,21 @@ The architectural capability of a foundation model to output structured JSON arg
 
 ---
 
-### V
+#### V
 
 **Vector Database**  
 A specialized database engine designed to store, index, and execute ultra-fast approximate nearest neighbor (ANN) searches over high-dimensional mathematical vector embeddings.
 
 ---
 
-### Z
+#### Z
 
 **Zero-Shot Prompting**  
 A prompting method wherein a foundation model is requested to perform a task based solely on its instruction, without providing any demonstration examples in the prompt context.
 
 ---
 
-# Chapter 2: Abbreviations and Acronyms Register
+## Chapter 2: Abbreviations and Acronyms Register
 
 | Acronym | Complete Expansion | Architectural Domain |
 |---|---|---|
@@ -326,11 +326,11 @@ A prompting method wherein a foundation model is requested to perform a task bas
 
 ---
 
-# Chapter 3: Cross-Framework Concept Concordance
+## Chapter 3: Cross-Framework Concept Concordance
 
-The AIEA Standard harmonizes terminology across the major industry enterprise frameworks and regulatory bodies. Architects MUST reference this concordance matrix when translating enterprise artifacts:
+The AIEA Reference Framework harmonizes terminology across the major industry enterprise frameworks and regulatory bodies. Architects MUST reference this concordance matrix when translating enterprise artifacts:
 
-| AIEA Standard | TOGAF 10 Standard | NIST AI RMF 1.0 & AI 600-1 | ISO/IEC 42001:2023 | EU AI Act (2024) |
+| AIEA Reference Framework | TOGAF 10 Standard | NIST AI RMF 1.0 & AI 600-1 | ISO/IEC 42001:2023 | EU AI Act (2024) |
 |---|---|---|---|---|
 | **AI-ADM Methodology** | TOGAF ADM (Phases A–H) | Core Functions Cycle | AI Management System (Clause 8) | Lifecycle Conformity Assessment |
 | **AI Architecture Principles** | Architecture Principles (Part 3) | GOVERN Function (1.1–1.3) | AI Policy & Objectives (Clause 5.2) | Fundamental Rights & AI Ethics |
@@ -344,9 +344,9 @@ The AIEA Standard harmonizes terminology across the major industry enterprise fr
 
 ---
 
-# Chapter 4: Master Topical Index and Document Map
+## Chapter 4: Master Topical Index and Document Map
 
-This index maps core architectural topics across the six publications of the AIEA Standard:
+This index maps core architectural topics across the six publications of the AIEA Reference Framework:
 
 ```
 TOPIC                                   PRIMARY REFERENCE                CROSS-REFERENCE
@@ -382,5 +382,5 @@ Technical Reference Model (AI-TRM)       AIEA-501: Chapter 1               AIEA-
 
 ---
 
-*AIEA Standard Part 6: Definitions and Glossary. Document AIEA-601, Version 1.0, 2026.*  
-*Complete 6-Part AIEA® Standard Set (AIEA-101, AIEA-201, AIEA-301, AIEA-401, AIEA-501, AIEA-601).*
+*AIEA Reference Framework Part 6: Definitions and Glossary. Document AIEA-601, Version 1.0, 2026.*
+*Complete AIEA Reference Framework documentation set. See the [Standards index](README.md) for all Parts and companion material.*

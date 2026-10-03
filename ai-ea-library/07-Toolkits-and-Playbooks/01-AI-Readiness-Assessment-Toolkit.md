@@ -28,7 +28,7 @@ This toolkit provides the formal survey instruments, scoring algorithms, capabil
 
 ---
 
-# Chapter 1: The Enterprise Diagnostic Survey (30 Criteria)
+## Chapter 1: The Enterprise Diagnostic Survey (30 Criteria)
 
 Architects administer this diagnostic across business and technical leadership. Each criterion is scored from **1 (Non-Existent)** to **5 (Optimized / World-Class)**:
 
@@ -39,35 +39,35 @@ Architects administer this diagnostic across business and technical leadership. 
 4. **Portfolio Balance:** AI investments are balanced across quick-win copilots (60 days) and transformative capabilities (1–3 years). *(Score: 1–5)*
 5. **Funding Sustainability:** Project funding accommodates non-linear operational token inference costs, not just upfront build capex. *(Score: 1–5)*
 
-### Pillar 2: Data Foundations & Semantic Architecture
+#### Pillar 2: Data Foundations & Semantic Architecture
 6. **Data Accessibility:** Target enterprise data is accessible via documented REST/GraphQL APIs or modern lakehouses. *(Score: 1–5)*
 7. **Data Quality & Hygiene:** Master data management (MDM) ensures consistent customer/product identifiers with $< 2\%$ duplication. *(Score: 1–5)*
 8. **Lineage & Provenance:** Data sources feed into downstream vector stores with auditable cryptographic timestamps. *(Score: 1–5)*
 9. **Access Control Filtering:** Enterprise IAM (Active Directory / Okta) can be enforced at document chunk level in retrieval pipelines. *(Score: 1–5)*
 10. **Data Contracts:** Upstream data producers adhere to binding schemas and delivery SLAs. *(Score: 1–5)*
 
-### Pillar 3: Governance, Risk & Regulatory Compliance
+#### Pillar 3: Governance, Risk & Regulatory Compliance
 11. **Chartered Governance Body:** An AI Architecture Board (AIAB) holds binding review authority over production launches. *(Score: 1–5)*
 12. **Risk Classification Schema:** AI systems are classified into formal risk tiers (Prohibited, High, Significant, Limited, Minimal). *(Score: 1–5)*
 13. **Regulatory Readiness:** Processes satisfy applicable legal frameworks (EU AI Act, India DPDPA, NIST AI RMF, ISO 42001). *(Score: 1–5)*
 14. **System Inventory (System Cards):** The enterprise maintains a living registry of all models and algorithms in production. *(Score: 1–5)*
 15. **Adversarial Red Teaming:** High-risk models undergo structured red-teaming for prompt injection and jailbreaking before launch. *(Score: 1–5)*
 
-### Pillar 4: Architecture & Runtime Infrastructure
+#### Pillar 4: Architecture & Runtime Infrastructure
 16. **Model Independence:** Applications utilize an AI Gateway abstraction layer, preventing vendor SDK lock-in. *(Score: 1–5)*
 17. **Semantic Caching:** Common queries are cached to eliminate redundant API token consumption. *(Score: 1–5)*
 18. **Failover Resilience:** The architecture supports automated fallback to secondary model providers upon API timeout or outage. *(Score: 1–5)*
 19. **Security Sandboxing:** Autonomous agent code-execution tools run in ephemeral, isolated microVMs. *(Score: 1–5)*
 20. **Observability Instrumentation:** Real-time telemetry tracks latency, drift, hallucination rates, and token volume. *(Score: 1–5)*
 
-### Pillar 5: Talent, Competency & Culture
+#### Pillar 5: Talent, Competency & Culture
 21. **Dedicated AI Architecture Roles:** Named Enterprise and Solution AI Architects lead technical designs. *(Score: 1–5)*
 22. **Product Team Literacy:** Business analysts and product owners understand prompt engineering and model capability boundaries. *(Score: 1–5)*
 23. **Cross-Functional Teaming:** Delivery pods embed architects, data engineers, security specialists, and business SMEs. *(Score: 1–5)*
 24. **Responsible AI Training:** Engineers and architects receive mandatory training on bias, fairness, and ethical safety. *(Score: 1–5)*
 25. **Change Management:** Formal ADKAR change plans manage employee transition, mitigating job displacement anxiety. *(Score: 1–5)*
 
-### Pillar 6: FinOps & Economic Governance
+#### Pillar 6: FinOps & Economic Governance
 26. **Real-Time Cost Attribution:** All inference requests carry mandatory departmental chargeback headers (`X-Cost-Center`). *(Score: 1–5)*
 27. **Budget Throttling:** Hard financial caps prevent runaway recursive agent loops or unexpected vendor invoices. *(Score: 1–5)*
 28. **Model Tiering Strategy:** Ingress queries are classified so routine tasks route to low-cost SLMs rather than frontier models. *(Score: 1–5)*
@@ -76,7 +76,7 @@ Architects administer this diagnostic across business and technical leadership. 
 
 ---
 
-# Chapter 2: Scoring Rubric & Readiness Tiers
+## Chapter 2: Scoring Rubric & Readiness Tiers
 
 Calculate the aggregate score across all 30 criteria (Maximum Score: 150 points):
 
@@ -102,7 +102,7 @@ AGGREGATE SCORE BANDS:
 
 ---
 
-# Chapter 3: Executive C-Level Pitch Deck Template
+## Chapter 3: Executive C-Level Pitch Deck Template
 
 When presenting AI readiness findings to the Board or Executive Committee, architects SHOULD utilize this standard 6-slide structure:
 
@@ -137,4 +137,4 @@ SLIDE 6: IMMEDIATE 90-DAY ACTIONS REQUESTED
 ---
 
 *AIEA Toolkit AIEA-TK-01: Enterprise AI Readiness Assessment Toolkit. Version 1.0, 2026.*  
-*AI Enterprise Architecture Forum (AIEAF).*
+*AIEA Reference Library.*

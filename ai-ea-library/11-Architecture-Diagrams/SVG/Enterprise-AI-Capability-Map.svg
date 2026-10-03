@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 620" font-family="Segoe UI, Arial, sans-serif" role="img" aria-labelledby="capability-map-title capability-map-desc">
+  <title id="capability-map-title">Enterprise AI capability map</title>
+  <desc id="capability-map-desc">Six enterprise capability groups—strategy and value, governance and risk, data, platform and engineering, operations and assurance, and people and operating model—supported by the AIEA framework, architecture repository, reusable patterns, and regulatory alignment.</desc>
+  <rect x="0" y="0" width="980" height="620" fill="#ffffff"/>
+  <text x="490" y="40" text-anchor="middle" font-size="26" font-weight="700" fill="#1f2a44">Enterprise AI Capability Map</text>
+  <text x="490" y="66" text-anchor="middle" font-size="14" fill="#5a6a85">AI Enterprise Architecture Library — Section 11</text>
+
+  <!-- Domain 1: Strategy -->
+  <g>
+    <rect x="30" y="100" width="290" height="150" rx="10" fill="#eef3fb" stroke="#4472c4" stroke-width="2"/>
+    <text x="175" y="128" text-anchor="middle" font-size="17" font-weight="700" fill="#28406e">AI Strategy &amp; Value</text>
+    <rect x="48" y="144" width="254" height="30" rx="5" fill="#ffffff" stroke="#9db4df"/>
+    <text x="175" y="164" text-anchor="middle" font-size="13" fill="#28406e">Use-Case Portfolio &amp; Prioritisation</text>
+    <rect x="48" y="180" width="254" height="30" rx="5" fill="#ffffff" stroke="#9db4df"/>
+    <text x="175" y="200" text-anchor="middle" font-size="13" fill="#28406e">Value Realisation &amp; AI Economics</text>
+    <rect x="48" y="216" width="254" height="26" rx="5" fill="#ffffff" stroke="#9db4df"/>
+    <text x="175" y="234" text-anchor="middle" font-size="13" fill="#28406e">AI FinOps &amp; Cost Attribution</text>
+  </g>
+
+  <!-- Domain 2: Governance -->
+  <g>
+    <rect x="345" y="100" width="290" height="150" rx="10" fill="#fdf0ef" stroke="#c0504d" stroke-width="2"/>
+    <text x="490" y="128" text-anchor="middle" font-size="17" font-weight="700" fill="#8f2e2b">AI Governance &amp; Risk</text>
+    <rect x="363" y="144" width="254" height="30" rx="5" fill="#ffffff" stroke="#d99b99"/>
+    <text x="490" y="164" text-anchor="middle" font-size="13" fill="#8f2e2b">Risk Classification &amp; Compliance</text>
+    <rect x="363" y="180" width="254" height="30" rx="5" fill="#ffffff" stroke="#d99b99"/>
+    <text x="490" y="200" text-anchor="middle" font-size="13" fill="#8f2e2b">Responsible AI &amp; Explainability</text>
+    <rect x="363" y="216" width="254" height="26" rx="5" fill="#ffffff" stroke="#d99b99"/>
+    <text x="490" y="234" text-anchor="middle" font-size="13" fill="#8f2e2b">Incident Response &amp; Audit</text>
+  </g>
+
+  <!-- Domain 3: Data -->
+  <g>
+    <rect x="660" y="100" width="290" height="150" rx="10" fill="#eef7ef" stroke="#4e9a51" stroke-width="2"/>
+    <text x="805" y="128" text-anchor="middle" font-size="17" font-weight="700" fill="#2f6b31">AI Data Capability</text>
+    <rect x="678" y="144" width="254" height="30" rx="5" fill="#ffffff" stroke="#a4cfa5"/>
+    <text x="805" y="164" text-anchor="middle" font-size="13" fill="#2f6b31">Data Contracts &amp; Quality</text>
+    <rect x="678" y="180" width="254" height="30" rx="5" fill="#ffffff" stroke="#a4cfa5"/>
+    <text x="805" y="200" text-anchor="middle" font-size="13" fill="#2f6b31">Retrieval &amp; Knowledge (RAG)</text>
+    <rect x="678" y="216" width="254" height="26" rx="5" fill="#ffffff" stroke="#a4cfa5"/>
+    <text x="805" y="234" text-anchor="middle" font-size="13" fill="#2f6b31">Lineage, PII &amp; Sovereignty</text>
+  </g>
+
+  <!-- Domain 4: Platform -->
+  <g>
+    <rect x="30" y="280" width="290" height="150" rx="10" fill="#f3eefb" stroke="#7d60bf" stroke-width="2"/>
+    <text x="175" y="308" text-anchor="middle" font-size="17" font-weight="700" fill="#503a86">AI Platform &amp; Engineering</text>
+    <rect x="48" y="324" width="254" height="30" rx="5" fill="#ffffff" stroke="#bda7e0"/>
+    <text x="175" y="344" text-anchor="middle" font-size="13" fill="#503a86">AI Gateway &amp; Model Abstraction</text>
+    <rect x="48" y="360" width="254" height="30" rx="5" fill="#ffffff" stroke="#bda7e0"/>
+    <text x="175" y="380" text-anchor="middle" font-size="13" fill="#503a86">Inference, Serving &amp; Scaling</text>
+    <rect x="48" y="396" width="254" height="26" rx="5" fill="#ffffff" stroke="#bda7e0"/>
+    <text x="175" y="414" text-anchor="middle" font-size="13" fill="#503a86">LLMOps &amp; Agent Orchestration</text>
+  </g>
+
+  <!-- Domain 5: Operations -->
+  <g>
+    <rect x="345" y="280" width="290" height="150" rx="10" fill="#fff6e9" stroke="#d4902a" stroke-width="2"/>
+    <text x="490" y="308" text-anchor="middle" font-size="17" font-weight="700" fill="#8a5c17">AI Operations &amp; Assurance</text>
+    <rect x="363" y="324" width="254" height="30" rx="5" fill="#ffffff" stroke="#e6c489"/>
+    <text x="490" y="344" text-anchor="middle" font-size="13" fill="#8a5c17">Observability &amp; Monitoring</text>
+    <rect x="363" y="360" width="254" height="30" rx="5" fill="#ffffff" stroke="#e6c489"/>
+    <text x="490" y="380" text-anchor="middle" font-size="13" fill="#8a5c17">Evaluation &amp; Red Teaming</text>
+    <rect x="363" y="396" width="254" height="26" rx="5" fill="#ffffff" stroke="#e6c489"/>
+    <text x="490" y="414" text-anchor="middle" font-size="13" fill="#8a5c17">Model Lifecycle &amp; Retirement</text>
+  </g>
+
+  <!-- Domain 6: People -->
+  <g>
+    <rect x="660" y="280" width="290" height="150" rx="10" fill="#eaf6f8" stroke="#2f93a6" stroke-width="2"/>
+    <text x="805" y="308" text-anchor="middle" font-size="17" font-weight="700" fill="#1e6472">AI People &amp; Operating Model</text>
+    <rect x="678" y="324" width="254" height="30" rx="5" fill="#ffffff" stroke="#9fd2db"/>
+    <text x="805" y="344" text-anchor="middle" font-size="13" fill="#1e6472">AI Center of Excellence</text>
+    <rect x="678" y="360" width="254" height="30" rx="5" fill="#ffffff" stroke="#9fd2db"/>
+    <text x="805" y="380" text-anchor="middle" font-size="13" fill="#1e6472">Roles, Skills &amp; Accountability</text>
+    <rect x="678" y="396" width="254" height="26" rx="5" fill="#ffffff" stroke="#9fd2db"/>
+    <text x="805" y="414" text-anchor="middle" font-size="13" fill="#1e6472">Change &amp; Adoption</text>
+  </g>
+
+  <!-- Foundation band -->
+  <rect x="30" y="460" width="920" height="120" rx="10" fill="#1f2a44"/>
+  <text x="490" y="490" text-anchor="middle" font-size="17" font-weight="700" fill="#ffffff">Foundational Enablers</text>
+  <rect x="55" y="505" width="200" height="54" rx="6" fill="#2d3a5c"/>
+  <text x="155" y="532" text-anchor="middle" font-size="13" fill="#dce4f5">AIEA Standard</text>
+  <text x="155" y="550" text-anchor="middle" font-size="13" fill="#dce4f5">(Parts 1–7)</text>
+  <rect x="285" y="505" width="200" height="54" rx="6" fill="#2d3a5c"/>
+  <text x="385" y="532" text-anchor="middle" font-size="13" fill="#dce4f5">Architecture Repository</text>
+  <text x="385" y="550" text-anchor="middle" font-size="13" fill="#dce4f5">&amp; System Registry</text>
+  <rect x="515" y="505" width="200" height="54" rx="6" fill="#2d3a5c"/>
+  <text x="615" y="532" text-anchor="middle" font-size="13" fill="#dce4f5">Principles, Patterns</text>
+  <text x="615" y="550" text-anchor="middle" font-size="13" fill="#dce4f5">&amp; Reference Models</text>
+  <rect x="745" y="505" width="180" height="54" rx="6" fill="#2d3a5c"/>
+  <text x="835" y="532" text-anchor="middle" font-size="13" fill="#dce4f5">Regulatory Alignment</text>
+  <text x="835" y="550" text-anchor="middle" font-size="13" fill="#dce4f5">(NIST / EU / ISO / DPDPA)</text>
+</svg>

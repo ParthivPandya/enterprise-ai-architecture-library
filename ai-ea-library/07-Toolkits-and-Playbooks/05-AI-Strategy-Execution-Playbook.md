@@ -24,7 +24,7 @@ AI strategies fail when they remain slide decks disconnected from enterprise arc
 
 ---
 
-# Chapter 1: Translating Corporate OKRs to AI Portfolios
+## Chapter 1: Translating Corporate OKRs to AI Portfolios
 
 Architects MUST link every AI initiative directly to enterprise Objectives and Key Results (OKRs):
 
@@ -43,7 +43,7 @@ Target Architecture Deliverable: Project [Customer-Support-Copilot]
 
 ---
 
-# Chapter 2: Business Capability Heatmapping
+## Chapter 2: Business Capability Heatmapping
 
 Architects evaluate enterprise business capabilities to determine **AI Augmentation Suitability**:
 
@@ -69,7 +69,7 @@ $$\text{Priority Score} = 0.35(\text{Business Value}) + 0.30(\text{Data Feasibil
 
 ---
 
-# Chapter 3: Comprehensive AI Business Case Financial Model Template
+## Chapter 3: Comprehensive AI Business Case Financial Model Template
 
 Every AI project advancing to Phase A MUST document a 3-Year Financial Business Case:
 
@@ -107,7 +107,7 @@ FINANCIAL SUMMARY:
 
 ---
 
-# Chapter 4: The 90-Day Pilot-to-Production Transition Schedule
+## Chapter 4: The 90-Day Pilot-to-Production Transition Schedule
 
 To prevent the "Infinite PoC Trap", delivery pods follow a rigid 12-week timeline:
 
@@ -120,4 +120,4 @@ To prevent the "Infinite PoC Trap", delivery pods follow a rigid 12-week timelin
 ---
 
 *AIEA Toolkit AIEA-TK-05: Enterprise AI Strategy Execution Playbook. Version 1.0, 2026.*  
-*AI Enterprise Architecture Forum (AIEAF).*
+*AIEA Reference Library.*

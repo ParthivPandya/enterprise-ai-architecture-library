@@ -15,7 +15,7 @@ The **AI Strategy and Enterprise Adoption Domain Portfolio (DP-02)** is dedicate
 ### Domain Scope
 - **Strategy & Value Realization**: Business value tree decomposition, OKR-to-AI capability mapping, unit economics, and 3-year TCO/NPV financial models.
 - **Enterprise Platform Decoupling**: Universal AI Gateways, model independence, semantic caching, and volume token aggregation.
-- **Sovereignty & Geopolitics**: Sovereign cloud architectures, data residency compliance (India DPDP, EU GDPR), local compute topologies, and sovereign SLM fine-tuning.
+- **Sovereignty & Geopolitics**: Sovereign cloud architectures, documented cross-border transfer controls, sector-specific residency requirements, local compute topologies, and sovereign SLM fine-tuning. The India DPDP framework and EU GDPR permit cross-border processing subject to applicable restrictions and safeguards; neither creates blanket localisation for every workload.
 - **Adoption & Procurement**: Multi-speed adoption models, vendor due diligence scorecards, commercial contract negotiations, and ADKAR-based change management.
 
 ---
@@ -149,4 +149,4 @@ To guarantee that DP-02 provides comprehensive strategic coverage, we review the
 4. **Secure Board Approval**: Tailor and present the **[Executive AI Pitch Deck (AIEA-TK-10)](../07-Toolkits-and-Playbooks/10-Executive-AI-Pitch-Deck.md)**.
 
 ---
-*AIEA® Domain Portfolios. Published under Open Framework Licence for organizational adoption.*
+*AIEA Domain Portfolios. Independent practitioner guidance; see the Legal Notice.*

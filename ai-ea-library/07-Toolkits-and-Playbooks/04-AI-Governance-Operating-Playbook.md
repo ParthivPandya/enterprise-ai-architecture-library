@@ -22,9 +22,9 @@ Governance policies are useless without repeatable operational playbooks. This p
 
 ---
 
-# Chapter 1: AIAB Governance Meeting Rhythms & Agendas
+## Chapter 1: AIAB Governance Meeting Rhythms & Agendas
 
-## 1.1 The Monthly AI Architecture Board Agenda Template
+### 1.1 The Monthly AI Architecture Board Agenda Template
 
 ```
 ═════════════════════════════════════════════════════════════════════════
@@ -57,7 +57,7 @@ PART 4: INCIDENT RETROSPECTIVES & AUDIT ACTIONS (15 Mins)
 
 ---
 
-# Chapter 2: Architectural Variance & Exemption Protocol
+## Chapter 2: Architectural Variance & Exemption Protocol
 
 When a delivery pod must deviate from an approved standard (e.g., using a non-standard foundation model or bypassing a gateway rule due to extreme latency constraints), they MUST submit a formal **Architectural Variance Request**:
 
@@ -97,25 +97,25 @@ Chief AI Officer:  ______________________ Date: ______________
 
 ---
 
-# Chapter 3: Statutory Regulatory Filing Runbooks
+## Chapter 3: Regulatory Evidence Runbooks
 
-## 3.1 EU AI Act High-Risk Conformity Filing Runbook
-1. **Trigger:** AI system classified as High-Risk under Annex III (Credit, Hiring, Critical Infra).
-2. **Package Assembly:** AI Governance Analyst compiles the **Conformity Assessment Package**:
+### 3.1 EU AI Act High-Risk Evidence Runbook
+1. **Applicability Gate:** Record the organisation's role, territorial-scope basis, classification, exclusions, applicable Articles/Annex, and commencement dates. Do not assume every credit, hiring, or infrastructure use has identical obligations.
+2. **Package Assembly:** The governance function compiles the evidence required for the applicable route:
    - Up-to-date AI System Card (signed by System Owner).
    - Technical documentation of model training datasets and human oversight mechanisms.
-   - Quality Management System (QMS) audit report satisfying ISO/IEC 42001.
-3. **CE Mark Affixing & EU Database Registration:** Registration of system in the official EU AI Database prior to commercial release.
+   - Quality-management evidence appropriate to the Act; ISO/IEC 42001 can support the management system but is not automatically required and does not by itself establish conformity.
+3. **Conformity, Registration, and Marking:** Determine whether conformity assessment, EU database registration, declaration, and CE marking apply to the specific provider/system and effective date. Complete only the legally applicable steps, supported by qualified advice.
 
-## 3.2 India DPDPA Data Protection Impact Assessment (DPIA) Runbook
-1. **Trigger:** Significant Data Fiduciary deploying AI processing personal data at scale.
-2. **Package Assembly:** Lead Data Architect and DPO compile the **DPIA Dossier**:
-   - Assessment of lawful consent mechanisms across 22 scheduled languages.
-   - Data flow map documenting zero cross-border transmission outside India.
-   - Proof of child data exclusion under Section 9.
-3. **Repository Archival:** Retention of DPIA documentation for seven years, available for inspection by the Data Protection Board of India.
+### 3.2 India DPDP Significant Data Fiduciary Evidence Runbook
+1. **Trigger:** The organisation is designated a Significant Data Fiduciary and the applicable DPIA/audit provisions have commenced.
+2. **Package Assembly:** The architecture and privacy functions compile the evidence:
+   - Assessment of notice, consent, withdrawal, and certain legitimate uses in the language and channel appropriate to the interaction.
+   - Data flow map documenting transfers, processing locations, notified restrictions, sector rules, and safeguards. The DPDP Act does not impose blanket localisation.
+   - Evidence of applicable child-data controls, including verifiable parental consent and restrictions on tracking, targeted advertising, and processing likely to harm a child.
+3. **Repository Archival:** Retain DPIA and audit evidence for the period required by commenced law, regulator direction, sector rules, contract, and organisational records policy. Do not assume a universal seven-year period.
 
 ---
 
 *AIEA Toolkit AIEA-TK-04: Enterprise AI Governance Operating Playbook. Version 1.0, 2026.*  
-*AI Enterprise Architecture Forum (AIEAF).*
+*AIEA Reference Library.*

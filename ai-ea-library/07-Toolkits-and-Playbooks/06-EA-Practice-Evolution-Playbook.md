@@ -24,9 +24,9 @@ This playbook provides the skills transition matrices, modern tooling architectu
 
 ---
 
-# Chapter 1: The Four Evolving Architect Personas
+## Chapter 1: The Four Evolving Architect Personas
 
-As enterprises adopt the AIEA Standard, architecture roles evolve into four specialized personas:
+As enterprises adopt the AIEA Reference Framework, architecture roles evolve into four specialized personas:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
@@ -46,7 +46,7 @@ As enterprises adopt the AIEA Standard, architecture roles evolve into four spec
 
 ---
 
-# Chapter 2: The Modern AI Architect Workbench & Tooling Stack
+## Chapter 2: The Modern AI Architect Workbench & Tooling Stack
 
 Modern architects discard static documentation tools in favor of an **Architecture-as-Code (AaC)** workbench:
 
@@ -60,7 +60,7 @@ Modern architects discard static documentation tools in favor of an **Architectu
 
 ---
 
-# Chapter 3: Enterprise Architecture Competency & Skills Matrix
+## Chapter 3: Enterprise Architecture Competency & Skills Matrix
 
 Architects assess and advance their skills across five modern capability dimensions:
 
@@ -94,7 +94,7 @@ Architects assess and advance their skills across five modern capability dimensi
 
 ---
 
-# Chapter 4: A Day in the Life of the Lead AI Architect
+## Chapter 4: A Day in the Life of the Lead AI Architect
 
 ```
 08:30 – 09:15: TELEMETRY & COST RADAR INSPECTION
@@ -119,4 +119,4 @@ Architects assess and advance their skills across five modern capability dimensi
 ---
 
 *AIEA Toolkit AIEA-TK-06: Enterprise Architecture Practice Evolution Playbook. Version 1.0, 2026.*  
-*AI Enterprise Architecture Forum (AIEAF).*
+*AIEA Reference Library.*

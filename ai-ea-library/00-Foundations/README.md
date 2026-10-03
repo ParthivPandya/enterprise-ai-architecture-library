@@ -30,4 +30,4 @@ This section primarily supports the **Preliminary Phase** (establishing technica
 
 ---
 
-> **Next Section:** [01-AI-Governance](../01-AI-Governance/) — How to govern AI systems responsibly
+> **Next Section:** [01-AI-Governance](../01-AI-Governance/README.md) — How to govern AI systems responsibly

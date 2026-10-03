@@ -1,5 +1,8 @@
 # AI FinOps: Cost Governance for the LLM Era
 
+> **Document type:** Informative Guide
+> **Evidence note:** Prices, savings ranges, and unit-cost examples are modelling inputs unless linked to a verified disclosure. Replace them with the organisation's measured volumes, rates, and discount terms.
+
 > **Related:** [02-Governance-Framework.md](02-Governance-Framework.md) | [../02-AI-Strategy/01-Business-Value.md](../02-AI-Strategy/01-Business-Value.md)
 
 ---
@@ -194,4 +197,4 @@ AI FinOps is not a cost-cutting exercise — it is a governance discipline that 
 
 ---
 
-*Sources: FinOps Foundation State of FinOps 2026, Snowflake AI FinOps Blog, Deloitte State of AI 2026, PromptMetrics, arXiv Cost Transparency of Enterprise AI Adoption 2024, Finout.io, RapidData 2026.*
+*Source leads (not publication-grade citations; verify exact title, edition, URL, page/section, methodology, and date under the [Editorial and Citation Policy](../EDITORIAL-AND-CITATION-POLICY.md)): FinOps Foundation State of FinOps 2026, Snowflake AI FinOps Blog, Deloitte State of AI 2026, PromptMetrics, arXiv Cost Transparency of Enterprise AI Adoption 2024, Finout.io, RapidData 2026.*

@@ -20,5 +20,5 @@ This section supports **Phase H: Architecture Change Management** and the **Prel
 
 ---
 
-> **Previous:** [03-EA-Practice](../03-EA-Practice/) — Hands-on architecture practice  
-> **Next:** [05-Standards](../05-Standards/) — The formal AIEA Standard
+> **Previous:** [03-EA-Practice](../03-EA-Practice/README.md) — Hands-on architecture practice
+> **Next:** [05-Standards](../05-Standards/README.md) — The AIEA Reference Framework

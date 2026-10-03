@@ -1,8 +1,8 @@
 # 06 — Series Guides
 
-> *Supplementary deep-dives that extend the core AIEA Standard with domain-specific and topic-specific architectural guidance.*
+> *Supplementary deep-dives that extend the core AIEA Reference Framework with domain-specific and topic-specific architectural guidance.*
 
-Series Guides are official AIEA supplements. Each guide takes a specific topic from the core standard and provides the detailed architectural patterns, implementation blueprints, and operational procedures needed to execute in that domain.
+Series Guides are independent AIEA supplements. Each guide takes a specific topic from the core standard and provides the detailed architectural patterns, implementation blueprints, and operational procedures needed to execute in that domain.
 
 ---
 
@@ -18,12 +18,16 @@ Series Guides are official AIEA supplements. Each guide takes a specific topic f
 | G06 | [Sovereign AI](AIEA-G06-Sovereign-AI.md) | Air-gapped infrastructure, data diodes, tactical edge deployments, and sovereignty compliance | CISOs, Defence architects |
 | G07 | [AI FinOps](AIEA-G07-AI-FinOps.md) | Token attribution, cost optimisation, chargeback models, and FinOps maturity for AI | FinOps teams, CFOs |
 | G08 | [LLMOps Enterprise](AIEA-G08-LLMOps-Enterprise.md) | Production LLM lifecycle — CI/CD, evaluation, deployment, and monitoring patterns | Platform Engineers, ML Engineers |
+| G09 | [Manufacturing & Industrial AI](AIEA-G09-Manufacturing-Industrial-AI.md) | IT/OT divide, cyber-physical risk, predictive maintenance, and industrial agents | Plant/OT architects, Industrial EAs |
+| G10 | [Government & Public Sector AI](AIEA-G10-Government-Public-Sector-AI.md) | Sovereignty-first, inclusion-by-design, citizen rights, and public-sector governance | Public-sector architects, Governance Leads |
+| G11 | [AI for SMEs](AIEA-G11-AI-for-SMEs.md) | Proportionate architecture and minimum viable AI governance for smaller organisations | Founders, Heads of Technology |
+| G12 | [Defence & Education AI](AIEA-G12-Defence-and-Education-AI.md) | Meaningful human control, sovereignty, child safety, and academic integrity | Defence & education architects |
 
 ---
 
 ## How Series Guides Relate to the Core Standard
 
-Series Guides extend specific sections of the core AIEA Standard (Parts 1–7 in `05-Standards/`). They are not standalone — they assume familiarity with the core standard and provide implementation-level detail.
+Series Guides extend specific sections of the core AIEA Reference Framework (Parts 1–7 in `05-Standards/`). They are not standalone — they assume familiarity with the core standard and provide implementation-level detail.
 
 | Guide | Extends Core Standard |
 |---|---|
@@ -33,8 +37,12 @@ Series Guides extend specific sections of the core AIEA Standard (Parts 1–7 in
 | G06 | AIEA-501 (Reference Models) — sovereign infrastructure patterns |
 | G07 | AIEA-401 (Capability & Governance) — financial governance |
 | G08 | AIEA-501 (Reference Models) — operational lifecycle patterns |
+| G09 | AIEA-501 (Reference Models) — industrial / cyber-physical patterns |
+| G10 | AIEA-401 (Capability & Governance) + AIEA-G06 — public-sector governance & sovereignty |
+| G11 | AIEA-101 (Core Concepts) — proportionate, lightweight adoption |
+| G12 | AIEA-401 (Capability & Governance) + AIEA-G06 — high-stakes human control & sovereignty |
 
 ---
 
-> **Previous:** [05-Standards](../05-Standards/) — The formal AIEA Standard  
-> **Next:** [07-Toolkits-and-Playbooks](../07-Toolkits-and-Playbooks/) — Practitioner toolkits and assessment instruments
+> **Previous:** [05-Standards](../05-Standards/README.md) — The formal AIEA Reference Framework
+> **Next:** [07-Toolkits-and-Playbooks](../07-Toolkits-and-Playbooks/README.md) — Practitioner toolkits and assessment instruments

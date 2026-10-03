@@ -1,4 +1,4 @@
-# AIEA® Standard
+# AIEA Reference Framework
 ## Part 2: AI Architecture Development Method (AI-ADM)
 ### Document Number: AIEA-201 | Version 1.0 | 2026
 
@@ -6,21 +6,21 @@
 
 ## Preface
 
-This document describes the AI Architecture Development Method (AI-ADM) — the core methodology of the AIEA Standard. The AI-ADM provides a systematic, iterative approach to developing, governing, and evolving AI-enabled enterprise architectures.
+This document describes the AI Architecture Development Method (AI-ADM) — the core methodology of the AIEA Reference Framework. The AI-ADM provides a systematic, iterative approach to developing, governing, and evolving AI-enabled enterprise architectures.
 
 The AI-ADM is designed to be adapted. Not every enterprise will execute every phase in every AI initiative. The method defines what must be done; each organisation determines the appropriate scope and sequence for its context.
 
 ---
 
-# Chapter 1: Overview of the AI-ADM
+## Chapter 1: Overview of the AI-ADM
 
-## 1.1 Purpose
+### 1.1 Purpose
 
 The AI-ADM exists to answer a deceptively simple question: *How do you go from "we should use AI" to AI systems that deliver measurable business value, are properly governed, and can be managed and evolved sustainably?*
 
 The distance between those two points is where most AI programmes fail. Not because the technology doesn't work — but because the journey from idea to governed production capability is not structured. The AI-ADM structures that journey.
 
-## 1.2 Key Characteristics
+### 1.2 Key Characteristics
 
 **Iterative:** The AI-ADM is not a waterfall. Phases may be revisited, repeated, or run in parallel as understanding evolves. An enterprise with five AI systems in development will be executing different phases simultaneously for different systems.
 
@@ -30,20 +30,20 @@ The distance between those two points is where most AI programmes fail. Not beca
 
 **Business-value anchored:** Every phase of the AI-ADM begins with a business question and ends with a business answer. Technology decisions derive from business requirements, not the reverse.
 
-## 1.3 Adapting the AI-ADM
+### 1.3 Adapting the AI-ADM
 
-The AIEA Standard RECOMMENDS but does not mandate specific phase sequences. Architects SHOULD adapt the method based on:
+The AIEA Reference Framework RECOMMENDS but does not mandate specific phase sequences. Architects SHOULD adapt the method based on:
 
 - The risk classification of the AI system
 - The organisation's existing EA capability and processes
 - The integration requirements with TOGAF ADM (if applicable)
 - The regulatory context and compliance obligations
 
-## 1.4 The Preliminary Phase: AI Architecture Readiness
+### 1.4 The Preliminary Phase: AI Architecture Readiness
 
 Before the AI-ADM begins, the enterprise must assess and establish the architectural capability to execute it. The Preliminary Phase is not an AI-ADM phase — it is the prerequisite for all phases.
 
-### Preliminary Phase Objectives
+#### Preliminary Phase Objectives
 - Assess the enterprise's current AI architecture maturity
 - Establish or confirm the AI architecture operating model
 - Define the scope of the AI architecture programme
@@ -51,14 +51,14 @@ Before the AI-ADM begins, the enterprise must assess and establish the architect
 - Establish the AIEA Repository baseline
 - Identify and engage key stakeholders
 
-### Preliminary Phase Inputs
+#### Preliminary Phase Inputs
 - Enterprise business strategy and priorities
 - Current IT landscape and EA repository
 - Existing AI systems inventory (if any)
 - Applicable regulatory requirements (EU AI Act, DPDPA, sector regulations)
 - Organisational policies and constraints
 
-### Preliminary Phase Outputs
+#### Preliminary Phase Outputs
 | Deliverable | Description |
 |---|---|
 | AI Architecture Readiness Assessment | Current maturity level and gaps |
@@ -69,15 +69,15 @@ Before the AI-ADM begins, the enterprise must assess and establish the architect
 
 ---
 
-# Chapter 2: Phase 0 — AI Strategy and Opportunity
+## Chapter 2: Phase 0 — AI Strategy and Opportunity
 
-## 2.1 Objective
+### 2.1 Objective
 
 Phase 0 establishes the strategic context for AI investment. It translates business strategy into an AI opportunity portfolio — a prioritised set of AI use cases with a clear link to business value and strategic objectives.
 
 This phase is analogous to TOGAF's Architecture Vision phase, but operates at the portfolio level before any specific AI system is designed.
 
-## 2.2 Inputs
+### 2.2 Inputs
 
 - Enterprise business strategy and strategic objectives
 - Current AI capability assessment (from Preliminary Phase)
@@ -85,12 +85,12 @@ This phase is analogous to TOGAF's Architecture Vision phase, but operates at th
 - Competitive landscape and industry AI benchmarks
 - Regulatory environment assessment
 
-## 2.3 Steps
+### 2.3 Steps
 
-### Step 0.1: Define AI Strategic Intent
+#### Step 0.1: Define AI Strategic Intent
 Establish the organisation's strategic intent for AI — what role AI will play in delivering the business strategy. Is AI a cost-reduction tool, a revenue enabler, a risk management mechanism, or a competitive differentiator? This intent governs all subsequent prioritisation.
 
-### Step 0.2: Conduct AI Opportunity Discovery
+#### Step 0.2: Conduct AI Opportunity Discovery
 Structured facilitation across business units to surface AI opportunities. Each opportunity is documented as an AI Opportunity Statement:
 
 ```
@@ -104,7 +104,7 @@ AI Opportunity Statement Template:
   Nominated Owner:      [Named business sponsor]
 ```
 
-### Step 0.3: Score and Prioritise Opportunities
+#### Step 0.3: Score and Prioritise Opportunities
 Apply the AIEA Opportunity Scoring Matrix to each opportunity:
 
 | Criterion | Weight | Score (1–5) |
@@ -120,13 +120,13 @@ Apply the AIEA Opportunity Scoring Matrix to each opportunity:
 - Strategic Bets (score 12–17): Target delivery in 90–180 days
 - Exploratory (score < 12): Research and validation
 
-### Step 0.4: Define AI Portfolio Governance
+#### Step 0.4: Define AI Portfolio Governance
 Establish portfolio-level oversight: the AI Investment Committee, portfolio KPIs, and the review cadence for portfolio health monitoring.
 
-### Step 0.5: Produce AI Strategy Statement
+#### Step 0.5: Produce AI Strategy Statement
 A concise (one-page) statement of the enterprise AI strategy, including: strategic intent, portfolio priorities, resource commitment, governance model, and success measures.
 
-## 2.4 Outputs
+### 2.4 Outputs
 
 | Deliverable | Description |
 |---|---|
@@ -135,21 +135,21 @@ A concise (one-page) statement of the enterprise AI strategy, including: strateg
 | AI Portfolio Roadmap | Sequenced delivery plan with dependencies |
 | AI Investment Framework | Budget model, approval gates, review cadence |
 
-## 2.5 Transition to Phase A
+### 2.5 Transition to Phase A
 
 Phase 0 establishes the portfolio. Phase A takes each prioritised AI use case from the portfolio and develops its Architecture Vision. In practice, Phase A will be executed multiple times — once per AI use case being progressed.
 
 ---
 
-# Chapter 3: Phase A — AI Architecture Vision
+## Chapter 3: Phase A — AI Architecture Vision
 
-## 3.1 Objective
+### 3.1 Objective
 
 Phase A develops a high-level Architecture Vision for a specific AI use case — establishing the business case, governance classification, and architectural approach before detailed design begins.
 
 It answers the question: *Is this AI use case worth building, and do we understand what building it entails?*
 
-## 3.2 Inputs
+### 3.2 Inputs
 
 - AI Opportunity Statement (from Phase 0)
 - Enterprise AI Architecture Principles
@@ -157,9 +157,9 @@ It answers the question: *Is this AI use case worth building, and do we understa
 - Applicable regulatory requirements
 - Stakeholder requirements and constraints
 
-## 3.3 Steps
+### 3.3 Steps
 
-### Step A.1: Identify Stakeholders and Concerns
+#### Step A.1: Identify Stakeholders and Concerns
 Map all stakeholders for this AI use case:
 
 | Stakeholder Class | Typical Concerns |
@@ -173,7 +173,7 @@ Map all stakeholders for this AI use case:
 | HR / People | Role change, adoption, training |
 | Affected Individuals | Right to explanation, fairness, redress |
 
-### Step A.2: Develop AI Business Case
+#### Step A.2: Develop AI Business Case
 Complete the AI Business Case using the AIEA Business Case Template:
 
 ```
@@ -195,7 +195,7 @@ AI Business Case:
   Decision Requested:   [Approve development / Approve pilot]
 ```
 
-### Step A.3: Classify AI System Risk
+#### Step A.3: Classify AI System Risk
 Apply the AIEA Risk Classification Framework:
 
 **Level 1: Prohibited**
@@ -235,7 +235,7 @@ AI systems with negligible risk of harm. Self-service checklist only:
 - AI translation for internal documents
 - Exploratory AI experiments on non-production data
 
-### Step A.4: Select Build/Buy/Fine-Tune Approach
+#### Step A.4: Select Build/Buy/Fine-Tune Approach
 Apply the AIEA Technology Approach Decision Framework:
 
 ```
@@ -261,7 +261,7 @@ Q4: Is this a strategically proprietary capability
     NO  → Revisit requirement scope.
 ```
 
-### Step A.5: Develop Architecture Vision Statement
+#### Step A.5: Develop Architecture Vision Statement
 A concise architectural vision for the AI system:
 - What it does (in business terms)
 - What it does not do (scope boundaries)
@@ -269,7 +269,7 @@ A concise architectural vision for the AI system:
 - Key architectural decisions and their rationale
 - Governance path (which review track applies)
 
-### Step A.6: Obtain Architecture Vision Approval
+#### Step A.6: Obtain Architecture Vision Approval
 Present the Architecture Vision to the AI Architecture Board for formal approval before proceeding to detailed design phases (B through F).
 
 **Approval criteria:**
@@ -279,7 +279,7 @@ Present the Architecture Vision to the AI Architecture Board for formal approval
 - DPDPA / regulatory assessment completed
 - Architecture Vision Statement reviewed and approved
 
-## 3.4 Outputs
+### 3.4 Outputs
 
 | Deliverable | Description |
 |---|---|
@@ -292,22 +292,22 @@ Present the Architecture Vision to the AI Architecture Board for formal approval
 
 ---
 
-# Chapter 4: Phase B — AI Business Architecture
+## Chapter 4: Phase B — AI Business Architecture
 
-## 4.1 Objective
+### 4.1 Objective
 
 Phase B maps AI capabilities to the enterprise's business capability model — establishing exactly which business functions the AI system will change, what the target business state looks like, and what change management is required.
 
-## 4.2 Steps
+### 4.2 Steps
 
-### Step B.1: Map AI to Business Capabilities
+#### Step B.1: Map AI to Business Capabilities
 Identify every business capability affected by the AI system:
 - Capabilities the AI will augment (human still performs, with AI assistance)
 - Capabilities the AI will transform (process redesigned around AI)
 - Capabilities the AI will automate (AI performs without human in primary loop)
 - Capabilities unchanged (but affected through dependency or data sharing)
 
-### Step B.2: Define Target Business Operating Model
+#### Step B.2: Define Target Business Operating Model
 For each affected capability, define the target operating model:
 
 | Element | Current State | Target State |
@@ -318,14 +318,14 @@ For each affected capability, define the target operating model:
 | Volume capacity | [Current] | [Target] |
 | Escalation path | [Current] | [Target] |
 
-### Step B.3: Identify Business Rules and Constraints
+#### Step B.3: Identify Business Rules and Constraints
 Document the business rules that govern the AI system's behaviour:
 - Regulatory constraints (what decisions the AI cannot make autonomously)
 - Policy constraints (enterprise policies that limit AI scope)
 - Commercial constraints (supplier agreements that affect data use)
 - Cultural constraints (workforce considerations requiring phased adoption)
 
-### Step B.4: Define Business KPIs and Measurement Plan
+#### Step B.4: Define Business KPIs and Measurement Plan
 For each affected business capability, define:
 - Primary KPI (the single most important measure of success)
 - Baseline measurement (pre-AI state, how and when measured)
@@ -333,7 +333,7 @@ For each affected business capability, define:
 - Measurement method (how the KPI will be tracked in production)
 - Attribution approach (how AI contribution will be distinguished from other factors)
 
-### Step B.5: Develop AI Change Management Plan
+#### Step B.5: Develop AI Change Management Plan
 Document the people-change implications:
 - Who is affected and how their roles change
 - Training requirements by role group
@@ -341,7 +341,7 @@ Document the people-change implications:
 - Resistance risk assessment
 - AI Champions identification
 
-## 4.3 Outputs
+### 4.3 Outputs
 
 | Deliverable | Description |
 |---|---|
@@ -353,17 +353,17 @@ Document the people-change implications:
 
 ---
 
-# Chapter 5: Phase C — AI Data Architecture
+## Chapter 5: Phase C — AI Data Architecture
 
-## 5.1 Objective
+### 5.1 Objective
 
 Phase C defines the data architecture required to support the AI system — encompassing data sources, data quality requirements, lineage, governance, privacy compliance, and the technical data infrastructure (feature stores, vector databases, data contracts).
 
 Data architecture is the most common cause of AI project failure. Phase C exists to surface and resolve data issues before they become production problems.
 
-## 5.2 Steps
+### 5.2 Steps
 
-### Step C.1: Data Source Identification and Assessment
+#### Step C.1: Data Source Identification and Assessment
 Identify all data sources required for:
 - Model training and fine-tuning (if applicable)
 - RAG knowledge base (if applicable)
@@ -382,7 +382,7 @@ For each data source, assess:
 | Consent/Lawful Basis | Is there a lawful basis under DPDPA/GDPR? |
 | PII Content | Does this data contain personal data? How classified? |
 
-### Step C.2: Data Quality Assessment
+#### Step C.2: Data Quality Assessment
 Apply the AIEA Five-Dimension Data Quality Standard:
 
 | Dimension | Minimum Standard | Measurement Method |
@@ -395,7 +395,7 @@ Apply the AIEA Five-Dimension Data Quality Standard:
 
 **Data Quality Gate:** AI system development MUST NOT proceed to Phase D if any critical data source fails two or more quality dimensions. Data remediation plan MUST be completed first.
 
-### Step C.3: Data Architecture Design
+#### Step C.3: Data Architecture Design
 Design the data infrastructure for the AI system:
 
 - **Data Lake Zone Allocation:** Which data lands in Bronze/Silver/Gold zones? What are the transformation rules?
@@ -404,7 +404,7 @@ Design the data infrastructure for the AI system:
 - **Data Contract Specification:** For each data source, produce a Data Contract defining schema, quality SLOs, freshness commitments, and change management process.
 - **Data Lineage:** Document the complete lineage from raw source to model input, for every training and inference data flow.
 
-### Step C.4: Privacy and Compliance Assessment
+#### Step C.4: Privacy and Compliance Assessment
 For every data source containing personal data:
 
 - Document the lawful basis under DPDPA (and GDPR if EU-facing)
@@ -413,7 +413,7 @@ For every data source containing personal data:
 - Document the data subject rights mechanism (access, correction, erasure) for AI-processed data
 - For training data: document the basis for using personal data in model training
 
-### Step C.5: Data Governance Framework
+#### Step C.5: Data Governance Framework
 Define data governance for the AI system's lifetime:
 - Data steward assignment for each data source
 - Data access controls and approval process
@@ -421,7 +421,7 @@ Define data governance for the AI system's lifetime:
 - Data breach response procedure specific to this AI system
 - Training data versioning and snapshot management
 
-## 5.3 Outputs
+### 5.3 Outputs
 
 | Deliverable | Description |
 |---|---|
@@ -434,15 +434,15 @@ Define data governance for the AI system's lifetime:
 
 ---
 
-# Chapter 6: Phase D — AI Application Architecture
+## Chapter 6: Phase D — AI Application Architecture
 
-## 6.1 Objective
+### 6.1 Objective
 
 Phase D defines the application architecture of the AI system — the models, pipelines, orchestration, human interfaces, and integration patterns that constitute the deployable system.
 
-## 6.2 Steps
+### 6.2 Steps
 
-### Step D.1: Define AI System Architecture
+#### Step D.1: Define AI System Architecture
 Specify the complete application architecture:
 
 - **Model Selection:** Which foundation model(s), specialised model(s), or custom model(s)?
@@ -454,7 +454,7 @@ Specify the complete application architecture:
 - **Human Interface:** How do users interact? What is the UI/UX design?
 - **Human Oversight Mechanism:** How does a human review or override AI outputs?
 
-### Step D.2: Integration Architecture
+#### Step D.2: Integration Architecture
 Define how the AI system connects to enterprise systems:
 
 - **AI Gateway Integration:** The system MUST route through the enterprise AI Gateway
@@ -463,7 +463,7 @@ Define how the AI system connects to enterprise systems:
 - **Fallback architecture:** What happens if the AI system is unavailable?
 - **Circuit breaker design:** When and how does the system degrade gracefully?
 
-### Step D.3: Output Architecture
+#### Step D.3: Output Architecture
 Define the structure of AI system outputs:
 
 - **Output format specification:** JSON schema, markdown structure, natural language constraints
@@ -472,7 +472,7 @@ Define the structure of AI system outputs:
 - **Output validation:** What post-processing validates outputs before delivery?
 - **Logging:** What output content is logged and retained?
 
-### Step D.4: Evaluation Architecture
+#### Step D.4: Evaluation Architecture
 Design the evaluation system that will measure AI quality:
 
 - **Golden test set:** Define 50–500 representative test cases with ground-truth answers
@@ -481,7 +481,7 @@ Design the evaluation system that will measure AI quality:
 - **Red team library:** Define the adversarial test cases (from OWASP LLM Top 10)
 - **Human evaluation protocol:** When and how human evaluators review outputs
 
-### Step D.5: Prompt Engineering and Management
+#### Step D.5: Prompt Engineering and Management
 Define the prompt architecture:
 
 - **System prompt specification:** Complete system prompt with version number
@@ -489,7 +489,7 @@ Define the prompt architecture:
 - **Prompt change management:** How prompt changes are reviewed, tested, and approved
 - **Token budget:** Maximum token budget per request (input + output) with cost implication
 
-## 6.3 Outputs
+### 6.3 Outputs
 
 | Deliverable | Description |
 |---|---|
@@ -502,15 +502,15 @@ Define the prompt architecture:
 
 ---
 
-# Chapter 7: Phase E — AI Technology Architecture
+## Chapter 7: Phase E — AI Technology Architecture
 
-## 7.1 Objective
+### 7.1 Objective
 
 Phase E defines the technology infrastructure that will host and operate the AI system — compute, networking, storage, AI platform components, observability, and deployment architecture.
 
-## 7.2 Steps
+### 7.2 Steps
 
-### Step E.1: Infrastructure Selection
+#### Step E.1: Infrastructure Selection
 Define the infrastructure for AI system deployment:
 
 - **Cloud vs. On-Premises vs. Hybrid:** Decision based on data sovereignty, cost, latency, and compliance requirements
@@ -518,7 +518,7 @@ Define the infrastructure for AI system deployment:
 - **Compute Requirements:** GPU requirements (if self-hosting), CPU for inference, memory
 - **AI Platform Services:** Which provider-managed AI services (Bedrock, Azure OpenAI, Vertex AI, self-hosted)
 
-### Step E.2: AI Operational Infrastructure
+#### Step E.2: AI Operational Infrastructure
 Define the LLMOps / MLOps infrastructure:
 
 | Component | Purpose | Approved Options |
@@ -531,7 +531,7 @@ Define the LLMOps / MLOps infrastructure:
 | Model Registry | Model version control | MLflow, HuggingFace Hub |
 | Inference Server | Self-hosted serving | vLLM, TGI |
 
-### Step E.3: CI/CD Pipeline for AI
+#### Step E.3: CI/CD Pipeline for AI
 Design the CI/CD pipeline for AI system changes:
 
 ```
@@ -545,7 +545,7 @@ Code/Prompt Change
     ↓ Progressive Rollout (5% → 25% → 50% → 100%)
 ```
 
-### Step E.4: Performance and Capacity Design
+#### Step E.4: Performance and Capacity Design
 Define non-functional requirements:
 
 | Metric | Requirement | How Measured |
@@ -556,7 +556,7 @@ Define non-functional requirements:
 | Availability | [target %] | Uptime monitoring |
 | Cost per request | [target cost] | AI Gateway attribution |
 
-### Step E.5: Disaster Recovery and Resilience Design
+#### Step E.5: Disaster Recovery and Resilience Design
 Define the resilience architecture:
 
 - **Primary / Secondary Model Fallback:** If primary model unavailable, what is the fallback?
@@ -564,7 +564,7 @@ Define the resilience architecture:
 - **Graceful Degradation:** What non-AI fallback exists if all AI infrastructure fails?
 - **RPO / RTO:** Recovery Point Objective and Recovery Time Objective for this AI system
 
-## 7.3 Outputs
+### 7.3 Outputs
 
 | Deliverable | Description |
 |---|---|
@@ -576,17 +576,17 @@ Define the resilience architecture:
 
 ---
 
-# Chapter 8: Phase F — AI Governance Architecture
+## Chapter 8: Phase F — AI Governance Architecture
 
-## 8.1 Objective
+### 8.1 Objective
 
 Phase F defines the governance architecture for the AI system — implementing the applicable regulatory requirements, security controls, responsible AI measures, and monitoring infrastructure.
 
 Phase F is the most critical phase for high-risk AI systems. It MUST NOT be abbreviated or deferred.
 
-## 8.2 Steps
+### 8.2 Steps
 
-### Step F.1: NIST AI RMF Application
+#### Step F.1: NIST AI RMF Application
 
 Apply NIST AI RMF to this AI system:
 
@@ -610,7 +610,7 @@ Apply NIST AI RMF to this AI system:
 - Incident response procedures for this system
 - Risk treatment record for AIEA Repository
 
-### Step F.2: EU AI Act Compliance (if applicable)
+#### Step F.2: EU AI Act Compliance (if applicable)
 For AI systems facing EU markets:
 
 - Confirm risk classification (Step A.3)
@@ -619,14 +619,14 @@ For AI systems facing EU markets:
 - Implement mandatory human oversight mechanisms
 - Configure post-market monitoring as required
 
-### Step F.3: DPDPA Compliance (for Indian enterprises)
+#### Step F.3: DPDPA Compliance (for Indian enterprises)
 - Confirm lawful basis for all personal data processing
 - Complete DPIA if required (mandated for SDFs and high-risk processing)
 - Implement data principal rights mechanism
 - Configure breach notification procedure
 - Document retention and deletion schedule
 
-### Step F.4: Security Architecture
+#### Step F.4: Security Architecture
 Implement the AIEA Security Architecture Framework, derived from OWASP LLM Top 10:
 
 | OWASP LLM Risk | AIEA Control |
@@ -642,7 +642,7 @@ Implement the AIEA Security Architecture Framework, derived from OWASP LLM Top 1
 | LLM09: Misinformation | RAG grounding; source citation; output factuality validation |
 | LLM10: Unbounded Consumption | Rate limits; token budgets; loop detection |
 
-### Step F.5: Responsible AI Assessment
+#### Step F.5: Responsible AI Assessment
 Complete the AIEA Responsible AI Assessment:
 
 - **Fairness evaluation:** Test for demographic disparities across relevant protected characteristics
@@ -650,14 +650,14 @@ Complete the AIEA Responsible AI Assessment:
 - **Transparency disclosure:** Confirm user-facing AI disclosure is implemented
 - **Bias audit:** Document results and any mitigation actions
 
-### Step F.6: Red Team Exercise
+#### Step F.6: Red Team Exercise
 Execute a pre-deployment red team exercise:
 - Scope: OWASP LLM Top 10 categories + use-case-specific attacks
 - Automated phase: 1,000+ adversarial prompts using automated tooling (PyRIT, Giskard, Promptfoo)
 - Manual phase: Domain expert adversarial testing
 - Document all findings; resolve Critical and High before launch
 
-## 8.3 Outputs
+### 8.3 Outputs
 
 | Deliverable | Description |
 |---|---|
@@ -671,43 +671,43 @@ Execute a pre-deployment red team exercise:
 
 ---
 
-# Chapter 9: Phase G — AI Solutions and Roadmap
+## Chapter 9: Phase G — AI Solutions and Roadmap
 
-## 9.1 Objective
+### 9.1 Objective
 
 Phase G identifies the implementation vehicles — projects, workstreams, and dependencies — required to deliver the target AI architecture. It produces the implementation roadmap and resolves cross-system dependencies.
 
-## 9.2 Steps
+### 9.2 Steps
 
-### Step G.1: Gap Analysis
+#### Step G.1: Gap Analysis
 Compare current state (AIEA Repository: Current) to target state (AI Architecture designs from Phases B–F):
 - What AI capabilities are missing?
 - What data infrastructure must be built?
 - What governance infrastructure is absent?
 - What skills and roles are not yet in place?
 
-### Step G.2: Define Implementation Packages
+#### Step G.2: Define Implementation Packages
 Group the gaps into implementation packages — coherent units of work that can be delivered by a team:
 - Shared AI infrastructure packages (AI Gateway, vector database, LLMOps tooling)
 - AI system development packages (one per AI system)
 - Data infrastructure packages (feature store, data lake zones, data contracts)
 - Governance infrastructure packages (AI registry, monitoring, red team library)
 
-### Step G.3: Sequence and Dependencies
+#### Step G.3: Sequence and Dependencies
 Sequence the implementation packages:
 - Shared infrastructure MUST precede dependent AI system development
 - Data contracts MUST be in place before training or RAG pipelines are built
 - Governance infrastructure MUST be in place before production AI deployment
 - Identify and resolve cross-package dependencies
 
-### Step G.4: Produce AI Implementation Roadmap
+#### Step G.4: Produce AI Implementation Roadmap
 A sequenced, time-phased view of all implementation packages:
 - Quarter-by-quarter delivery plan
 - Dependency graph
 - Resource requirements per package
 - Decision points and approval gates
 
-## 9.3 Outputs
+### 9.3 Outputs
 
 | Deliverable | Description |
 |---|---|
@@ -718,13 +718,13 @@ A sequenced, time-phased view of all implementation packages:
 
 ---
 
-# Chapter 10: Phase H — AI Migration Planning
+## Chapter 10: Phase H — AI Migration Planning
 
-## 10.1 Objective
+### 10.1 Objective
 
 Phase H produces the detailed migration plan — how to transition from the current state to the target state without disrupting existing operations.
 
-## 10.2 Key Considerations for AI Migration
+### 10.2 Key Considerations for AI Migration
 
 **Model migration:** Switching from one foundation model to another requires: parallel evaluation on the golden test set, canary deployment, regression testing of the red team library, and user communication.
 
@@ -732,7 +732,7 @@ Phase H produces the detailed migration plan — how to transition from the curr
 
 **System retirement:** Retiring a legacy AI system requires the AIEA Retirement Runbook (see Part 3).
 
-## 10.3 Outputs
+### 10.3 Outputs
 
 | Deliverable | Description |
 |---|---|
@@ -743,13 +743,13 @@ Phase H produces the detailed migration plan — how to transition from the curr
 
 ---
 
-# Chapter 11: Phase I — AI Implementation Governance
+## Chapter 11: Phase I — AI Implementation Governance
 
-## 11.1 Objective
+### 11.1 Objective
 
 Phase I provides architectural oversight of AI system implementation — ensuring that what is built conforms to what was architected, and that governance gates are executed at each production milestone.
 
-## 11.2 The Production Launch Gate
+### 11.2 The Production Launch Gate
 
 Before any AI system enters production, it MUST pass the AIEA Production Launch Gate:
 
@@ -782,7 +782,7 @@ Before any AI system enters production, it MUST pass the AIEA Production Launch 
 - Promote to 25% → 50% → 100% on successful monitoring
 - Rollback trigger: any Critical incident or KPI degradation > 5%
 
-## 11.3 Ongoing Implementation Governance
+### 11.3 Ongoing Implementation Governance
 
 - Architecture Compliance Reviews (quarterly for High Risk, annual for all)
 - Change request assessment against architecture standards
@@ -790,13 +790,13 @@ Before any AI system enters production, it MUST pass the AIEA Production Launch 
 
 ---
 
-# Chapter 12: Phase J — AI Architecture Change Management
+## Chapter 12: Phase J — AI Architecture Change Management
 
-## 12.1 Objective
+### 12.1 Objective
 
 Phase J establishes the procedures for managing change to the AI architecture — ensuring that the architecture evolves in a controlled, documented manner as the enterprise and technology landscape changes.
 
-## 12.2 Change Triggers for AI Systems
+### 12.2 Change Triggers for AI Systems
 
 AI architectures change more frequently than traditional IT architectures. Change triggers include:
 
@@ -810,7 +810,7 @@ AI architectures change more frequently than traditional IT architectures. Chang
 | Cost anomaly | Spend exceeds approved budget threshold | FinOps review + optimisation |
 | Business change | Business process redesign affecting AI workflow | Phase B reassessment |
 
-## 12.3 Change Classification
+### 12.3 Change Classification
 
 | Change Class | Description | Governance Required |
 |---|---|---|
@@ -821,7 +821,7 @@ AI architectures change more frequently than traditional IT architectures. Chang
 
 ---
 
-# Chapter 13: Continuous Process — AI Requirements Management
+## Chapter 13: Continuous Process — AI Requirements Management
 
 AI Requirements Management operates throughout all phases, managing the elicitation, validation, prioritisation, and change management of AI system requirements.
 
@@ -837,7 +837,7 @@ AI Requirements Management operates throughout all phases, managing the elicitat
 
 ---
 
-# Chapter 14: Continuous Process — AI Risk Management
+## Chapter 14: Continuous Process — AI Risk Management
 
 AI Risk Management operates throughout all phases, continuously identifying, assessing, treating, and monitoring AI-related risks.
 
@@ -853,5 +853,5 @@ AI Risk Management operates throughout all phases, continuously identifying, ass
 
 ---
 
-*AIEA Standard Part 2: AI Architecture Development Method. Document AIEA-201, Version 1.0, 2026.*
+*AIEA Reference Framework Part 2: AI Architecture Development Method. Document AIEA-201, Version 1.0, 2026.*
 *Next: Part 3 — AI Architecture Content Framework (AIEA-301)*

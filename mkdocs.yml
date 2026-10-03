@@ -1,0 +1,228 @@
+site_name: AI Enterprise Architecture Library
+site_description: >-
+  A practitioner-focused reference for Enterprise Architects,
+  Chief AI Officers, Strategy Leaders, and Governance professionals building
+  and scaling AI in large organisations.
+site_author: AIEA Reference Library
+
+# Content lives under ai-ea-library/. README.md files are used as section indexes.
+docs_dir: ai-ea-library
+
+nav:
+  - Home: index.md
+  - Start Here: START-HERE.md
+  - Library Policies:
+      - Document Types: DOCUMENT-TYPES.md
+      - Editorial and Citation Policy: EDITORIAL-AND-CITATION-POLICY.md
+      - Primary Source Register: SOURCE-REGISTER.md
+      - How to Cite: HOW-TO-CITE.md
+      - Legal Notice: LEGAL-NOTICE.md
+  - Foundations:
+      - Overview: 00-Foundations/README.md
+      - How LLMs Work: 00-Foundations/01-How-LLMs-Work.md
+      - Foundation Model Landscape: 00-Foundations/02-Foundation-Model-Landscape.md
+      - Data Architecture for AI: 00-Foundations/03-Data-Architecture-for-AI.md
+      - Multi-Agent Orchestration: 00-Foundations/04-Multi-Agent-Orchestration.md
+  - AI Governance:
+      - Overview: 01-AI-Governance/README.md
+      - AI FinOps: 01-AI-Governance/01-FinOps.md
+      - Governance Framework: 01-AI-Governance/02-Governance-Framework.md
+      - Responsible AI: 01-AI-Governance/03-Responsible-AI.md
+      - Risk Mitigation: 01-AI-Governance/04-Risk-Mitigation.md
+      - When AI Goes Wrong: 01-AI-Governance/05-When-AI-Goes-Wrong.md
+      - Privacy and PII: 01-AI-Governance/06-AI-Data-Privacy-and-PII.md
+  - AI Strategy:
+      - Overview: 02-AI-Strategy/README.md
+      - Business Value: 02-AI-Strategy/01-Business-Value.md
+      - Agentic AI Use Cases: 02-AI-Strategy/02-Agentic-AI-Use-Cases.md
+      - Education and Defence: 02-AI-Strategy/03-Education-and-Defence.md
+      - Indian Enterprise Context: 02-AI-Strategy/04-Indian-Enterprise-Context.md
+      - Industry Playbooks: 02-AI-Strategy/05-Industry-Playbooks.md
+      - Change Management: 02-AI-Strategy/06-AI-Change-Management.md
+      - Procurement and Contracts: 02-AI-Strategy/07-AI-Procurement-and-Contracts.md
+  - EA Practice:
+      - Overview: 03-EA-Practice/README.md
+      - Driving Adoption: 03-EA-Practice/01-Driving-Adoption.md
+      - AI Design Decisions: 03-EA-Practice/02-AI-Design-Decisions.md
+      - Strategic Runbooks: 03-EA-Practice/03-Strategic-Runbooks.md
+      - Hands-on Workshops: 03-EA-Practice/04-Hands-on-Workshops.md
+      - LLMOps: 03-EA-Practice/05-LLMOps.md
+      - Prompt Engineering: 03-EA-Practice/06-Prompt-Engineering-Enterprise.md
+      - AI Center of Excellence: 03-EA-Practice/07-AI-Center-of-Excellence.md
+      - AI Reference Architectures: 03-EA-Practice/08-AI-Reference-Architectures.md
+      - Testing and Evaluation: 03-EA-Practice/09-AI-Testing-and-Evaluation.md
+      - Observability and Monitoring: 03-EA-Practice/10-AI-Observability-and-Monitoring.md
+      - Agent Interoperability and Identity: 03-EA-Practice/11-Agent-Interoperability-and-Identity.md
+      - AI Supply Chain and Governance as Code: 03-EA-Practice/12-AI-Supply-Chain-and-Governance-as-Code.md
+      - Context Engineering and Resilience: 03-EA-Practice/13-Context-Engineering-and-AI-Resilience.md
+  - Future:
+      - Overview: 04-Future/README.md
+      - Future of Work: 04-Future/01-Future-of-Work-with-AI.md
+      - Sovereign AI and Geopolitics: 04-Future/02-Sovereign-AI-and-Geopolitics.md
+  - AIEA Reference Framework:
+      - Overview: 05-Standards/README.md
+      - AIEA-101 — Core Concepts: 05-Standards/AIEA-101-Introduction-Core-Concepts.md
+      - AIEA-201 — AI-ADM: 05-Standards/AIEA-201-AI-ADM.md
+      - AIEA-301 — Content Framework: 05-Standards/AIEA-301-Content-Framework.md
+      - AIEA-401 — Capability and Governance: 05-Standards/AIEA-401-Capability-Governance.md
+      - AIEA-501 — Reference Models: 05-Standards/AIEA-501-Reference-Models.md
+      - AIEA-601 — Definitions and Glossary: 05-Standards/AIEA-601-Definitions-Glossary.md
+      - AIEA-701 — Practitioner's Guide: 05-Standards/AIEA-701-Practitioners-Guide.md
+      - AIEA-CW01 — Alignment and Evidence: 05-Standards/AIEA-CW01-Compliance-Workbook.md
+  - Series Guides:
+      - Overview: "06-Series Guide/README.md"
+      - G01 — Financial Services: "06-Series Guide/AIEA-G01-Financial-Services.md"
+      - G02 — Healthcare: "06-Series Guide/AIEA-G02-Healthcare.md"
+      - G03 — Indian Enterprises: "06-Series Guide/AIEA-G03-Indian-Enterprises.md"
+      - G04 — Responsible AI: "06-Series Guide/AIEA-G04-Responsible-AI-in-Practice.md"
+      - G05 — Agentic AI: "06-Series Guide/AIEA-G05-Agentic-AI-Architecture.md"
+      - G06 — Sovereign AI: "06-Series Guide/AIEA-G06-Sovereign-AI.md"
+      - G07 — AI FinOps: "06-Series Guide/AIEA-G07-AI-FinOps.md"
+      - G08 — LLMOps: "06-Series Guide/AIEA-G08-LLMOps-Enterprise.md"
+      - G09 — Manufacturing and Industrial AI: "06-Series Guide/AIEA-G09-Manufacturing-Industrial-AI.md"
+      - G10 — Government and Public Sector AI: "06-Series Guide/AIEA-G10-Government-Public-Sector-AI.md"
+      - G11 — AI for SMEs: "06-Series Guide/AIEA-G11-AI-for-SMEs.md"
+      - G12 — Defence and Education AI: "06-Series Guide/AIEA-G12-Defence-and-Education-AI.md"
+  - Toolkits and Playbooks:
+      - Overview: 07-Toolkits-and-Playbooks/README.md
+      - TK-01 — AI Readiness Assessment: 07-Toolkits-and-Playbooks/01-AI-Readiness-Assessment-Toolkit.md
+      - TK-02 — Enterprise AI Metamodel: 07-Toolkits-and-Playbooks/02-Enterprise-AI-Metamodel-Catalog.md
+      - TK-03 — Architecture Principles: 07-Toolkits-and-Playbooks/03-Architecture-Principles-Catalog.md
+      - TK-04 — Governance Operating Playbook: 07-Toolkits-and-Playbooks/04-AI-Governance-Operating-Playbook.md
+      - TK-05 — Strategy Execution: 07-Toolkits-and-Playbooks/05-AI-Strategy-Execution-Playbook.md
+      - TK-06 — EA Practice Evolution: 07-Toolkits-and-Playbooks/06-EA-Practice-Evolution-Playbook.md
+      - TK-07 — Vendor Evaluation: 07-Toolkits-and-Playbooks/07-AI-Vendor-Evaluation-Scorecard.md
+      - TK-08 — Reusable Governance Patterns: 07-Toolkits-and-Playbooks/08-Reusable-Governance-Patterns.md
+      - TK-09 — Architecture Review Checklist: 07-Toolkits-and-Playbooks/09-AI-Architecture-Review-Checklist.md
+      - TK-10 — Executive Pitch Deck: 07-Toolkits-and-Playbooks/10-Executive-AI-Pitch-Deck.md
+      - TK-11 — AI in EA Practice Deck: 07-Toolkits-and-Playbooks/11-AI-in-EA-Practice-Slide-Deck.md
+      - TK-12 — Governance and Guardrails Deck: 07-Toolkits-and-Playbooks/12-AI-Governance-and-Guardrails-Deck.md
+  - Domain Portfolios:
+      - Overview: 08-Domain-Portfolios/README.md
+      - DP-01 — AI in EA Practice: 08-Domain-Portfolios/DP-01-AI-in-EA-Practice.md
+      - DP-02 — Strategy and Adoption: 08-Domain-Portfolios/DP-02-AI-Strategy-and-Enterprise-Adoption.md
+      - DP-03 — Governance: 08-Domain-Portfolios/DP-03-AI-Governance.md
+      - WP-01 — Modernising EA with AI: 08-Domain-Portfolios/WP-01-Modernizing-EA-with-AI.md
+      - WP-02 — AI-First Enterprise: 08-Domain-Portfolios/WP-02-Architecting-the-AI-First-Enterprise.md
+      - WP-03 — Reusable Governance Patterns: 08-Domain-Portfolios/WP-03-Reusable-AI-Governance-Patterns.md
+  - Operational Guides:
+      - Overview: 09-WG-Outputs/README.md
+      - Scope Notes:
+          - AI Governance Scope: 09-WG-Outputs/WG-Charters/WG1-AI-Governance-Playbook-Charter.md
+          - AI-Native EA Scope: 09-WG-Outputs/WG-Charters/WG2-EA-Guides-AI-Native-Charter.md
+          - AI-Assisted EA Scope: 09-WG-Outputs/WG-Charters/WG3-AI-Enhances-EA-Process-Charter.md
+          - Maturity Assessment Scope: 09-WG-Outputs/WG-Charters/WG4-AI-Maturity-Assessment-Charter.md
+          - Scaling Agentic AI Scope: 09-WG-Outputs/WG-Charters/WG5-Scaling-Agentic-AI-Charter.md
+      - AI Governance:
+          - Overview: 09-WG-Outputs/WG1-AI-Governance-Playbook/README.md
+          - Governance Playbook: 09-WG-Outputs/WG1-AI-Governance-Playbook/AI-Governance-Playbook.md
+          - Control Library: 09-WG-Outputs/WG1-AI-Governance-Playbook/Governance-Control-Library.md
+          - Risk Classification: 09-WG-Outputs/WG1-AI-Governance-Playbook/AI-Risk-Classification-Framework.md
+      - AI-Native EA:
+          - Overview: 09-WG-Outputs/WG2-EA-AI-Native/README.md
+          - White Paper: 09-WG-Outputs/WG2-EA-AI-Native/AI-Native-EA-White-Paper.md
+          - Principles and Guardrails: 09-WG-Outputs/WG2-EA-AI-Native/AI-Native-Principles-and-Guardrails.md
+          - Reference Architecture: 09-WG-Outputs/WG2-EA-AI-Native/AI-Native-Reference-Architecture.md
+          - Value Realisation: 09-WG-Outputs/WG2-EA-AI-Native/Value-Realisation-Model.md
+          - Maturity and Roadmap: 09-WG-Outputs/WG2-EA-AI-Native/Maturity-Model-and-Adoption-Roadmap.md
+      - AI-Assisted EA:
+          - Overview: 09-WG-Outputs/WG3-AI-EA-Process/README.md
+          - Lifecycle Playbook: 09-WG-Outputs/WG3-AI-EA-Process/AI-in-EA-Lifecycle-Playbook.md
+          - Industry Overlays: 09-WG-Outputs/WG3-AI-EA-Process/Multi-Industry-Overlays.md
+          - Prompt and Workflow Library: 09-WG-Outputs/WG3-AI-EA-Process/Reusable-Prompt-and-Workflow-Library.md
+          - Evaluation and Escalation: 09-WG-Outputs/WG3-AI-EA-Process/Evaluation-and-Escalation.md
+          - Pattern Catalogue: 09-WG-Outputs/WG3-AI-EA-Process/Pattern-Catalogue.md
+      - Maturity Assessment:
+          - Overview: 09-WG-Outputs/WG4-Maturity-Assessment/README.md
+          - Assessment Instrument: 09-WG-Outputs/WG4-Maturity-Assessment/Self-Assessment-Instrument.md
+          - Scorecard and Heatmap: 09-WG-Outputs/WG4-Maturity-Assessment/Scorecard-and-Heatmap.md
+          - Facilitation Playbook: 09-WG-Outputs/WG4-Maturity-Assessment/Facilitation-Playbook.md
+          - Score to Roadmap: 09-WG-Outputs/WG4-Maturity-Assessment/Score-to-Roadmap.md
+      - Scaling Agentic AI:
+          - Overview: 09-WG-Outputs/WG5-Scaling-Agentic-AI/README.md
+          - White Paper: 09-WG-Outputs/WG5-Scaling-Agentic-AI/Scaling-Agentic-AI-White-Paper.md
+          - Prioritisation: 09-WG-Outputs/WG5-Scaling-Agentic-AI/Prioritisation-Method.md
+          - TOGAF ADM Mapping: 09-WG-Outputs/WG5-Scaling-Agentic-AI/TOGAF-ADM-Phase-Mapping.md
+  - Use Cases and Worked Examples:
+      - Overview: 10-Use-Cases-and-Case-Studies/README.md
+      - Submit a Verified Case Study: 10-Use-Cases-and-Case-Studies/SUBMIT-A-CASE-STUDY.md
+      - UC-01 — Financial Services Governance: 10-Use-Cases-and-Case-Studies/01-WG1-Governance-Use-Cases/UC-01-Financial-Services-Governance.md
+      - UC-02 — Healthcare Controls: 10-Use-Cases-and-Case-Studies/01-WG1-Governance-Use-Cases/UC-02-Healthcare-AI-Controls.md
+      - UC-03 — IT Operations Agent: 10-Use-Cases-and-Case-Studies/02-WG5-Agentic-AI-Use-Cases/UC-03-IT-Operations-Agent-BFSI.md
+      - UC-04 — Contract Review: 10-Use-Cases-and-Case-Studies/02-WG5-Agentic-AI-Use-Cases/UC-04-Contract-Review-Legal.md
+      - UC-05 — Customer Onboarding: 10-Use-Cases-and-Case-Studies/02-WG5-Agentic-AI-Use-Cases/UC-05-Customer-Onboarding-Bank.md
+      - Worked Example — Governance Rollout: 10-Use-Cases-and-Case-Studies/03-Case-Studies/CS-01-Enterprise-AI-Governance-Rollout.md
+      - Worked Example — Agentic Operations: 10-Use-Cases-and-Case-Studies/03-Case-Studies/CS-02-Agentic-Automation-in-Operations.md
+  - Architecture Diagrams: 11-Architecture-Diagrams/README.md
+  - Templates:
+      - Template Catalogue: 12-Templates/README.md
+      - Blank Templates:
+          - AI Business Case: 12-Templates/AI-Business-Case-Template.md
+          - AI Incident Report: 12-Templates/AI-Incident-Report-Template.md
+          - AI System Card: 12-Templates/AI-System-Card-Template.md
+          - Architecture Decision Record: 12-Templates/Architecture-Decision-Record.md
+          - Data Contract: 12-Templates/Data-Contract-Template.md
+          - DPDP Alignment Checklist: 12-Templates/DPDPA-Compliance-Checklist.md
+          - Pre-Deployment Launch Gate: 12-Templates/Pre-Deployment-Launch-Gate.md
+          - Red-Team Log: 12-Templates/Red-Team-Log-Template.md
+          - Tool Permission Matrix: 12-Templates/Tool-Permission-Matrix-Template.md
+          - Vendor Assessment Record: 12-Templates/Vendor-Assessment-Record-Template.md
+      - Completed Examples:
+          - Example Catalogue: 12-Templates/Examples/README.md
+          - AI Business Case Example: 12-Templates/Examples/AI-Business-Case-Example.md
+          - AI Incident Report Example: 12-Templates/Examples/AI-Incident-Report-Example.md
+          - AI System Card Example: 12-Templates/Examples/AI-System-Card-Example.md
+          - Architecture Decision Record Example: 12-Templates/Examples/Architecture-Decision-Record-Example.md
+          - Data Contract Example: 12-Templates/Examples/Data-Contract-Example.md
+          - DPDP Alignment Example: 12-Templates/Examples/DPDPA-Compliance-Checklist-Example.md
+          - Pre-Deployment Launch Gate Example: 12-Templates/Examples/Pre-Deployment-Launch-Gate-Example.md
+          - Red-Team Log Example: 12-Templates/Examples/Red-Team-Log-Example.md
+          - Tool Permission Matrix Example: 12-Templates/Examples/Tool-Permission-Matrix-Example.md
+          - Vendor Assessment Example: 12-Templates/Examples/Vendor-Assessment-Record-Example.md
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search
+
+# Navigation is explicitly curated below so repository administration and
+# supporting assets do not become first-class reader chapters.

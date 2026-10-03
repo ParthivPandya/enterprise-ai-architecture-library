@@ -236,4 +236,4 @@ AI governance that exists only in a compliance document is governance theatre. C
 
 ---
 
-*Sources: NIST AI RMF 1.0, NIST AI 600-1 (July 2024), ISO/IEC 42001:2023, EU AI Act (2024), Stanford HAI AI Index 2025, NeuralTrust NIST AI RMF Guide 2026, Aurascape AI Compliance Frameworks 2026, EPC Group NIST Enterprise Guide.*
+*Source leads (not publication-grade citations; verify exact title, edition, URL, page/section, methodology, and date under the [Editorial and Citation Policy](../EDITORIAL-AND-CITATION-POLICY.md)): NIST AI RMF 1.0, NIST AI 600-1 (July 2024), ISO/IEC 42001:2023, EU AI Act (2024), Stanford HAI AI Index 2025, NeuralTrust NIST AI RMF Guide 2026, Aurascape AI Compliance Frameworks 2026, EPC Group NIST Enterprise Guide.*

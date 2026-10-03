@@ -202,4 +202,4 @@ The smallest sustainable LLMOps team for 3–5 production LLM systems is 2–3 f
 
 ---
 
-*Sources: MLops in 2026 DataCamp/Medium February 2026, MLOps Infrastructure CI/CD Pipelines Introl Blog March 2026, LLMOps for Production AI Enterprise Guide Ailoitte June 2026, ThirstySprout MLOps Best Practices 2025, Galileo MLOps Operationalizing ML Blog, CaliberFocus MLOps LLMOps Services, MLcon LLMOps track curriculum, Netflix ML infrastructure blog, S&P Global AI abandonment survey 2025, Gartner AI model failure analysis.*
+*Source leads (not publication-grade citations; verify exact title, edition, URL, page/section, methodology, and date under the [Editorial and Citation Policy](../EDITORIAL-AND-CITATION-POLICY.md)): MLops in 2026 DataCamp/Medium February 2026, MLOps Infrastructure CI/CD Pipelines Introl Blog March 2026, LLMOps for Production AI Enterprise Guide Ailoitte June 2026, ThirstySprout MLOps Best Practices 2025, Galileo MLOps Operationalizing ML Blog, CaliberFocus MLOps LLMOps Services, MLcon LLMOps track curriculum, Netflix ML infrastructure blog, S&P Global AI abandonment survey 2025, Gartner AI model failure analysis.*

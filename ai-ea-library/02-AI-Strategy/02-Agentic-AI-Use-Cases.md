@@ -1,5 +1,8 @@
 # Agentic AI at Enterprise Scale: 40+ Functions Mapped
 
+> **Document type:** Informative Use-Case Catalogue
+> **Evidence note:** Outcome ranges are reported or illustrative calibration points, not guaranteed benefits. Verify the originating disclosure and build an organisation-specific baseline before using a figure in a business case.
+
 > **Related:** [01-Business-Value.md](01-Business-Value.md) | [../03-EA-Practice/02-AI-Design-Decisions.md](../03-EA-Practice/02-AI-Design-Decisions.md)
 
 ---
@@ -175,4 +178,4 @@ Target: 2–3 quick wins, 1–2 strategic bets, 1 exploratory initiative running
 
 ---
 
-*Sources: Gartner Agentic AI Enterprise Forecast 2026, McKinsey AI State of the Art 2025, JPMorgan COIN public disclosure, Klarna AI report (Google Cloud/Ipsos 2025), Forrester AI Agent Enterprise Report 2025, AIHive Enterprise AI Agent Use Cases 2026, Atomicwork AI Agent Use Cases 2026, AI Monk Agentic ROI Case Studies 2026, AIMuliple 40+ Agentic AI Use Cases.*
+*Source leads (not publication-grade citations; verify exact title, edition, URL, page/section, methodology, and date under the [Editorial and Citation Policy](../EDITORIAL-AND-CITATION-POLICY.md)): Gartner Agentic AI Enterprise Forecast 2026, McKinsey AI State of the Art 2025, JPMorgan COIN public disclosure, Klarna AI report (Google Cloud/Ipsos 2025), Forrester AI Agent Enterprise Report 2025, AIHive Enterprise AI Agent Use Cases 2026, Atomicwork AI Agent Use Cases 2026, AI Monk Agentic ROI Case Studies 2026, AIMuliple 40+ Agentic AI Use Cases.*

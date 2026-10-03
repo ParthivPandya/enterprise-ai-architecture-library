@@ -1,4 +1,4 @@
-# AIEA® Series Guide
+# AIEA Series Guide
 ## AIEA-G01: AI Architecture in Financial Services (BFSI)
 ### Document Number: AIEA-G01 | Version 1.0 | 2026
 
@@ -6,7 +6,7 @@
 
 ## Preface
 
-This document is an official AIEA Series Guide supplementing the core AIEA Standard. It provides sector-specific architecture guidance, regulatory compliance patterns, and technical reference designs for Banking, Financial Services, and Insurance (BFSI) enterprises.
+This document is an independent AIEA Series Guide supplementing the core AIEA Reference Framework. It provides sector-specific architecture guidance, regulatory compliance patterns, and technical reference designs for Banking, Financial Services, and Insurance (BFSI) enterprises.
 
 In financial services, AI systems operate under extraordinary regulatory scrutiny, severe legal liability, and zero-tolerance expectations for fraud, bias, and unauthorized data leakage. This guide translates global banking regulations into concrete architectural controls and deployment patterns.
 
@@ -14,7 +14,7 @@ This guide MUST be read by Enterprise Architects, Chief Risk Officers (CROs), Fi
 
 ---
 
-# Chapter 1: Regulatory Landscape & Compliance Architecture
+## Chapter 1: Regulatory Landscape & Compliance Architecture
 
 Financial institutions must navigate an overlapping web of banking guidelines and AI-specific legislation:
 
@@ -31,7 +31,7 @@ Financial institutions must navigate an overlapping web of banking guidelines an
 └────────────────────────────────┴────────────────────────────────────────┘
 ```
 
-## 1.1 Federal Reserve / OCC SR 11-7 Alignment (Model Risk Management)
+### 1.1 Federal Reserve / OCC SR 11-7 Alignment (Model Risk Management)
 
 All AI and ML models utilized in credit underwriting, risk forecasting, or market trading MUST comply with the **Three Lines of Defense** mandated by SR 11-7:
 
@@ -39,23 +39,25 @@ All AI and ML models utilized in credit underwriting, risk forecasting, or marke
 2. **Second Line (Model Validation & AIAB):** An independent Model Risk Management (MRM) team mathematically stress-tests models, auditing training data distributions, conceptual soundness, and out-of-time validation performance.
 3. **Third Line (Internal Audit):** Independent verification that the AI architecture governance framework operates effectively.
 
-## 1.2 EU AI Act Classification in BFSI
+### 1.2 EU AI Act Classification in BFSI
 
-Under the EU AI Act (Annex III, Section 5), AI systems used to evaluate creditworthiness, establish credit scores, or price life/health insurance are classified as **High-Risk AI Systems**. These systems legally require:
-- Complete logging of all algorithmic inputs, weights, and inference outputs for at least six months.
-- Comprehensive technical documentation and risk mitigation procedures.
-- Guaranteed human oversight capable of overriding or reversing automated credit rejections.
+Under the EU AI Act, selected systems used to evaluate creditworthiness or establish credit scores, and selected risk-assessment/pricing systems for life and health insurance, can be classified as **high-risk**, subject to the Act's definitions, exclusions, organisation role, and applicable commencement date. Relevant evidence can include:
+- Automatically generated logs appropriate to the system's purpose; this does not mean recording model weights for every inference.
+- Technical documentation, risk management, data governance, accuracy, robustness, and cybersecurity evidence.
+- Human-oversight measures appropriate to the system and decision process.
 
-## 1.3 Indian Regulatory Context (RBI & SEBI Mandates)
+Confirm the current text and application timeline against [Regulation (EU) 2024/1689](https://eur-lex.europa.eu/eli/reg/2024/1689/oj).
 
-Indian BFSI institutions MUST incorporate the following non-negotiable architectural constraints:
-- **Financial Data Localisation (RBI 2018 Directive):** All end-to-end transaction data and customer identifiers processed by AI models MUST reside exclusively on servers physically located within India. Foreign multi-tenant cloud API inference is prohibited unless private, domestic Indian VPC instances are deployed.
-- **Explainability for Adverse Actions (RBI Fair Practices Code):** Automated credit denials MUST provide unambiguous, human-readable explanations of the primary adverse factors.
-- **SEBI Algorithmic Governance:** Algorithmic trading and automated investment advisory agents MUST maintain air-gapped kill-switches and audit trails preventing runaway market volatility.
+### 1.3 Indian Regulatory Context (RBI & SEBI Mandates)
+
+Indian BFSI institutions must determine which RBI, SEBI, IRDAI, payment-system, outsourcing, cybersecurity, and records requirements apply to the regulated entity and workload:
+- **Payment System Data Storage:** The RBI's 2018 direction requires covered payment-system data to be stored in India. The RBI FAQ permits processing abroad provided the data is deleted from foreign systems and brought back to India within the specified period; it is therefore inaccurate to treat every foreign processing service as universally prohibited. See the [RBI direction](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11244) and [FAQ](https://www.rbi.org.in/scripts/FAQView.aspx?Id=117).
+- **Adverse Decisions:** Architecture SHOULD preserve the decision factors, policy basis, notices, and human-review route required by the applicable product, fair-practices, consumer-protection, and credit-information rules.
+- **Algorithmic Markets:** Trading and advisory systems SHOULD implement deterministic limits, authorised kill controls, evidence retention, and supervision appropriate to the applicable SEBI framework. Do not describe a control as legally mandatory without citing the specific circular or regulation.
 
 ---
 
-# Chapter 2: Reference Architecture Patterns for Financial Services
+## Chapter 2: Reference Architecture Patterns for Financial Services
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
@@ -89,27 +91,27 @@ Indian BFSI institutions MUST incorporate the following non-negotiable architect
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
-## 2.1 Pattern 1: High-Throughput Streaming Fraud Detection
+### 2.1 Pattern 1: High-Throughput Streaming Fraud Detection
 
-### Architectural Specifications:
+#### Architectural Specifications:
 - **Throughput & Latency SLA:** Processing $\ge 15,000$ transactions/sec with P99 inference latency $\le 35\text{ms}$.
 - **Feature Store Integration:** Real-time lookup of customer behavioral aggregates (velocity of spend, geographic impossibility, device fingerprint shifts) via in-memory Redis cluster.
 - **Model Topology:** Dual-stage inference:
   - *Stage 1 (Filter):* Ultra-fast tree ensemble (LightGBM/XGBoost) filtering 98% of benign transactions in $< 5\text{ms}$.
   - *Stage 2 (Deep Analysis):* Temporal Graph Neural Network (GNN) analyzing complex money-mule networks for suspicious multi-account flows.
 
-## 2.2 Pattern 2: Explainable Credit Underwriting & Decisioning
+### 2.2 Pattern 2: Explainable Credit Underwriting & Decisioning
 
-### Architectural Specifications:
+#### Architectural Specifications:
 - **No Black-Box Neural Deployments:** Standalone raw LLM completions MUST NEVER directly approve or deny a loan application. Deep learning models MUST be paired with an explainability proxy.
 - **SHAP Feature Attribution:** Every credit score is accompanied by local Shapley additive explanations (TreeSHAP) quantifying the exact positive or negative dollar impact of each input variable (debt-to-income ratio, credit history length, delinquent accounts).
 - **Adverse Action Notice Engine:** If the algorithmic score falls below the approval threshold, a template engine synthesizes an adverse action disclosure citing the top 4 adverse factors, compliant with the US Equal Credit Opportunity Act (ECOA) and Indian Fair Lending guidelines.
 
 ---
 
-# Chapter 3: Security & Customer Data Isolation
+## Chapter 3: Security & Customer Data Isolation
 
-## 3.1 Zero-Retention Private VPC Hosting
+### 3.1 Zero-Retention Private VPC Hosting
 
 Financial institutions MUST NOT route customer transaction history or PII through public multi-tenant SaaS model endpoints. Architectures MUST enforce:
 
@@ -120,4 +122,4 @@ Financial institutions MUST NOT route customer transaction history or PII throug
 ---
 
 *AIEA Series Guide AIEA-G01: AI Architecture in Financial Services. Document AIEA-G01, Version 1.0, 2026.*  
-*AI Enterprise Architecture Forum (AIEAF).*
+*AIEA Reference Library.*

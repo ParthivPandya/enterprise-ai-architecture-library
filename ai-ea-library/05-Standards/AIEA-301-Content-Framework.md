@@ -1,4 +1,4 @@
-# AIEA® Standard
+# AIEA Reference Framework
 ## Part 3: AI Architecture Content Framework
 ### Document Number: AIEA-301 | Version 1.0 | 2026
 
@@ -12,9 +12,9 @@ The Content Framework answers the question: *What do we produce when we do AI ar
 
 ---
 
-# Chapter 1: Overview of the Content Framework
+## Chapter 1: Overview of the Content Framework
 
-## 1.1 Content Categories
+### 1.1 Content Categories
 
 The AIEA Content Framework uses three categories of architectural work product:
 
@@ -26,7 +26,7 @@ The AIEA Content Framework uses three categories of architectural work product:
 - *Architecture Building Blocks (ABBs):* Required capabilities — what must be done
 - *Solution Building Blocks (SBBs):* Implementation components — how it will be done
 
-## 1.2 Content Lifecycle
+### 1.2 Content Lifecycle
 
 AI architecture content has a defined lifecycle:
 
@@ -40,9 +40,9 @@ All content in the AIEA Repository is versioned. Major version changes require A
 
 ---
 
-# Chapter 2: AI Architecture Deliverables
+## Chapter 2: AI Architecture Deliverables
 
-## 2.1 Deliverable: AI Architecture Vision Document
+### 2.1 Deliverable: AI Architecture Vision Document
 
 **AI-ADM Phase:** Phase A  
 **Owner:** Lead AI Architect  
@@ -72,7 +72,7 @@ All content in the AIEA Repository is versioned. Major version changes require A
 
 ---
 
-## 2.2 Deliverable: AI System Card
+### 2.2 Deliverable: AI System Card
 
 **AI-ADM Phase:** Phase F (draft), Phase I (final)  
 **Owner:** AI System Owner  
@@ -173,7 +173,7 @@ SECTION 10: HISTORY AND CHANGE LOG
 
 ---
 
-## 2.3 Deliverable: AI Data Architecture Definition
+### 2.3 Deliverable: AI Data Architecture Definition
 
 **AI-ADM Phase:** Phase C  
 **Owner:** Data Architect  
@@ -189,7 +189,7 @@ SECTION 10: HISTORY AND CHANGE LOG
 
 ---
 
-## 2.4 Deliverable: AI Governance Framework
+### 2.4 Deliverable: AI Governance Framework
 
 **AI-ADM Phase:** Preliminary Phase / Phase F  
 **Owner:** AI Governance Lead  
@@ -208,7 +208,7 @@ SECTION 10: HISTORY AND CHANGE LOG
 
 ---
 
-## 2.5 Deliverable: AI Architecture Definition Document
+### 2.5 Deliverable: AI Architecture Definition Document
 
 **AI-ADM Phase:** Phases B–F (consolidated)  
 **Owner:** Lead AI Architect  
@@ -229,11 +229,11 @@ The Architecture Definition Document is the complete architecture specification 
 
 ---
 
-# Chapter 3: AI Architecture Artifacts
+## Chapter 3: AI Architecture Artifacts
 
-## 3.1 Catalogs
+### 3.1 Catalogs
 
-### 3.1.1 AI System Inventory Catalog
+#### 3.1.1 AI System Inventory Catalog
 
 The master catalog of all AI systems in the enterprise. Minimum fields:
 
@@ -255,7 +255,7 @@ The master catalog of all AI systems in the enterprise. Minimum fields:
 | Annual Cost | Estimated annual run cost |
 | Annual Value | Documented annual business value |
 
-### 3.1.2 AI Risk Register
+#### 3.1.2 AI Risk Register
 
 For each AI system, a risk register documenting:
 
@@ -275,7 +275,7 @@ For each AI system, a risk register documenting:
 | Owner | Named individual responsible |
 | Review Date | When this risk entry was last reviewed |
 
-### 3.1.3 AI Data Asset Catalog
+#### 3.1.3 AI Data Asset Catalog
 
 All data assets used in AI systems:
 
@@ -293,7 +293,7 @@ All data assets used in AI systems:
 | Retention Period | How long data is retained |
 | Last Quality Check | Date of most recent quality validation |
 
-### 3.1.4 AI Architecture Principles Catalog
+#### 3.1.4 AI Architecture Principles Catalog
 
 All AI Architecture Principles in effect, with:
 - Principle Name
@@ -304,7 +304,7 @@ All AI Architecture Principles in effect, with:
 - Owner
 - Last Reviewed
 
-### 3.1.5 AI Vendor and Technology Catalog
+#### 3.1.5 AI Vendor and Technology Catalog
 
 Approved AI vendors and technology components:
 
@@ -323,9 +323,9 @@ Approved AI vendors and technology components:
 
 ---
 
-## 3.2 Matrices
+### 3.2 Matrices
 
-### 3.2.1 AI-Business Capability Matrix
+#### 3.2.1 AI-Business Capability Matrix
 
 Maps AI systems to the business capabilities they support:
 
@@ -339,7 +339,7 @@ Business Cap 4         ○              ○              ●
 ● Directly supports    ○ No relationship
 ```
 
-### 3.2.2 AI-Data Flow Matrix
+#### 3.2.2 AI-Data Flow Matrix
 
 Maps AI systems to the data sources they consume and produce:
 
@@ -353,7 +353,7 @@ Audit Logs             OUT            OUT            OUT
 IN = Consumes  OUT = Produces  ○ = No relationship
 ```
 
-### 3.2.3 AI-Risk Matrix
+#### 3.2.3 AI-Risk Matrix
 
 Heat map of AI systems by risk tier and governance compliance status:
 
@@ -367,7 +367,7 @@ Minimal Risk           ✓            ✓              ✓
 ✓ = Green (Compliant)   ! = Amber (Action Required)   ✗ = Red (Halt)
 ```
 
-### 3.2.4 AI-Regulatory Compliance Matrix
+#### 3.2.4 AI-Regulatory Compliance Matrix
 
 Maps AI systems to applicable regulatory requirements and compliance status:
 
@@ -382,9 +382,9 @@ AI System C            !            ✓         ○        ○
 
 ---
 
-## 3.3 Diagrams
+### 3.3 Diagrams
 
-### 3.3.1 AI System Context Diagram
+#### 3.3.1 AI System Context Diagram
 
 Shows the AI system in the context of its environment — the actors who interact with it, the systems it connects to, and the data flows in and out. Uses ArchiMate notation.
 
@@ -396,7 +396,7 @@ Shows the AI system in the context of its environment — the actors who interac
 - Foundation model provider
 - Human oversight mechanism
 
-### 3.3.2 AI Data Flow Diagram
+#### 3.3.2 AI Data Flow Diagram
 
 Shows the complete data lineage from source to model input and from model output to consuming systems.
 
@@ -408,7 +408,7 @@ Shows the complete data lineage from source to model input and from model output
 - Output delivery to consuming systems
 - Data retention and deletion points
 
-### 3.3.3 AI Governance Architecture Diagram
+#### 3.3.3 AI Governance Architecture Diagram
 
 Shows the governance infrastructure — how the AI system is monitored, how alerts flow, and how the governance response chain operates.
 
@@ -420,23 +420,23 @@ Shows the governance infrastructure — how the AI system is monitored, how aler
 - Audit log destination
 - Governance team touchpoints
 
-### 3.3.4 AI Infrastructure Diagram
+#### 3.3.4 AI Infrastructure Diagram
 
 Physical deployment architecture — cloud regions, compute, networking, and AI platform components.
 
-### 3.3.5 AI Roadmap Diagram
+#### 3.3.5 AI Roadmap Diagram
 
 Time-phased visual representation of the AI implementation roadmap — packages, dependencies, and milestones across quarters.
 
 ---
 
-# Chapter 4: AI Architecture Building Blocks
+## Chapter 4: AI Architecture Building Blocks
 
-## 4.1 Architecture Building Blocks (ABBs)
+### 4.1 Architecture Building Blocks (ABBs)
 
 ABBs describe required capabilities, independent of how they will be implemented.
 
-### AI Capability ABBs
+#### AI Capability ABBs
 
 | ABB Name | Description |
 |---|---|
@@ -449,7 +449,7 @@ ABBs describe required capabilities, independent of how they will be implemented
 | Code Generation Capability | Ability to generate, complete, review, or explain software code |
 | Translation Capability | Ability to convert content between human languages |
 
-### AI Infrastructure ABBs
+#### AI Infrastructure ABBs
 
 | ABB Name | Description |
 |---|---|
@@ -460,7 +460,7 @@ ABBs describe required capabilities, independent of how they will be implemented
 | AI Observability Capability | Real-time monitoring of AI system performance, cost, and quality in production |
 | Prompt Management Capability | Version-controlled management of AI system prompts and configurations |
 
-### AI Governance ABBs
+#### AI Governance ABBs
 
 | ABB Name | Description |
 |---|---|
@@ -472,9 +472,9 @@ ABBs describe required capabilities, independent of how they will be implemented
 
 ---
 
-## 4.2 Solution Building Blocks (SBBs)
+### 4.2 Solution Building Blocks (SBBs)
 
-SBBs are specific implementation components that realise AI-ABBs. The AIEA Standards Library (in the AIEA Repository) maintains the approved SBB catalogue for the enterprise.
+SBBs are specific implementation components that realise AI-ABBs. The AIEA Reference Frameworks Library (in the AIEA Repository) maintains the approved SBB catalogue for the enterprise.
 
 **SBB categories:**
 
@@ -496,9 +496,9 @@ Every SBB must pass the AIEA Vendor Onboarding Process (see AIEA-401) before it 
 
 ---
 
-# Chapter 5: Deliverable Templates — Quick Reference
+## Chapter 5: Deliverable Templates — Quick Reference
 
-## 5.1 AI Data Contract Template
+### 5.1 AI Data Contract Template
 
 ```
 ═══════════════════════════════════════════════════════
@@ -535,7 +535,7 @@ SIGNATURES:
 ═══════════════════════════════════════════════════════
 ```
 
-## 5.2 Architecture Decision Record (ADR) Template
+### 5.2 Architecture Decision Record (ADR) Template
 
 ```
 ═══════════════════════════════════════════════════════
@@ -575,7 +575,7 @@ REVIEW DATE: [When should this decision be reviewed?]
 ═══════════════════════════════════════════════════════
 ```
 
-## 5.3 AI Incident Report Template
+### 5.3 AI Incident Report Template
 
 ```
 ═══════════════════════════════════════════════════════
@@ -632,5 +632,5 @@ INCIDENT CLOSED:
 
 ---
 
-*AIEA Standard Part 3: AI Architecture Content Framework. Document AIEA-301, Version 1.0, 2026.*
+*AIEA Reference Framework Part 3: AI Architecture Content Framework. Document AIEA-301, Version 1.0, 2026.*
 *Next: Part 4 — AI Enterprise Architecture Capability and Governance (AIEA-401)*

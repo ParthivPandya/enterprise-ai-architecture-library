@@ -1,12 +1,16 @@
-# AIEA® Series Guide
+# AIEA Series Guide
 ## AIEA-G07: AI FinOps & Token Economics
 ### Document Number: AIEA-G07 | Version 1.0 | 2026
+
+> **Document type:** Informative Series Guide
+> **Last verified:** October 2026
+> **Volatility notice:** Prices and provider billing units are examples; verify current commercial terms before financial modelling.
 
 ---
 
 ## Preface
 
-This document is an official AIEA Series Guide supplementing the core AIEA Standard. It establishes the financial engineering methodology, cost attribution models, architectural optimization patterns, and organizational governance required to master **AI FinOps** across the enterprise.
+This document is an independent AIEA Series Guide supplementing the core AIEA Reference Framework. It establishes the financial engineering methodology, cost attribution models, architectural optimization patterns, and organizational governance required to master **AI FinOps** across the enterprise.
 
 Uncontrolled foundation model API usage, inefficient context window stuffing, and premature GPU cluster leasing are among the leading causes of enterprise AI program cancellations. This guide provides the operational framework to align every dollar of AI spend with measurable business value.
 
@@ -14,7 +18,7 @@ This guide MUST be read by Enterprise Architects, Chief Financial Officers (CFOs
 
 ---
 
-# Chapter 1: The AI FinOps Framework
+## Chapter 1: The AI FinOps Framework
 
 The AIEA FinOps Framework adapts the FinOps Foundation lifecycle specifically for AI token economics and accelerated compute:
 
@@ -36,11 +40,11 @@ The AIEA FinOps Framework adapts the FinOps Foundation lifecycle specifically fo
 
 ---
 
-# Chapter 2: The Unit Economics of Enterprise AI
+## Chapter 2: The Unit Economics of Enterprise AI
 
 Architects MUST understand the fundamental cost drivers of modern AI workloads:
 
-## 2.1 The Input/Output Token Cost Asymmetry
+### 2.1 The Input/Output Token Cost Asymmetry
 Across frontier model providers, output tokens are priced **3x to 4x higher** than input tokens due to the autoregressive computational nature of token generation (sequential key-value cache memory generation).
 
 | Model Class | Representative Input Cost / 1M | Representative Output Cost / 1M | Cost Ratio (Out : In) |
@@ -51,7 +55,7 @@ Across frontier model providers, output tokens are priced **3x to 4x higher** th
 
 **Architectural Rule:** In prompt engineering, minimize verbose model completions. Forcing models to emit compact, minified JSON instead of verbose conversational prose reduces output token costs by up to 65%.
 
-## 2.2 Dedicated GPU vs. Serverless API Crossover Modeling
+### 2.2 Dedicated GPU vs. Serverless API Crossover Modeling
 
 Architects MUST calculate the break-even token volume before committing to reserved cloud GPU instances:
 
@@ -76,7 +80,7 @@ Monthly Spend ($)
 
 ---
 
-# Chapter 3: Architectural Cost Optimization Techniques
+## Chapter 3: Architectural Cost Optimization Techniques
 
 Enterprise AI platforms MUST implement the following four technical optimization patterns at the AI Gateway layer:
 
@@ -105,26 +109,26 @@ Enterprise AI platforms MUST implement the following four technical optimization
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
-## 3.1 Technique 1: Semantic Caching
+### 3.1 Technique 1: Semantic Caching
 - **Implementation:** Vector search against previously answered query-response pairs stored in an in-memory database (Redis).
 - **Threshold Policy:** Queries with cosine similarity $\ge 0.96$ return the cached answer with zero upstream token cost.
 - **Financial Impact:** Reduces enterprise token expenditure by 25% to 40% in repetitive environments (HR helpdesks, customer support, IT troubleshooting).
 
-## 3.2 Technique 2: Dynamic Multi-Model Tiering
+### 3.2 Technique 2: Dynamic Multi-Model Tiering
 - **Implementation:** A lightweight classification model (e.g., DeBERTa or fine-tuned SLM) analyzes incoming query complexity.
 - **Routing:**
   - 70% of routine corporate queries (fact lookups, text reformatting, translation) route to low-cost models.
   - 30% of complex queries (legal synthesis, code generation, multi-hop reasoning) route to frontier models.
 - **Financial Impact:** Lowers average blended cost per query from $0.045 to $0.012 (a 73% direct cost reduction).
 
-## 3.3 Technique 3: Context Window Compression
+### 3.3 Technique 3: Context Window Compression
 - **Implementation:** Eliminating low-relevance paragraphs from retrieved RAG context using Cross-Encoder re-ranking before context injection. Passing only the top 5 chunks rather than top 20 reduces prompt token overhead by 75% per call.
 
 ---
 
-# Chapter 4: Enterprise Cost Governance & Chargeback
+## Chapter 4: Enterprise Cost Governance & Chargeback
 
-## 4.1 Header-Based Cost Attribution
+### 4.1 Header-Based Cost Attribution
 
 Every transaction passing through the AI Gateway MUST carry mandatory financial tracking headers:
 
@@ -140,7 +144,7 @@ X-User-Hash: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 
 The Gateway logs actual input and output tokens consumed, applies the real-time provider tariff, and writes a financial transaction record to the FinOps data warehouse for automated monthly departmental chargeback.
 
-## 4.2 Key Performance Indicators (KPIs) for AI FinOps
+### 4.2 Key Performance Indicators (KPIs) for AI FinOps
 
 | Metric Name | Calculation | Target Benchmark |
 |---|---|---|
@@ -152,4 +156,4 @@ The Gateway logs actual input and output tokens consumed, applies the real-time 
 ---
 
 *AIEA Series Guide AIEA-G07: AI FinOps & Token Economics. Document AIEA-G07, Version 1.0, 2026.*  
-*AI Enterprise Architecture Forum (AIEAF).*
+*AIEA Reference Library.*

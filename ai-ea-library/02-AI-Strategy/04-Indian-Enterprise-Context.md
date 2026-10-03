@@ -1,5 +1,10 @@
 # AI Standards for the Indian Enterprise Context
 
+> **Document type:** Informative Jurisdiction Guide
+> **Primary audience:** Enterprise Architects, Governance Leads, and Technology Leaders operating in India
+> **Last verified:** October 2026
+> **Authority:** Independent practitioner guidance; verify commencement notifications and sector-specific rules with primary sources.
+
 > **Related:** [../01-AI-Governance/02-Governance-Framework.md](../01-AI-Governance/02-Governance-Framework.md) | [01-Business-Value.md](01-Business-Value.md)
 
 ---
@@ -214,31 +219,37 @@ For the highest sensitivity (government, defence, critical infrastructure):
 
 ---
 
-## Compliance Roadmap for Indian Enterprises
+## Alignment Readiness for Indian Enterprises
 
-### Immediate Actions (Now — November 2026)
+### Foundation Readiness
 
-- [ ] Audit all AI systems processing Indian personal data — catalogue data types, lawful basis, and processing purpose
+- [ ] Audit all AI systems processing Indian personal data — catalogue data types, processing ground, purpose, role, and relevant commencement date
 - [ ] Review and update all privacy notices to include AI processing disclosures
 - [ ] Implement consent management for personal data used in AI training
-- [ ] Assess SDF designation likelihood — begin enhanced controls if applicable
+- [ ] Monitor Significant Data Fiduciary designation and prepare enhanced controls where the organisation's scale and risk make designation plausible
 - [ ] Review AI vendor contracts — suppliers must meet DPDPA obligations for data they process
 
-### Phase 1 (By November 2026)
+### Near-Term Readiness (verify applicable commencement dates)
 
-- [ ] Consent Manager registration process (if applicable)
-- [ ] Data breach notification process operational
-- [ ] DPO appointed (SDFs)
+- [ ] Confirm whether Consent Manager provisions and registration requirements apply
+- [ ] Test the breach assessment and notification process against commenced Rules
+- [ ] If designated as an SDF, confirm DPO, auditor, DPIA, and due-diligence duties
 
-### Phase 2 (By May 2027 — Full Compliance)
+### Substantive Obligations (prepare before the applicable commencement date)
 
-- [ ] Annual DPIA conducted and submitted (SDFs)
-- [ ] Data localisation controls implemented (SDFs / high-sensitivity sectors)
-- [ ] Security safeguards (Rule 6) fully implemented across all AI systems
-- [ ] Machine unlearning / data erasure process documented (even if manual interim process)
-- [ ] Algorithmic transparency process for significant decisions (credit, hiring, admissions)
+- [ ] Periodic DPIA and audit process established where SDF duties apply; do not assume a universal annual submission requirement
+- [ ] Cross-border transfer and residency controls mapped to notified restrictions, sector rules, contracts, and organisational policy; the DPDP Act does not impose blanket localisation
+- [ ] Applicable security safeguards implemented and evidenced for systems processing personal data
+- [ ] Erasure process covers source data, retrieval indexes, logs, memory, and derived artifacts; assess model remediation case by case rather than assuming universal machine unlearning
+- [ ] Explainability and human-review controls mapped to the applicable sector and decision context; do not attribute a universal algorithmic-transparency duty to the DPDP Act
 - [ ] Grievance redressal mechanism live and tested
 
 ---
 
-*Sources: IAPP India DPDPA Rules and AI Governance Guidelines Note 2026, MeitY DPDP Rules 2025 notification, MeitY India AI Governance Guidelines November 2025, IndiaAI Mission Cabinet approval March 2024, IndiaAI.gov.in EoI Round 1 and 2, ReedSmith India Data Protection and AI 2026, Saikrishna & Associates India AI Governance Guidelines Analysis, DPDPA AI Compliance Guide 2026, India AI Rulebook IndiaAI Mission Analysis.*
+## Primary References
+
+1. Ministry of Electronics and Information Technology, [Acts, Rules, and notifications](https://www.meity.gov.in/documents/act-and-policies), including the DPDP Act and current commencement material.
+2. IndiaAI, [IndiaAI Mission](https://indiaai.gov.in/).
+3. Reserve Bank of India, [Storage of Payment System Data](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11244) and associated FAQs.
+
+Secondary legal commentary may help interpretation but should not replace the current Gazette text, regulator material, or qualified advice.

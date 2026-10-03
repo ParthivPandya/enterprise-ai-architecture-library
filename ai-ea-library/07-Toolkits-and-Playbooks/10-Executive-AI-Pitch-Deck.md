@@ -2,6 +2,9 @@
 ## C-Suite & Boardroom Presentation Toolkit
 ### Document Ref: AIEA-TK-10 | Version 1.0 | 2026
 
+> **Document type:** Presentation Template
+> **Evidence note:** Replace every market statistic, benchmark, cost, benefit, and case-study claim with a current cited source or the organisation's measured data before presentation. Unverified figures are illustrative placeholders.
+
 ---
 
 > **Presenter Guide**: This presentation deck is designed for Chief Information Officers (CIOs), Chief Technology Officers (CTOs), and Chief Enterprise Architects pitching enterprise AI strategy, investment allocation, and architectural transformation to the CEO, CFO, and Board of Directors. 

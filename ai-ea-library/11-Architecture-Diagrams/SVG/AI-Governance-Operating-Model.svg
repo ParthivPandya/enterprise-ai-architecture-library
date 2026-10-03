@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 640" font-family="Segoe UI, Arial, sans-serif" role="img" aria-labelledby="governance-model-title governance-model-desc">
+  <title id="governance-model-title">AI governance operating model</title>
+  <desc id="governance-model-desc">A governance model aligned to the NIST AI RMF functions Govern, Map, Measure, and Manage, with system registration, risk classification, evaluation, monitoring, risk treatment, incident response, and accountability roles.</desc>
+  <rect x="0" y="0" width="980" height="640" fill="#ffffff"/>
+  <text x="490" y="40" text-anchor="middle" font-size="26" font-weight="700" fill="#1f2a44">AI Governance Operating Model</text>
+  <text x="490" y="66" text-anchor="middle" font-size="14" fill="#5a6a85">Aligned to NIST AI RMF — Govern, Map, Measure, Manage</text>
+
+  <!-- GOVERN band (continuous) -->
+  <rect x="30" y="95" width="920" height="70" rx="10" fill="#1f2a44"/>
+  <text x="60" y="126" font-size="18" font-weight="700" fill="#ffffff">GOVERN</text>
+  <text x="60" y="148" font-size="13" fill="#c7d2ea">Principles · Accountability (named owners) · Policies · Governance Repository</text>
+
+  <!-- Three operational lanes -->
+  <!-- MAP -->
+  <rect x="30" y="185" width="290" height="300" rx="10" fill="#eef3fb" stroke="#4472c4" stroke-width="2"/>
+  <text x="175" y="214" text-anchor="middle" font-size="18" font-weight="700" fill="#28406e">MAP</text>
+  <rect x="48" y="230" width="254" height="44" rx="6" fill="#ffffff" stroke="#9db4df"/>
+  <text x="175" y="252" text-anchor="middle" font-size="13" fill="#28406e">System intake &amp; registration</text>
+  <text x="175" y="268" text-anchor="middle" font-size="12" fill="#5a6a85">AI System Registry</text>
+  <rect x="48" y="284" width="254" height="44" rx="6" fill="#ffffff" stroke="#9db4df"/>
+  <text x="175" y="306" text-anchor="middle" font-size="13" fill="#28406e">Risk classification</text>
+  <text x="175" y="322" text-anchor="middle" font-size="12" fill="#5a6a85">Minimal / Limited / High</text>
+  <rect x="48" y="338" width="254" height="44" rx="6" fill="#ffffff" stroke="#9db4df"/>
+  <text x="175" y="360" text-anchor="middle" font-size="13" fill="#28406e">Context &amp; stakeholders</text>
+  <text x="175" y="376" text-anchor="middle" font-size="12" fill="#5a6a85">Use case, data, impact</text>
+
+  <!-- MEASURE -->
+  <rect x="345" y="185" width="290" height="300" rx="10" fill="#eef7ef" stroke="#4e9a51" stroke-width="2"/>
+  <text x="490" y="214" text-anchor="middle" font-size="18" font-weight="700" fill="#2f6b31">MEASURE</text>
+  <rect x="363" y="230" width="254" height="44" rx="6" fill="#ffffff" stroke="#a4cfa5"/>
+  <text x="490" y="252" text-anchor="middle" font-size="13" fill="#2f6b31">Pre-deployment evaluation</text>
+  <text x="490" y="268" text-anchor="middle" font-size="12" fill="#5a6a85">Launch gate · red teaming</text>
+  <rect x="363" y="284" width="254" height="44" rx="6" fill="#ffffff" stroke="#a4cfa5"/>
+  <text x="490" y="306" text-anchor="middle" font-size="13" fill="#2f6b31">Production monitoring</text>
+  <text x="490" y="322" text-anchor="middle" font-size="12" fill="#5a6a85">Accuracy · cost · fairness</text>
+  <rect x="363" y="338" width="254" height="44" rx="6" fill="#ffffff" stroke="#a4cfa5"/>
+  <text x="490" y="360" text-anchor="middle" font-size="13" fill="#2f6b31">Explainability checks</text>
+  <text x="490" y="376" text-anchor="middle" font-size="12" fill="#5a6a85">Proportionate to consequence</text>
+
+  <!-- MANAGE -->
+  <rect x="660" y="185" width="290" height="300" rx="10" fill="#fdf0ef" stroke="#c0504d" stroke-width="2"/>
+  <text x="805" y="214" text-anchor="middle" font-size="18" font-weight="700" fill="#8f2e2b">MANAGE</text>
+  <rect x="678" y="230" width="254" height="44" rx="6" fill="#ffffff" stroke="#d99b99"/>
+  <text x="805" y="252" text-anchor="middle" font-size="13" fill="#8f2e2b">Risk treatment</text>
+  <text x="805" y="268" text-anchor="middle" font-size="12" fill="#5a6a85">Accept / mitigate / block</text>
+  <rect x="678" y="284" width="254" height="44" rx="6" fill="#ffffff" stroke="#d99b99"/>
+  <text x="805" y="306" text-anchor="middle" font-size="13" fill="#8f2e2b">Incident response</text>
+  <text x="805" y="322" text-anchor="middle" font-size="12" fill="#5a6a85">Report · remediate · learn</text>
+  <rect x="678" y="338" width="254" height="44" rx="6" fill="#ffffff" stroke="#d99b99"/>
+  <text x="805" y="360" text-anchor="middle" font-size="13" fill="#8f2e2b">Lifecycle &amp; retirement</text>
+  <text x="805" y="376" text-anchor="middle" font-size="12" fill="#5a6a85">Review cadence · triggers</text>
+
+  <!-- flow arrows -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#5a6a85"/>
+    </marker>
+  </defs>
+  <line x1="320" y1="420" x2="345" y2="420" stroke="#5a6a85" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="635" y1="420" x2="660" y2="420" stroke="#5a6a85" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Roles band -->
+  <rect x="30" y="505" width="920" height="100" rx="10" fill="#f3f5fa" stroke="#c3cde0"/>
+  <text x="490" y="532" text-anchor="middle" font-size="16" font-weight="700" fill="#1f2a44">Accountability</text>
+  <rect x="55" y="545" width="270" height="44" rx="6" fill="#ffffff" stroke="#c3cde0"/>
+  <text x="190" y="572" text-anchor="middle" font-size="13" fill="#1f2a44">Chief AI Officer / AI CoE</text>
+  <rect x="355" y="545" width="270" height="44" rx="6" fill="#ffffff" stroke="#c3cde0"/>
+  <text x="490" y="572" text-anchor="middle" font-size="13" fill="#1f2a44">Governance Lead &amp; System Owners</text>
+  <rect x="655" y="545" width="270" height="44" rx="6" fill="#ffffff" stroke="#c3cde0"/>
+  <text x="790" y="572" text-anchor="middle" font-size="13" fill="#1f2a44">Internal Audit / Assurance</text>
+</svg>

@@ -35,5 +35,5 @@ This section primarily supports **Phase A: Architecture Vision** (business case,
 
 ---
 
-> **Previous:** [01-AI-Governance](../01-AI-Governance/) — Compliance, risk, and accountability  
-> **Next:** [03-EA-Practice](../03-EA-Practice/) — Hands-on architecture practice
+> **Previous:** [01-AI-Governance](../01-AI-Governance/README.md) — Compliance, risk, and accountability
+> **Next:** [03-EA-Practice](../03-EA-Practice/README.md) — Hands-on architecture practice

@@ -206,4 +206,4 @@ Different contexts require different levels of explanation:
 
 ---
 
-*Sources: Microsoft Responsible AI Transparency Report 2025, IBM AI Ethics Board documentation, Google AI Principles 2025, WEF Advancing Responsible AI Innovation Playbook 2025, Accenture/Stanford HAI Responsible AI Maturity Index 2025, IDC Worldwide Responsible AI Survey, AI Fairness 360 documentation.*
+*Source leads (not publication-grade citations; verify exact title, edition, URL, page/section, methodology, and date under the [Editorial and Citation Policy](../EDITORIAL-AND-CITATION-POLICY.md)): Microsoft Responsible AI Transparency Report 2025, IBM AI Ethics Board documentation, Google AI Principles 2025, WEF Advancing Responsible AI Innovation Playbook 2025, Accenture/Stanford HAI Responsible AI Maturity Index 2025, IDC Worldwide Responsible AI Survey, AI Fairness 360 documentation.*

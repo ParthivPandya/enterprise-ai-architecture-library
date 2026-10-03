@@ -8,9 +8,9 @@
 
 ## The Craft That Became an Engineering Discipline
 
-In early 2023, "prompt engineering" was what you did when you wanted ChatGPT to write better emails. By 2025 it had become, in McKinsey's phrasing, "the new SQL" — a skill that non-technical professionals need to develop proficiency in, and that technical teams need to treat with the same engineering discipline as code.
+In early enterprise adoption, "prompt engineering" was often treated as an individual productivity skill. It has since become an engineering concern: prompts influence system behaviour, cost, safety, test results, and change control, and therefore need the same versioning and evaluation discipline as other application artifacts.
 
-The Stanford HAI 2025 report found that structured prompt engineering improves LLM output accuracy by 40–60% compared to unstructured queries. McKinsey's State of AI 2025 found that enterprises combining structured prompting with retrieval architectures see 2.5x higher user adoption of GenAI tools compared to teams using unstructured prompting.
+Structured instructions, examples, retrieval, and output schemas can improve performance for a particular model and task, but there is no universal improvement percentage. Measure prompt changes against a versioned evaluation set using the actual model, data, and workflow. Adoption is affected by usefulness, trust, integration, incentives, and training—not prompt structure alone.
 
 The business case for investing in prompt engineering as an organisational discipline is clear. What follows is how to do it — the techniques, the enterprise practices, and the governance.
 
@@ -320,4 +320,11 @@ This iterative process — not a one-time cleverness exercise — is what prompt
 
 ---
 
-*Sources: Stanford HAI Prompt Engineering Impact Study 2025, McKinsey State of AI 2025, Maxim AI Prompt Engineering Practitioner's Guide 2026, K2view Prompt Engineering Techniques 2026, NextAgile Enterprise Prompt Engineering Guide 2026, Meta Intelligence Prompt Engineering Complete Guide 2026, Promptbuilder.cc Complete Guide 2025, Bifrost Enterprise Prompt Engineering Practitioner Guide 2026.*
+## References
+
+1. NIST, [Generative AI Profile (NIST AI 600-1)](https://doi.org/10.6028/NIST.AI.600-1).
+2. OpenAI, [prompt engineering guidance](https://platform.openai.com/docs/guides/prompt-engineering), provider-specific and subject to change.
+3. Anthropic, [prompt engineering guidance](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview), provider-specific and subject to change.
+4. Google Cloud, [prompt design strategies](https://cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/prompt-design-strategies), provider-specific and subject to change.
+
+Use provider guidance as implementation input, not independent evidence of business outcomes.

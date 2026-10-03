@@ -1,12 +1,16 @@
-# AIEA® Series Guide
+# AIEA Series Guide
 ## AIEA-G06: Sovereign AI Architecture
 ### Document Number: AIEA-G06 | Version 1.0 | 2026
+
+> **Document type:** Informative Series Guide
+> **Last verified:** October 2026
+> **Authority:** Independent practitioner guidance; sovereignty and residency requirements must be verified by jurisdiction and sector.
 
 ---
 
 ## Preface
 
-This document is an official AIEA Series Guide supplementing the core AIEA Standard. It establishes the architectural blueprints, infrastructure topologies, security protocols, and operational procedures required to design and operate **Sovereign AI Capabilities**.
+This document is an independent AIEA Series Guide supplementing the core AIEA Reference Framework. It establishes the architectural blueprints, infrastructure topologies, security protocols, and operational procedures required to design and operate **Sovereign AI Capabilities**.
 
 In an era of intensifying geopolitical tensions, extraterritorial data subpoenas (e.g., the US CLOUD Act), export controls on advanced semiconductors, and foreign cloud dependencies, sovereign enterprises, defence organizations, and critical national infrastructure (CNI) operators cannot rely on foreign-hosted AI APIs.
 
@@ -14,7 +18,7 @@ This guide MUST be read by Enterprise Architects, National Security AI Engineers
 
 ---
 
-# Chapter 1: The Three Pillars of Sovereign AI
+## Chapter 1: The Three Pillars of Sovereign AI
 
 An AI architecture achieves genuine sovereignty only when it satisfies all three structural pillars:
 
@@ -32,7 +36,7 @@ An AI architecture achieves genuine sovereignty only when it satisfies all three
 └───────────────────┴───────────────────┴─────────────────────────────────┘
 ```
 
-## 1.1 The US CLOUD Act & Extraterritoriality Risk
+### 1.1 The US CLOUD Act & Extraterritoriality Risk
 
 Enterprises frequently confuse "local cloud region hosting" with sovereignty. Under the US Clarifying Lawful Overseas Use of Data (CLOUD) Act (18 U.S.C. § 2713), US-headquartered cloud hyperscalers are legally compelled to provide foreign customer data stored in overseas data centers upon receipt of a valid US federal warrant, regardless of local domestic privacy laws.
 
@@ -40,7 +44,7 @@ Enterprises frequently confuse "local cloud region hosting" with sovereignty. Un
 
 ---
 
-# Chapter 2: Air-Gapped Bare-Metal Architecture
+## Chapter 2: Air-Gapped Bare-Metal Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
@@ -70,38 +74,38 @@ Enterprises frequently confuse "local cloud region hosting" with sovereignty. Un
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
-## 2.1 Hardware Infrastructure Specifications
+### 2.1 Hardware Infrastructure Specifications
 - **Compute Sizing:** Minimum 8-GPU nodes interconnected via high-bandwidth NVLink (900 GB/s to 1.8 TB/s bidirectional bandwidth) enabling tensor parallelism ($TP=8$) for large models (70B+ parameters) without network bottlenecks.
 - **Cluster Interconnect:** InfiniBand Quantum-2 or 400GbE RoCE v2 with lossless priority flow control (PFC), guaranteeing non-blocking all-reduce communication during distributed inference.
 - **Storage Subsystem:** All-flash NVMe parallel file storage delivering $> 100\text{ GB/s}$ sequential read throughput to load 140GB model checkpoints into GPU VRAM in under two seconds.
 
-## 2.2 Air-Gapped Software & Weight Synchronization
+### 2.2 Air-Gapped Software & Weight Synchronization
 - **One-Way Data Diodes:** Software patches, base container images, and open-weight checkpoints (`.safetensors`) pass into the air-gapped facility via physical hardware data diodes that enforce unidirectional optical data transmission.
 - **Cryptographic Checkpoint Attestation:** Prior to mounting weights into GPU memory, an automated security agent verifies the SHA-256 hash and cryptographic signature against an air-gapped root certificate authority.
 
 ---
 
-# Chapter 3: Edge & Tactical Deployments
+## Chapter 3: Edge & Tactical Deployments
 
 For tactical environments (defence field stations, naval vessels, offshore drilling platforms, hospital ICU units):
 
-## 3.1 Quantization & Footprint Optimization
+### 3.1 Quantization & Footprint Optimization
 Large 70B+ models are compressed to operate within low-power, ruggedized edge computing devices (e.g., NVIDIA Jetson AGX Orin, 64GB):
 - **AWQ (Activation-aware Weight Quantization):** Compresses weights to 4-bit integers while preserving critical outlier weights, maintaining $> 99\%$ of FP16 accuracy.
 - **GGUF / llama.cpp Runtimes:** CPU+GPU unified memory offloading enabling real-time local inference without server-grade GPU clusters.
 
-## 3.2 Offline Knowledge Synchronization
+### 3.2 Offline Knowledge Synchronization
 Tactical edge nodes maintain local vector indices. When occasional network connectivity is re-established (via satellite link), an asynchronous differential sync updates local embedding indices using minimal bandwidth.
 
 ---
 
-# Chapter 4: Sovereign Model Fine-Tuning & Adaptation
+## Chapter 4: Sovereign Model Fine-Tuning & Adaptation
 
-## 4.1 The Sovereign Fine-Tuning Imperative
+### 4.1 The Sovereign Fine-Tuning Imperative
 
 Enterprises deploying sovereign AI cannot rely on commercial API providers for model customisation. The fine-tuning pipeline itself must operate within sovereign boundaries.
 
-### Sovereign Fine-Tuning Architecture
+#### Sovereign Fine-Tuning Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
@@ -137,7 +141,7 @@ Enterprises deploying sovereign AI cannot rely on commercial API providers for m
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
-## 4.2 Open-Weight Model Selection for Sovereign Deployment
+### 4.2 Open-Weight Model Selection for Sovereign Deployment
 
 | Model Family | Parameters | Licence | Sovereign Suitability | Key Strength |
 |---|---|---|---|---|
@@ -150,7 +154,7 @@ Enterprises deploying sovereign AI cannot rely on commercial API providers for m
 
 **Licence Warning:** Sovereign deployments MUST verify that the chosen open-weight model licence permits: (a) commercial use, (b) modification and fine-tuning, (c) deployment without telemetry reporting, and (d) use in defence/government contexts. Some "open" licences restrict military use.
 
-## 4.3 Domestic Talent Requirements
+### 4.3 Domestic Talent Requirements
 
 Sovereign AI cannot depend on foreign technical personnel for sensitive model operations. Enterprises MUST develop domestic capability in:
 - Model fine-tuning and PEFT/QLoRA adaptation
@@ -161,9 +165,9 @@ Sovereign AI cannot depend on foreign technical personnel for sensitive model op
 
 ---
 
-# Chapter 5: Sovereign AI Cost Modeling
+## Chapter 5: Sovereign AI Cost Modeling
 
-## 5.1 Build vs. Buy Cost Comparison
+### 5.1 Build vs. Buy Cost Comparison
 
 | Cost Component | Commercial API (Cloud) | Sovereign Self-Hosted |
 |---|---|---|
@@ -175,7 +179,7 @@ Sovereign AI cannot depend on foreign technical personnel for sensitive model op
 | **Data sovereignty** | ⚠ Requires contractual guarantees | ✅ By architecture |
 | **Vendor dependency** | High | Zero |
 
-## 5.2 TCO Formula for Sovereign Deployment
+### 5.2 TCO Formula for Sovereign Deployment
 
 $$\text{Annual TCO} = C_{\text{HW}} / N_{\text{years}} + C_{\text{DC}} + C_{\text{Staff}} + C_{\text{Power}} + C_{\text{SW}} + C_{\text{Maint}}$$
 
@@ -199,21 +203,21 @@ Where:
 
 ---
 
-# Chapter 6: Global Sovereign AI Case Studies
+## Chapter 6: Global Sovereign AI Case Studies
 
-## 6.1 France — Mistral AI & National Sovereignty Strategy
+### 6.1 France — Mistral AI & National Sovereignty Strategy
 
 France has positioned Mistral AI as a strategic national asset. The French government's "AI Commission" recommended sovereign AI infrastructure funded through public-private partnerships. Mistral's Apache 2.0 licensing model explicitly enables sovereign deployment without licence restrictions. Several French government departments deploy Mistral models on sovereign infrastructure operated by OVHcloud (French-headquartered hyperscaler).
 
 **Enterprise lesson:** Sovereign AI is not only a defence/intelligence requirement — it is increasingly a commercial competitive advantage for enterprises in regulated industries.
 
-## 6.2 UAE — Falcon & Technology Innovation Institute
+### 6.2 UAE — Falcon & Technology Innovation Institute
 
 The UAE's Technology Innovation Institute developed the Falcon family of open-source LLMs, representing the first sovereign foundation model from a Gulf Cooperation Council nation. Falcon models are deployed across UAE government services and serve as the basis for Arabic-language AI applications.
 
 **Enterprise lesson:** Sovereign AI enables language and cultural customisation that commercial models from US/European providers cannot provide.
 
-## 6.3 India — IndiaAI Mission & Sarvam AI
+### 6.3 India — IndiaAI Mission & Sarvam AI
 
 India's IndiaAI Mission (₹10,000 crore allocation) includes sovereign AI compute infrastructure, Indian-language foundation models, and AI application development for government services. Sarvam AI's models are specifically trained on Indian languages and optimised for Indian enterprise contexts.
 
@@ -221,7 +225,7 @@ India's IndiaAI Mission (₹10,000 crore allocation) includes sovereign AI compu
 
 ---
 
-# Chapter 7: Sovereign AI Maturity Assessment
+## Chapter 7: Sovereign AI Maturity Assessment
 
 ```
 LEVEL 1 — DEPENDENT (Cloud API Only)
@@ -258,5 +262,4 @@ LEVEL 5 — SOVEREIGN + EDGE
 ---
 
 *AIEA Series Guide AIEA-G06: Sovereign AI Architecture. Document AIEA-G06, Version 1.0, 2026.*  
-*AI Enterprise Architecture Forum (AIEAF).*
-
+*AIEA Reference Library.*

@@ -164,13 +164,13 @@ USER PROMPT ──► [ INPUT GUARDRAIL ] ──► [ FOUNDATION MODEL ] ──�
 │   3. Out-of-Scope Blocker: Refuses queries asking for speculative returns   │
 │   4. Human-in-the-Loop: Wealth manager must review, edit, and sign memo     │
 ├─────────────────────────────────────────────────────────────────────────────┤
-│ • AUDIT RECORD: Full immutable log stored in WORM storage for 7 years       │
+│ • AUDIT RECORD: WORM retention per applicable policy (example: 7 years)     │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
-### Regulatory Compliance Highlights
-- **Compliance Certification**: SEC Rule 206(4)-1 compliant; FINRA advertising rules enforced via automated output classification.
-- **Operational Result**: Zero compliance infractions across 120,000 generated client portfolio summaries.
+### Illustrative Regulatory Alignment Targets
+- **Evidence Target**: Map applicable SEC and FINRA requirements to output classification, review, recordkeeping, and supervision controls; obtain qualified legal review.
+- **Operational Targets**: Measure prohibited-output rate, citation coverage, review exceptions, and incidents against defined thresholds. The scenario does not claim certification or zero incidents.
 
 ### Speaker Notes
 > "Let us examine our Wealth Management Copilot as a practical scenario. 

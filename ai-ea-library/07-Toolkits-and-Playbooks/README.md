@@ -1,4 +1,4 @@
-# AIEA® Practitioner Toolkits & Playbooks
+# AIEA Practitioner Toolkits & Playbooks
 ## Section 07 — Enterprise AI Architecture Execution Toolkits
 ### Version 1.0 | 2026
 
@@ -10,7 +10,7 @@
 
 ## About Section 07
 
-This directory contains the operational execution toolkits, diagnostic surveys, modeling catalogs, governance playbooks, and strategy execution worksheets that accompany the **AIEA Standard (05-Standards)** and **AIEA Series Guides (06-Series Guide)**.
+This directory contains the operational execution toolkits, diagnostic surveys, modeling catalogs, governance playbooks, and strategy execution worksheets that accompany the **AIEA Reference Framework (05-Standards)** and **AIEA Series Guides (06-Series Guide)**.
 
 Each toolkit is designed to be adapted, copied, and utilized directly by practicing architects, Chief AI Officers, governance professionals, and engineering pods.
 
@@ -35,7 +35,7 @@ Each toolkit is designed to be adapted, copied, and utilized directly by practic
 
 ---
 
-## How to Use These Toolkits with the AIEA Standard
+## How to Use These Toolkits with the AIEA Reference Framework
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
@@ -69,5 +69,5 @@ Each toolkit is designed to be adapted, copied, and utilized directly by practic
 
 ---
 
-*AIEA Practitioner Toolkits & Playbooks, Version 1.0. Copyright © 2026 AI Enterprise Architecture Forum.*  
-*Published under Open Framework Licence for organizational adoption.*
+*AIEA Practitioner Toolkits & Playbooks, Version 1.0. Copyright © 2026 AIEA Reference Library.*
+*Independent practitioner guidance; see the Legal Notice.*

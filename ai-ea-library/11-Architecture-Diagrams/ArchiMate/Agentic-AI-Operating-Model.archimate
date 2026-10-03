@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model xmlns="http://www.opengroup.org/xsd/archimate/3.0/"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.opengroup.org/xsd/archimate/3.0/ http://www.opengroup.org/xsd/archimate/3.1/archimate3_Model.xsd"
+       identifier="id-agentic-ai-operating-model">
+  <name xml:lang="en">Agentic AI Operating Model</name>
+  <documentation xml:lang="en">Reference operating model for enterprise agentic AI. Shows the four agent subsystems, orchestration, the governance and safety harness, and the human oversight loop (AIEA-101 Principles D3/D4, AIEA-G05).</documentation>
+
+  <elements>
+    <element identifier="el-actor-human" xsi:type="BusinessActor">
+      <name xml:lang="en">Human Owner / Approver</name>
+    </element>
+    <element identifier="el-svc-task" xsi:type="BusinessService">
+      <name xml:lang="en">Automated Business Task</name>
+    </element>
+
+    <element identifier="el-reason" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Reasoning Engine (Brain)</name>
+    </element>
+    <element identifier="el-memory" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Memory Fabric (working, episodic, procedural)</name>
+    </element>
+    <element identifier="el-tools" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Tool and Sensor Interfaces</name>
+    </element>
+    <element identifier="el-harness" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Governance and Safety Harness</name>
+    </element>
+    <element identifier="el-orch" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Agent Orchestrator</name>
+    </element>
+    <element identifier="el-gateway" xsi:type="ApplicationComponent">
+      <name xml:lang="en">AI Gateway</name>
+    </element>
+
+    <element identifier="el-perm" xsi:type="ApplicationFunction">
+      <name xml:lang="en">Tool Permission Matrix (Minimum Sufficient Agency)</name>
+    </element>
+    <element identifier="el-approval" xsi:type="ApplicationFunction">
+      <name xml:lang="en">Human-in-the-Loop Approval Gate (irreversible actions)</name>
+    </element>
+    <element identifier="el-circuit" xsi:type="ApplicationFunction">
+      <name xml:lang="en">Circuit Breaker and Escalation</name>
+    </element>
+
+    <element identifier="el-fmprovider" xsi:type="TechnologyService">
+      <name xml:lang="en">Foundation Model Provider</name>
+    </element>
+    <element identifier="el-vectordb" xsi:type="TechnologyService">
+      <name xml:lang="en">Vector Database</name>
+    </element>
+    <element identifier="el-enterprise-apis" xsi:type="TechnologyService">
+      <name xml:lang="en">Enterprise APIs and Systems</name>
+    </element>
+  </elements>
+
+  <relationships>
+    <relationship identifier="ar-1" source="el-orch" target="el-reason" xsi:type="Composition"/>
+    <relationship identifier="ar-2" source="el-orch" target="el-memory" xsi:type="Composition"/>
+    <relationship identifier="ar-3" source="el-orch" target="el-tools" xsi:type="Composition"/>
+    <relationship identifier="ar-4" source="el-orch" target="el-harness" xsi:type="Composition"/>
+    <relationship identifier="ar-5" source="el-harness" target="el-perm" xsi:type="Composition"/>
+    <relationship identifier="ar-6" source="el-harness" target="el-approval" xsi:type="Composition"/>
+    <relationship identifier="ar-7" source="el-harness" target="el-circuit" xsi:type="Composition"/>
+    <relationship identifier="ar-8" source="el-reason" target="el-gateway" xsi:type="Serving"/>
+    <relationship identifier="ar-9" source="el-gateway" target="el-fmprovider" xsi:type="Serving"/>
+    <relationship identifier="ar-10" source="el-memory" target="el-vectordb" xsi:type="Serving"/>
+    <relationship identifier="ar-11" source="el-tools" target="el-enterprise-apis" xsi:type="Serving"/>
+    <relationship identifier="ar-12" source="el-perm" target="el-tools" xsi:type="Access"/>
+    <relationship identifier="ar-13" source="el-approval" target="el-actor-human" xsi:type="Serving"/>
+    <relationship identifier="ar-14" source="el-orch" target="el-svc-task" xsi:type="Realization"/>
+    <relationship identifier="ar-15" source="el-actor-human" target="el-harness" xsi:type="Assignment"/>
+  </relationships>
+
+  <organizations>
+    <item>
+      <label xml:lang="en">Business Layer</label>
+      <item identifierRef="el-actor-human"/>
+      <item identifierRef="el-svc-task"/>
+    </item>
+    <item>
+      <label xml:lang="en">Agent Subsystems</label>
+      <item identifierRef="el-orch"/>
+      <item identifierRef="el-reason"/>
+      <item identifierRef="el-memory"/>
+      <item identifierRef="el-tools"/>
+      <item identifierRef="el-harness"/>
+      <item identifierRef="el-gateway"/>
+    </item>
+    <item>
+      <label xml:lang="en">Governance Functions</label>
+      <item identifierRef="el-perm"/>
+      <item identifierRef="el-approval"/>
+      <item identifierRef="el-circuit"/>
+    </item>
+    <item>
+      <label xml:lang="en">Technology Layer</label>
+      <item identifierRef="el-fmprovider"/>
+      <item identifierRef="el-vectordb"/>
+      <item identifierRef="el-enterprise-apis"/>
+    </item>
+  </organizations>
+</model>

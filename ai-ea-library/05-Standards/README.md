@@ -1,10 +1,12 @@
-# AIEA® Standard
-## AI Enterprise Architecture Standard
+# AIEA Reference Framework
+## Independent AI Enterprise Architecture Framework
 ### Version 1.0 | 2026
 
 ---
 
-> *"The AIEA Standard provides the foundational framework for designing, governing, and evolving AI-enabled enterprise architectures. It is the first comprehensive open standard to address Artificial Intelligence as a first-class architectural domain — not an afterthought to existing practice."*
+> *"The AIEA Reference Framework provides a structured approach for designing, governing, and evolving AI-enabled enterprise architectures. It treats Artificial Intelligence as a first-class architectural domain rather than an afterthought to existing practice."*
+
+> **Independent guidance:** This framework is independently developed practitioner guidance. It is not issued, endorsed, accredited, or certified by The Open Group, NIST, ISO, the European Union, the Government of India, or any other standards or regulatory body. See the [Legal Notice](../LEGAL-NOTICE.md).
 
 ---
 
@@ -12,20 +14,20 @@
 
 | Attribute | Value |
 |---|---|
-| **Standard Name** | AIEA® Standard — AI Enterprise Architecture Standard |
+| **Framework Name** | AIEA Reference Framework — AI Enterprise Architecture |
 | **Version** | 1.0 (2026) |
 | **Document Number** | AIEA-001 |
-| **Status** | Published Standard |
-| **Issuing Body** | AI Enterprise Architecture Forum (AIEAF) |
-| **Effective Date** | 1 January 2026 |
+| **Status** | Published independent reference framework |
+| **Publisher** | AIEA Reference Library |
+| **Edition Date** | 3 October 2026 |
 | **Supersedes** | Not applicable (inaugural edition) |
-| **Review Cycle** | Annual |
+| **Verification Cadence** | At least annual, and after material regulatory or technology change |
 
 ---
 
-## About the AIEA Standard
+## About the AIEA Reference Framework
 
-The AIEA Standard is an open, consensus-based framework for AI Enterprise Architecture. It provides a structured, repeatable methodology for enterprises to:
+The AIEA Reference Framework is an independently developed framework for AI Enterprise Architecture. It provides a structured, repeatable methodology for enterprises to:
 
 - Define, govern, and evolve AI-enabled architectures
 - Align AI investments with business strategy and measurable value
@@ -33,13 +35,13 @@ The AIEA Standard is an open, consensus-based framework for AI Enterprise Archit
 - Comply with global AI regulations (EU AI Act, NIST AI RMF, ISO/IEC 42001, DPDPA)
 - Build and sustain an organisational AI architecture capability
 
-The AIEA Standard is **complementary to TOGAF 10**. Organisations using TOGAF apply the AIEA Standard to extend their Architecture Development Method (ADM) for AI-specific concerns. Organisations without TOGAF apply the AIEA Standard as a standalone framework.
+The AIEA Reference Framework is **complementary to TOGAF 10**. Organisations using TOGAF apply the AIEA Reference Framework to extend their Architecture Development Method (ADM) for AI-specific concerns. Organisations without TOGAF apply the AIEA Reference Framework as a standalone framework.
 
 ---
 
 ## The AIEA Documentation Set
 
-The AIEA Standard comprises seven core specification documents supplemented by specialized Series Guides:
+The AIEA Reference Framework comprises seven core specification documents supplemented by specialized Series Guides:
 
 | Document | Number | What It Covers |
 |---|---|---|
@@ -50,6 +52,7 @@ The AIEA Standard comprises seven core specification documents supplemented by s
 | [**Part 5: AI Reference Models and Technical Standards**](AIEA-501-Reference-Models.md) | AIEA-501 | Reference architectures, technology models, integration patterns |
 | [**Part 6: Definitions and Glossary**](AIEA-601-Definitions-Glossary.md) | AIEA-601 | Complete terminology, abbreviations, and index |
 | [**Part 7: A Practitioner's Approach to Developing AI Enterprise Architecture**](AIEA-701-Practitioners-Guide.md) | AIEA-701 | Practical guide to developing AI architectures: budget cycles, 4 purposive levels, failure patterns, viewpoints, and contracts |
+| [**Alignment and Evidence Workbook**](AIEA-CW01-Compliance-Workbook.md) | AIEA-CW01 | Evidence checklists for NIST AI RMF, EU AI Act, ISO/IEC 42001, and the India DPDP framework |
 
 ### AIEA Series Guides (Sector & Practice Guidance)
 
@@ -81,7 +84,7 @@ The core standard is supported by operational practitioner toolkits and playbook
 
 ---
 
-## How to Use This Standard
+## How to Use This Framework
 
 | Your Situation | Recommended Entry Point |
 |---|---|
@@ -89,23 +92,23 @@ The core standard is supported by operational practitioner toolkits and playbook
 | Planning your first AI architecture programme | Part 2: AI-ADM Phases 0 and A |
 | Establishing AI governance | Part 4: Capability and Governance |
 | Evaluating AI vendor or technology choices | Part 5: Reference Models |
-| Seeking compliance with NIST AI RMF / EU AI Act | Part 4 + AI-ADM Phase F |
+| Preparing alignment evidence for NIST AI RMF / EU AI Act analysis | Part 4 + AI-ADM Phase F + AIEA-CW01 |
 | Building an AI Center of Excellence | Part 4: Chapter 2 |
-| Integrating with existing TOGAF programme | Part 1: Section 1.5 (TOGAF Integration) |
+| Integrating with existing TOGAF programme | Part 1: Section 1.6 (TOGAF Integration) |
 
 ---
 
 ## Relationship to Other Frameworks
 
-The AIEA Standard is designed to integrate with, not replace, existing frameworks:
+The AIEA Reference Framework is designed to map to, not replace, existing frameworks:
 
-| Framework | Relationship to AIEA Standard |
+| Framework | Relationship to AIEA |
 |---|---|
-| **TOGAF 10** | AIEA extends TOGAF ADM Phases A–H with AI-specific activities, artifacts, and governance |
-| **NIST AI RMF 1.0 + AI 600-1** | AIEA Phase F (AI Governance Architecture) implements NIST AI RMF as the operational methodology |
-| **ISO/IEC 42001:2023** | AIEA Part 4 Governance Framework satisfies ISO 42001 management system requirements |
-| **EU AI Act (2024)** | AIEA AI-ADM Phase F includes EU AI Act risk classification and compliance obligations |
-| **India DPDPA (2023)** | AIEA Part 4 includes DPDPA compliance track for Indian enterprises |
+| **TOGAF 10** | AIEA provides an independent AI-specific mapping to TOGAF ADM concepts; it does not modify or replace the TOGAF Standard |
+| **NIST AI RMF 1.0 + AI 600-1** | AIEA Phase F maps activities and evidence to the NIST AI RMF functions |
+| **ISO/IEC 42001:2023** | AIEA Part 4 can support alignment activities; certification requires organisation-specific implementation and independent audit |
+| **EU AI Act (2024)** | AIEA Phase F identifies architecture evidence relevant to selected EU AI Act obligations; applicability and commencement dates must be assessed separately |
+| **India DPDP Act (2023) and Rules (2025)** | AIEA Part 4 identifies privacy and governance evidence relevant to Indian enterprises; sector rules and phased commencement must be assessed |
 | **ArchiMate 3.2** | AIEA artifact diagrams are modelled using ArchiMate notation |
 | **COBIT 2019** | AIEA Governance Framework aligns with COBIT AI-related management objectives |
 | **IEEE 7000 Series** | AIEA Responsible AI principles align with IEEE ethical AI standards |
@@ -114,7 +117,7 @@ The AIEA Standard is designed to integrate with, not replace, existing framework
 
 ## Intended Audience
 
-The AIEA Standard is intended for:
+The AIEA Reference Framework is intended for:
 
 - **Chief AI Officers (CAIOs)** and AI programme leaders
 - **Enterprise Architects** responsible for AI architecture governance
@@ -137,7 +140,7 @@ Enterprise architecture practice exists to align technology investments with bus
 
 **Third, AI creates new categories of risk.** Hallucination, prompt injection, model drift, training data poisoning, and emergent agent behaviour are risks without precedent in traditional IT. Architecture standards must address them.
 
-The AIEA Standard provides the vocabulary, methodology, and governance structures to meet these three challenges across the enterprise AI lifecycle.
+The AIEA Reference Framework provides the vocabulary, methodology, and governance structures to meet these three challenges across the enterprise AI lifecycle.
 
 ---
 
@@ -157,4 +160,4 @@ Throughout this standard, the following conventions are used:
 
 ---
 
-*AIEA Standard, Version 1.0. Copyright © 2026 AI Enterprise Architecture Forum. This standard is published under an open licence for non-commercial organisational use. Commercial training and certification programmes require a separate licence agreement.*
+*AIEA Reference Framework, Version 1.0. Copyright © 2026 AIEA Reference Library. Independent practitioner guidance; no certification, regulatory approval, or third-party endorsement is implied. See the [Legal Notice](../LEGAL-NOTICE.md).*

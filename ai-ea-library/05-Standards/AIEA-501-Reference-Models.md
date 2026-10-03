@@ -1,12 +1,16 @@
-# AIEA® Standard
+# AIEA Reference Framework
 ## Part 5: AI Reference Models and Technical Standards
 ### Document Number: AIEA-501 | Version 1.0 | 2026
+
+> **Document type:** Normative Reference Framework with Informative Technology Examples
+> **Last verified:** October 2026
+> **Volatility notice:** Product, model, protocol, and security guidance examples must be verified against current primary documentation.
 
 ---
 
 ## Preface
 
-This document is Part 5 of the AIEA Standard — AI Enterprise Architecture Standard. It defines the technical reference architectures, integration patterns, security standards, and infrastructure blueprints required to implement production-grade AI systems across the enterprise.
+This document is Part 5 of the AIEA Reference Framework — AI Enterprise Architecture Standard. It defines the technical reference architectures, integration patterns, security standards, and infrastructure blueprints required to implement production-grade AI systems across the enterprise.
 
 While Part 2 (AI-ADM) describes the method for developing architectures and Part 4 defines organizational capability and governance, Part 5 provides the technical foundation: the structural patterns and technical standards that ensure interoperability, security, scalability, and maintainability.
 
@@ -16,9 +20,9 @@ This document MUST be read by Enterprise Architects, AI Solution Architects, Lea
 
 ---
 
-# Chapter 1: The AI Technical Reference Model (AI-TRM)
+## Chapter 1: The AI Technical Reference Model (AI-TRM)
 
-## 1.1 Model Overview
+### 1.1 Model Overview
 
 The AI Technical Reference Model (AI-TRM) provides a vendor-neutral, layered architecture model defining all technical capabilities required to operate an enterprise AI platform. 
 
@@ -55,46 +59,46 @@ Every enterprise AI deployment draws capabilities from these seven structural la
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
-## 1.2 Layer Definitions
+### 1.2 Layer Definitions
 
-### Layer 1: Accelerated Compute & Infrastructure
+#### Layer 1: Accelerated Compute & Infrastructure
 Provides the raw compute, memory, and high-speed networking fabrics required for AI workloads:
 - **Accelerated Compute:** NVIDIA Hopper/Blackwell clusters, AMD Instinct, Google Cloud TPUs, AWS Trainium/Inferentia.
 - **Interconnects & Networking:** NVLink, InfiniBand, RDMA over Converged Ethernet (RoCE) for distributed model training and tensor-parallel inference.
 - **Deployment Environments:** Multi-cloud Kubernetes (vLLM, TGI, Triton Inference Server), serverless container runtimes, or sovereign air-gapped bare-metal racks.
 
-### Layer 2: MLOps & Model Lifecycle Platform
+#### Layer 2: MLOps & Model Lifecycle Platform
 Manages the continuous lifecycle of data preparation, fine-tuning, automated testing, and model registry governance:
 - **Feature & Dataset Management:** Feature stores (Feast), data version control (DVC), synthetic data generators.
 - **Training & Adaptation Pipelines:** Distributed training orchestrators (Ray, PyTorch Distributed), parameter-efficient fine-tuning (PEFT/QLoRA) pipelines.
 - **Model Registry & Packaging:** Standardized artifact storage (MLflow, Hugging Face Enterprise, OCI-compliant container registries).
 
-### Layer 3: Foundation Model & Inference Layer
+#### Layer 3: Foundation Model & Inference Layer
 Hosts and executes model checkpoints across diverse modalities:
 - **Commercial Closed-Source GPAI:** Multi-modal foundation models consumed via managed APIs (OpenAI, Anthropic Claude, Google Gemini).
 - **Open-Weight Enterprise LLMs:** Self-hosted open weights (Llama 3+, Mistral Large, DeepSeek, Qwen) deployed within private enterprise VPCs.
 - **Domain & Small Language Models (SLMs):** Specialized low-latency task models (Phi-4, Gemma, embedding models, cross-encoders) optimized for edge or high-throughput batch inference.
 
-### Layer 4: Data, Retrieval & Semantic Fabric
+#### Layer 4: Data, Retrieval & Semantic Fabric
 Structures, indexes, and delivers enterprise context to models in real time:
 - **Vector Storage:** Distributed vector databases (Qdrant, Milvus, pgvector, Pinecone) supporting HNSW/IVF indexing and scalar filtering.
 - **Hybrid Retrieval Engines:** Combined dense vector embeddings and sparse lexical indices (BM25) with reciprocal rank fusion (RRF).
 - **Knowledge Graphs:** Enterprise graph databases (Neo4j, AWS Neptune) providing deterministic entity-relationship grounding.
 
-### Layer 5: AI Gateway & Runtime Middleware
+#### Layer 5: AI Gateway & Runtime Middleware
 The mandatory abstraction layer governing all model interactions (see Chapter 2).
 
-### Layer 6: Agentic Orchestration & Reasoning Fabric
+#### Layer 6: Agentic Orchestration & Reasoning Fabric
 Coordinates multi-step reasoning, tool execution, and dynamic context assembly (see Chapter 4).
 
-### Layer 7: Application & Experience Layer
+#### Layer 7: Application & Experience Layer
 The presentation and interaction surface through which human operators, external consumers, or enterprise software trigger AI workloads.
 
 ---
 
-# Chapter 2: AI Gateway & Model Abstraction Layer Standards
+## Chapter 2: AI Gateway & Model Abstraction Layer Standards
 
-## 2.1 The AI Gateway Imperative
+### 2.1 The AI Gateway Imperative
 
 Per **Principle D1 (Model Independence)**, enterprise applications MUST NOT couple directly to proprietary model provider APIs. An enterprise AI Gateway is a mandatory Solution Building Block (AI-SBB) positioned between all consuming applications and upstream model providers.
 
@@ -110,14 +114,14 @@ Per **Principle D1 (Model Independence)**, enterprise applications MUST NOT coup
                           └────────────────────────────────────────────────────────┘
 ```
 
-## 2.2 Mandatory Gateway Capabilities
+### 2.2 Mandatory Gateway Capabilities
 
 Every production AI Gateway deployment MUST implement the following seven technical capabilities:
 
-### 2.2.1 Protocol Normalization
+#### 2.2.1 Protocol Normalization
 The Gateway MUST expose a single, uniform API interface (standardizing on the OpenAI-compatible REST/SSE streaming format). Application developers write to one schema; the Gateway translates requests and responses to match provider-specific syntaxes (Anthropic, Bedrock, Vertex AI, local vLLM).
 
-### 2.2.2 Dynamic Routing & Tiered Fallback
+#### 2.2.2 Dynamic Routing & Tiered Fallback
 The Gateway MUST support automated, policy-based model routing:
 - **Primary / Secondary Failover:** If the primary provider returns HTTP 429 (Rate Limit), 500 (Server Error), or timeouts (> 3000ms), traffic immediately fails over to a secondary provider or internal open-weight instance.
 - **Cost-Optimized Routing:** Routing simple queries (classified by a lightweight classifier) to low-cost SLMs, reserving frontier models for complex multi-step reasoning.
@@ -132,12 +136,12 @@ Fallback Policy Example:
   Emergency: Static error response with deterministic fallback template
 ```
 
-### 2.2.3 Semantic Caching
+#### 2.2.3 Semantic Caching
 To reduce latency and eliminate redundant token costs:
 - The Gateway MUST implement semantic caching. Queries with a cosine similarity score exceeding the threshold ($\ge 0.96$) against previously answered queries are served directly from cache without calling upstream models.
 - Caching policies MUST support cache invalidation tags, time-to-live (TTL) configurations, and strict exclusion of prompts containing PII or sensitive session variables.
 
-### 2.2.4 FinOps Attribution Headers
+#### 2.2.4 FinOps Attribution Headers
 Every request passing through the Gateway MUST include standard enterprise attribution headers:
 
 | Header Name | Type | Description | Mandatory |
@@ -150,25 +154,25 @@ Every request passing through the Gateway MUST include standard enterprise attri
 
 The Gateway MUST log input tokens, output tokens, cached tokens, and calculated financial costs against these headers for automated monthly chargeback reporting.
 
-### 2.2.5 Hard Budget Caps and Quota Throttling
+#### 2.2.5 Hard Budget Caps and Quota Throttling
 The Gateway MUST enforce rate limits and hard spend caps:
 - Per-minute request limits (RPM) and token limits (TPM) per application.
 - Monthly financial caps per cost center. Upon reaching 80% of budget, automated alerts notify the System Owner. Upon reaching 100%, the Gateway throttles non-essential requests or downgrades models to low-cost alternatives.
 
-### 2.2.6 Real-Time Safety & Guardrail Interception
+#### 2.2.6 Real-Time Safety & Guardrail Interception
 All input prompts and model completions MUST pass through synchronous guardrail filters:
 - **Ingress Inspection:** Prompt injection detection, PII masking, toxic prompt rejection.
 - **Egress Inspection:** Sensitive data leakage prevention (credit cards, API keys, source code secrets), hallucination verification, toxicity filtering.
 
 ---
 
-# Chapter 3: Enterprise Retrieval-Augmented Generation (RAG) Reference Architecture
+## Chapter 3: Enterprise Retrieval-Augmented Generation (RAG) Reference Architecture
 
-## 3.1 Advanced Enterprise RAG Pipeline
+### 3.1 Advanced Enterprise RAG Pipeline
 
 Retrieval-Augmented Generation (RAG) is the primary pattern for grounding models in proprietary enterprise data. Naive RAG architectures (simple vector search + prompt stuffing) fail in production due to context loss, chunk fragmentation, and retrieval irrelevance.
 
-The AIEA Standard mandates the **Advanced Enterprise RAG Reference Architecture**:
+The AIEA Reference Framework mandates the **Advanced Enterprise RAG Reference Architecture**:
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────────────────────────┐
@@ -192,9 +196,9 @@ The AIEA Standard mandates the **Advanced Enterprise RAG Reference Architecture*
 └────────────────────────────────┴────────────────────────────────┴───────────────────────────────┘
 ```
 
-## 3.2 Ingestion & Indexing Standards
+### 3.2 Ingestion & Indexing Standards
 
-### 3.2.1 Chunking Strategy Selection Matrix
+#### 3.2.1 Chunking Strategy Selection Matrix
 Organizations MUST select chunking strategies based on document structure:
 
 | Document Type | Recommended Chunking Pattern | Chunk Size / Overlap | Key Consideration |
@@ -204,7 +208,7 @@ Organizations MUST select chunking strategies based on document structure:
 | **Tabular & Financial Reports** | Structured Table-to-Markdown / JSON | Entire table or row-group | Raw text chunking destroys row-column relationships. Tables must be converted to Markdown tables. |
 | **Unstructured Knowledge Articles**| Recursive Character Chunking | 512 tokens<br>Overlap: 64 tokens | General baseline for narrative text. |
 
-### 3.2.2 Metadata and Access Control List (ACL) Tagging
+#### 3.2.2 Metadata and Access Control List (ACL) Tagging
 Every indexed chunk MUST include structured metadata:
 - `document_id` and `chunk_id`
 - `source_uri` (with page number or deep-link anchor)
@@ -213,9 +217,9 @@ Every indexed chunk MUST include structured metadata:
 
 **Security Rule:** At query time, the retrieval engine MUST apply mandatory pre-filtering or post-filtering based on the authenticated user's security token. Users MUST NEVER receive retrieval context from documents they lack permission to read in the source system.
 
-## 3.3 Retrieval, Fusion & Re-Ranking
+### 3.3 Retrieval, Fusion & Re-Ranking
 
-### 3.3.1 Hybrid Search
+#### 3.3.1 Hybrid Search
 Enterprises MUST NOT rely solely on dense vector embeddings. Production RAG systems MUST implement Hybrid Search combining:
 1. **Dense Retrieval:** Captures semantic meaning, synonyms, and conceptual relationships (e.g., `text-embedding-3-large`, `bge-en-v1.5`).
 2. **Sparse Retrieval:** Captures exact keywords, part numbers, SKU codes, and acronyms (BM25 or SPLADE).
@@ -223,12 +227,12 @@ Enterprises MUST NOT rely solely on dense vector embeddings. Production RAG syst
    $$RRF\_Score(d) = \sum_{m \in M} \frac{1}{k + r_m(d)}$$
    where $k=60$ and $r_m(d)$ is the rank of document $d$ in retrieval method $m$.
 
-### 3.3.2 Cross-Encoder Re-Ranking
+#### 3.3.2 Cross-Encoder Re-Ranking
 Hybrid retrieval retrieves an initial candidate pool of 30–50 chunks. Passing all candidates to the LLM increases latency, cost, and hallucination risk ("Lost in the Middle" phenomenon).
 - A specialized cross-encoder re-ranking model (e.g., Cohere Rerank 3, BGE-Reranker-Large) MUST score query-document relevance pairs.
 - Only the top 5 to 8 re-ranked chunks are passed into the final context window.
 
-## 3.4 Automated Ground Truth Evaluation (RAG Triad)
+### 3.4 Automated Ground Truth Evaluation (RAG Triad)
 
 Every RAG system MUST be continuously evaluated against the **RAG Triad Metrics**:
 
@@ -240,13 +244,13 @@ Systems in High-Risk tiers MUST maintain automated daily synthetic evaluation ru
 
 ---
 
-# Chapter 4: Agentic AI & Multi-Agent Architecture
+## Chapter 4: Agentic AI & Multi-Agent Architecture
 
-## 4.1 Agentic Systems Definition
+### 4.1 Agentic Systems Definition
 
 An Agentic AI System is an autonomous or semi-autonomous software entity that utilizes foundation models to perceive its environment, formulate multi-step plans, execute actions via external tools and APIs, evaluate outcomes, and iterate toward a goal.
 
-## 4.2 Core Agent Execution Loop
+### 4.2 Core Agent Execution Loop
 
 All agent architectures MUST adhere to a structured execution loop that prevents unbounded recursion:
 
@@ -290,23 +294,23 @@ All agent architectures MUST adhere to a structured execution loop that prevents
 
 **Guardrail Requirement:** Every agent loop MUST implement a hard limit on execution steps (`max_iterations`, default: 10). When the counter expires without goal completion, the agent MUST gracefully suspend and escalate to a human operator.
 
-## 4.3 Multi-Agent Collaboration Topologies
+### 4.3 Multi-Agent Collaboration Topologies
 
 Complex enterprise workflows requiring multiple skill sets MUST NOT be handled by a single monolithic agent. They MUST employ one of three approved multi-agent topologies:
 
-### 4.3.1 Supervisor-Worker (Hierarchical Orchestrator)
+#### 4.3.1 Supervisor-Worker (Hierarchical Orchestrator)
 - **Structure:** A central Supervisor agent receives the user goal, decomposes it into sub-tasks, assigns tasks to specialized Worker agents (e.g., SQL Specialist, Document Researcher, Code Auditor), aggregates results, and synthesizes the final output.
 - **Suitability:** Most enterprise business processes (e.g., loan underwriting, claims processing, technical support escalation).
 
-### 4.3.2 Sequential Pipeline
+#### 4.3.2 Sequential Pipeline
 - **Structure:** Agents execute in a deterministic assembly-line sequence where the output of Agent $N$ becomes the input to Agent $N+1$.
 - **Suitability:** Document translation and verification, code generation and linting, compliance audit reports.
 
-### 4.3.3 Consensus / Critic Pattern
+#### 4.3.3 Consensus / Critic Pattern
 - **Structure:** A primary Generator agent produces a draft solution, which is independently evaluated by a Critic agent against security, business rules, or compliance criteria. If the Critic rejects, the Generator refines the draft until consensus is reached.
 - **Suitability:** High-stakes financial analysis, legal drafting, security vulnerability assessment.
 
-## 4.4 Tool Execution Sandboxing & Least-Privilege Access
+### 4.4 Tool Execution Sandboxing & Least-Privilege Access
 
 Per **Principle D3 (Minimum Sufficient Agency)**:
 1. **Container Isolation:** Agent code-execution tools (Python interpreters, shell environments) MUST run in ephemeral, air-gapped sandboxes (gVisor, Firecracker microVMs, or hardened Docker containers) with zero access to the host enterprise network.
@@ -315,9 +319,9 @@ Per **Principle D3 (Minimum Sufficient Agency)**:
 
 ---
 
-# Chapter 5: Machine Learning & Fine-Tuning Infrastructure
+## Chapter 5: Machine Learning & Fine-Tuning Infrastructure
 
-## 5.1 Model Adaptation Decision Framework
+### 5.1 Model Adaptation Decision Framework
 
 Enterprises MUST NOT jump to fine-tuning or training custom foundation models before evaluating lower-complexity alternatives. Architects MUST follow the hierarchical adaptation ladder:
 
@@ -338,7 +342,7 @@ LEVEL 4: CONTINUED PRE-TRAINING / FULL MODEL TRAINING
 • Extreme cost ($1M+), massive GPU clusters. Requires AIAB Board approval and dedicated business case.
 ```
 
-## 5.2 PEFT / QLoRA Pipeline Architecture
+### 5.2 PEFT / QLoRA Pipeline Architecture
 
 When fine-tuning is justified, enterprises SHOULD employ Parameter-Efficient Fine-Tuning (PEFT) utilizing Quantized Low-Rank Adaptation (QLoRA):
 
@@ -348,7 +352,7 @@ When fine-tuning is justified, enterprises SHOULD employ Parameter-Efficient Fin
 
 ---
 
-# Chapter 6: AI Security & Safety Technical Architecture
+## Chapter 6: AI Security & Safety Technical Architecture
 
 AI systems introduce novel attack vectors that bypass traditional network and application firewalls. Enterprise architectures MUST implement technical controls mapped to the **OWASP Top 10 for LLM Applications (2025/2026)**:
 
@@ -367,7 +371,7 @@ AI systems introduce novel attack vectors that bypass traditional network and ap
 
 ---
 
-# Chapter 7: Enterprise Integration Patterns for AI Systems
+## Chapter 7: Enterprise Integration Patterns for AI Systems
 
 Architects MUST select from four standard integration patterns based on workload latency, throughput, and statefulness requirements:
 
@@ -396,9 +400,9 @@ Agent <──[ Approval Callback ]───────────────�
 
 ---
 
-# Chapter 8: Technology Selection & Architecture Decision Framework
+## Chapter 8: Technology Selection & Architecture Decision Framework
 
-## 8.1 Build vs. Buy vs. Fine-Tune Decision Matrix
+### 8.1 Build vs. Buy vs. Fine-Tune Decision Matrix
 
 Architects MUST evaluate all candidate AI initiatives against the standardized AIEA Decision Matrix during AI-ADM Phase E:
 
@@ -429,7 +433,7 @@ Architects MUST evaluate all candidate AI initiatives against the standardized A
 └───────────────────┴───────────────────┴─────────────────────────────────┘
 ```
 
-## 8.2 Sovereign AI and Private Cloud Hosting Criteria
+### 8.2 Sovereign AI and Private Cloud Hosting Criteria
 
 An AI system MUST be deployed on self-hosted, private cloud, or on-premises infrastructure (rather than commercial multi-tenant SaaS) if ANY of the following conditions are met:
 
@@ -440,5 +444,5 @@ An AI system MUST be deployed on self-hosted, private cloud, or on-premises infr
 
 ---
 
-*AIEA Standard Part 5: AI Reference Models and Technical Standards. Document AIEA-501, Version 1.0, 2026.*  
+*AIEA Reference Framework Part 5: AI Reference Models and Technical Standards. Document AIEA-501, Version 1.0, 2026.*
 *Next: Part 6 — Definitions and Glossary (AIEA-601)*

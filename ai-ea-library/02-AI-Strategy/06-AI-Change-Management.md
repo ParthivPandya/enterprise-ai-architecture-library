@@ -6,9 +6,9 @@
 
 ---
 
-## The Statistic That Should Terrify Every Programme Leader
+## Why Transformation Statistics Need Care
 
-70% of digital transformation programmes fail due to people and organisational factors — not technology. That number comes from McKinsey and has been replicated across dozens of subsequent studies. AI deployments are more vulnerable than most digital transformations, for a reason that is specific to AI and not to ERP implementations or cloud migrations.
+The often-repeated claim that "70% of transformations fail" is useful as a warning but should not be treated as a universal measured constant. Different surveys define transformation and success differently, and the original evidence behind the headline is frequently indirect. A more defensible conclusion is that sustained transformation outcomes are difficult and that organisational factors—including leadership, workflow redesign, incentives, skills, and adoption—are repeatedly associated with success. AI deployments are especially exposed because they change not only processes but also how expertise and decision authority are perceived.
 
 AI doesn't just automate tasks. It changes *who is seen as expert.* A senior lawyer who has spent 30 years developing the judgment to review contracts now works alongside a system that reviews contracts in seconds. A radiologist who has spent a decade learning to read CT scans has their interpretations compared in real time to an AI that read ten million scans. The identity threat embedded in AI adoption is categorically different from "we're upgrading the CRM."
 
@@ -18,7 +18,7 @@ This is why the standard change management playbook — communicate, train, supp
 
 ## Understanding the Resistance You Will Actually Face
 
-ManpowerGroup's 2026 Workforce Survey found that AI usage in the workplace jumped 13% in 2025, while confidence in using AI tools dropped 18% over the same period. People are using the tools and feeling worse about their work. That gap is a change management crisis waiting to materialise.
+Workforce surveys consistently report a gap between rapidly increasing AI use and employee confidence. Treat any single percentage as survey-specific: capture the population, geography, question wording, and field date before using it in a business case. The architectural implication is stable even when the headline numbers change—adoption telemetry must be paired with trust, competence, and workflow-quality measures.
 
 Resistance to AI comes in three forms, and each requires a different response:
 
@@ -32,7 +32,7 @@ Senior professionals who have watched technology initiatives overpromise and und
 **What works:** Demonstrating the system working on their actual work, with their data, in their conditions. Let a skeptic run the AI against one of their real cases and see the output. One genuine demonstration beats a hundred slide decks.
 
 ### Form 2: Anxiety About Role Change
-40% of workers globally fear their jobs will be significantly automated within five years (PwC, 2024). The World Economic Forum projects 85 million job roles displaced by automation by 2025 while 97 million new roles emerge. The net number may be positive. The individual experience is often not.
+Worker concerns about automation remain material, but projections must be dated. The World Economic Forum's *Future of Jobs Report 2025* projects 170 million roles created and 92 million displaced by 2030, for a net increase of 78 million roles. The aggregate may be positive; the individual experience can still involve disruption, reskilling, or displacement.
 
 **What they're thinking:** "Is my job going away? If I'm good at this AI, am I training my replacement?"
 
@@ -174,4 +174,9 @@ That is harder to say than "AI will make everyone's jobs better and more meaning
 
 ---
 
-*Sources: McKinsey Digital Transformation failure rates 2023, PwC Global Workforce Survey 2024, ManpowerGroup Workforce AI confidence survey 2026, WEF Future of Jobs Report 2025, Opsio AI Change Management Guide 2026, Airiodion AI Change Management Practical Guide 2026, AI Assembly Lines Change Management Enterprise Framework 2026, Digital Applied AI Change Management Playbook 2026, Prosci AI Adoption Workshop North America 2025, HBR Guide to Building Change Resilience in the Age of AI July 2025.*
+## References
+
+1. World Economic Forum, [*Future of Jobs Report 2025*](https://www.weforum.org/publications/the-future-of-jobs-report-2025/), accessed 3 October 2026.
+2. McKinsey & Company, [*Unlocking success in digital transformations*](https://www.mckinsey.com/capabilities/people-and-organizational-performance/our-insights/unlocking-success-in-digital-transformations), survey-based evidence on sustained transformation outcomes.
+3. PwC, [*Global Workforce Hopes and Fears Survey*](https://www.pwc.com/gx/en/issues/workforce/hopes-and-fears.html), use the edition and field dates applicable to the quoted result.
+4. Prosci, [AI adoption and change-management resources](https://www.prosci.com/), practitioner guidance; not independent regulatory authority.

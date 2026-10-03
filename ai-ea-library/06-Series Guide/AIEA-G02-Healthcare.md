@@ -1,4 +1,4 @@
-# AIEA® Series Guide
+# AIEA Series Guide
 ## AIEA-G02: AI Architecture in Healthcare & Life Sciences
 ### Document Number: AIEA-G02 | Version 1.0 | 2026
 
@@ -6,7 +6,7 @@
 
 ## Preface
 
-This document is an official AIEA Series Guide supplementing the core AIEA Standard. It establishes the architectural blueprints, clinical safety frameworks, interoperability standards, and regulatory compliance patterns for Artificial Intelligence in healthcare provider, payer, biotechnology, and medical device organizations.
+This document is an independent AIEA Series Guide supplementing the core AIEA Reference Framework. It establishes the architectural blueprints, clinical safety frameworks, interoperability standards, and regulatory compliance patterns for Artificial Intelligence in healthcare provider, payer, biotechnology, and medical device organizations.
 
 In healthcare, AI systems operate in life-critical contexts where algorithmic error, model hallucination, or data bias can directly cause patient morbidity or mortality. This guide translates clinical guidelines and medical device regulations into rigorous enterprise architecture controls.
 
@@ -14,7 +14,7 @@ This guide MUST be read by Healthcare Enterprise Architects, Chief Medical Infor
 
 ---
 
-# Chapter 1: Healthcare Regulatory Landscape & SaMD Classification
+## Chapter 1: Healthcare Regulatory Landscape & SaMD Classification
 
 Clinical AI systems are governed by a convergence of healthcare data privacy laws and medical device safety regulations:
 
@@ -33,21 +33,21 @@ Clinical AI systems are governed by a convergence of healthcare data privacy law
 └────────────────────────────────┴────────────────────────────────────────┘
 ```
 
-## 1.1 US FDA Software as a Medical Device (SaMD) Framework
+### 1.1 US FDA Software as a Medical Device (SaMD) Framework
 
 AI systems intended to diagnose, treat, prevent, or cure human disease are classified as **Software as a Medical Device (SaMD)** under FDA oversight:
 
 - **Good Machine Learning Practice (GMLP):** The FDA, Health Canada, and UK MHRA enforce ten guiding principles for AI development, requiring rigorous data representative of the target patient population, clear separation between training and test sets, and human-in-the-loop clinical validation.
 - **Predetermined Change Control Plans (PCCP):** Machine learning models that dynamically adapt or update in production MUST have an FDA-approved PCCP defining the boundaries of permissible algorithmic modification before deployment.
 
-## 1.2 EU AI Act & Medical Device Regulation (MDR)
+### 1.2 EU AI Act & Medical Device Regulation (MDR)
 
 Under the EU AI Act, AI systems acting as safety components of medical devices or systems falling under EU MDR 2017/745 are classified as **High-Risk AI Systems (Annex III)**. Deploying organizations MUST maintain:
 - Auditable risk management files throughout the medical device lifecycle.
 - Post-Market Clinical Follow-up (PMCF) to monitor for algorithmic drift in clinical outcomes.
 - Mandatory adverse event reporting to national competent authorities within 72 hours of any severe medical incident.
 
-## 1.3 Indian Clinical Context: CDSCO & ABDM
+### 1.3 Indian Clinical Context: CDSCO & ABDM
 
 In India, healthcare AI architectures MUST comply with:
 - **Central Drugs Standard Control Organisation (CDSCO):** Regulatory approval for AI diagnostic software under the Medical Device Rules.
@@ -55,7 +55,7 @@ In India, healthcare AI architectures MUST comply with:
 
 ---
 
-# Chapter 2: Clinical AI Reference Architecture Patterns
+## Chapter 2: Clinical AI Reference Architecture Patterns
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
@@ -82,25 +82,25 @@ In India, healthcare AI architectures MUST comply with:
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
-## 2.1 Pattern 1: Governed Clinical Decision Support System (CDSS)
+### 2.1 Pattern 1: Governed Clinical Decision Support System (CDSS)
 
-### Architectural Specifications:
+#### Architectural Specifications:
 - **Non-Autonomous Principle (Principle D4):** Clinical decision systems MUST operate in an advisory capacity only. The architecture MUST prohibit direct automated order entry without an affirmative electronic signature from an authenticated, licensed physician.
 - **Deterministic Grounding:** Recommendations MUST be strictly grounded in verified clinical guidelines (e.g., UpToDate, PubMed Central, NICE Guidelines) via hybrid retrieval.
 - **Contraindication Verification:** Prior to presenting any therapeutic recommendation, a deterministic rules engine validates the patient's active medication list against a drug-drug interaction database (RxNorm) to prevent lethal contraindications.
 
-## 2.2 Pattern 2: Medical Imaging Inference & PACS Integration
+### 2.2 Pattern 2: Medical Imaging Inference & PACS Integration
 
-### Architectural Specifications:
+#### Architectural Specifications:
 - **DICOM Protocol Standards:** Medical imaging AI (radiology, pathology, ophthalmology) MUST ingest and emit images conforming to the DICOM 3.0 standard.
 - **PACS Interoperability:** Model inference runs as an asynchronous microservice connected to the enterprise Picture Archiving and Communication System (PACS) via C-STORE and DICOMweb (WADO-RS / STOW-RS).
 - **Secondary Review Architecture:** Algorithmic heatmaps (Grad-CAM overlays) are displayed as secondary annotations in the radiologist's viewer; original raw DICOM pixel data is never overwritten.
 
 ---
 
-# Chapter 3: Health Data Architecture & Interoperability Standards
+## Chapter 3: Health Data Architecture & Interoperability Standards
 
-## 3.1 HL7 FHIR Integration Architecture
+### 3.1 HL7 FHIR Integration Architecture
 
 Healthcare AI architectures MUST NOT ingest raw proprietary relational database dumps. Systems MUST communicate via **HL7 FHIR Release 4 / Release 5**:
 
@@ -126,7 +126,7 @@ Healthcare AI architectures MUST NOT ingest raw proprietary relational database 
 }
 ```
 
-## 3.2 Protected Health Information (PHI) De-Identification
+### 3.2 Protected Health Information (PHI) De-Identification
 
 All patient data routed to foundation models MUST undergo automated de-identification complying with HIPAA Safe Harbor (redacting all 18 specified identifiers) or Expert Determination statistical validation:
 - Named Entity Recognition (NER) models trained on clinical corpora (BioBERT/ClinicalBERT) redact patient names, dates, phone numbers, and institutional affiliations in memory before token dispatch.
@@ -134,7 +134,7 @@ All patient data routed to foundation models MUST undergo automated de-identific
 
 ---
 
-# Chapter 4: Adverse Event Reporting & Clinical Kill-Switch
+## Chapter 4: Adverse Event Reporting & Clinical Kill-Switch
 
 Any healthcare AI deployment exhibiting diagnostic discrepancies exceeding clinical variance thresholds MUST execute the **Clinical Incident Protocol**:
 
@@ -145,4 +145,4 @@ Any healthcare AI deployment exhibiting diagnostic discrepancies exceeding clini
 ---
 
 *AIEA Series Guide AIEA-G02: AI Architecture in Healthcare & Life Sciences. Document AIEA-G02, Version 1.0, 2026.*  
-*AI Enterprise Architecture Forum (AIEAF).*
+*AIEA Reference Library.*

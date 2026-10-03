@@ -269,4 +269,4 @@ ratios        flags ESG        filings,        positioning
 
 ---
 
-*Sources: Gartner Agentic AI Predictions 2025, Andrew Ng Agentic AI productivity statement 2024, McKinsey Agentic AI economic impact estimate, LangGraph production documentation, Microsoft AutoGen 0.4 architecture, CrewAI documentation, Microsoft Semantic Kernel enterprise guide, DataCamp Multi-Agent System Design 2026, Promptfoo Agentic AI Security Guide 2026, Composio Agentic AI Framework Comparison 2026, AIMultiple Enterprise Agent Orchestration 2026.*
+*Source leads (not publication-grade citations; verify exact title, edition, URL, page/section, methodology, and date under the [Editorial and Citation Policy](../EDITORIAL-AND-CITATION-POLICY.md)): Gartner Agentic AI Predictions 2025, Andrew Ng Agentic AI productivity statement 2024, McKinsey Agentic AI economic impact estimate, LangGraph production documentation, Microsoft AutoGen 0.4 architecture, CrewAI documentation, Microsoft Semantic Kernel enterprise guide, DataCamp Multi-Agent System Design 2026, Promptfoo Agentic AI Security Guide 2026, Composio Agentic AI Framework Comparison 2026, AIMultiple Enterprise Agent Orchestration 2026.*

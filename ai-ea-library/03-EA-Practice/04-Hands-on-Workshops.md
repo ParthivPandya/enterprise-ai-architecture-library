@@ -431,4 +431,4 @@ Cards are read aloud, photographed, and distributed. The follow-up review is sch
 
 ---
 
-*Sources: Design Sprint Academy Enterprise Design Sprint 3.0 Guide 2025, Design Sprint Academy Best AI Workshops Buyer's Guide 2026, Practical DevSecOps AI Red Teaming Guide 2026, PromptMetrics AI FinOps Attribution Guide, Worqlo AI FinOps Cost Attribution Framework, Stanford Digital Economy Lab Enterprise AI Playbook 2026, Forrester EA Maturity Assessment guidance 2025.*
+*Source leads (not publication-grade citations; verify exact title, edition, URL, page/section, methodology, and date under the [Editorial and Citation Policy](../EDITORIAL-AND-CITATION-POLICY.md)): Design Sprint Academy Enterprise Design Sprint 3.0 Guide 2025, Design Sprint Academy Best AI Workshops Buyer's Guide 2026, Practical DevSecOps AI Red Teaming Guide 2026, PromptMetrics AI FinOps Attribution Guide, Worqlo AI FinOps Cost Attribution Framework, Stanford Digital Economy Lab Enterprise AI Playbook 2026, Forrester EA Maturity Assessment guidance 2025.*

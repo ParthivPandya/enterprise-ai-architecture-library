@@ -250,4 +250,4 @@ The organisations that build the most trustworthy AI programmes are the ones tha
 
 ---
 
-*Sources: McKinsey State of AI 2025 scaling analysis, IDC AI CoE Research 2025, Tredence AI CoE Blueprint 2025, Xebia AI CoE Microsoft Playbook 2025, Layer3 Labs AI CoE Structure Guide 2026, Appinventiv AI CoE Framework 2026, AI Assembly Lines AI CoE Staffing Guide 2026, Karunjay Medium AI CoE 6-month rollout case study, Gartner AI CoE Operating Model research 2025.*
+*Source leads (not publication-grade citations; verify exact title, edition, URL, page/section, methodology, and date under the [Editorial and Citation Policy](../EDITORIAL-AND-CITATION-POLICY.md)): McKinsey State of AI 2025 scaling analysis, IDC AI CoE Research 2025, Tredence AI CoE Blueprint 2025, Xebia AI CoE Microsoft Playbook 2025, Layer3 Labs AI CoE Structure Guide 2026, Appinventiv AI CoE Framework 2026, AI Assembly Lines AI CoE Staffing Guide 2026, Karunjay Medium AI CoE 6-month rollout case study, Gartner AI CoE Operating Model research 2025.*

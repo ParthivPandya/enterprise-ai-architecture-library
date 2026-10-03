@@ -1,5 +1,9 @@
 # Industry Playbooks: AI in BFSI, Healthcare, and Manufacturing
 
+> **Document type:** Informative Industry Guide
+> **Last verified:** October 2026
+> **Evidence note:** Named-company outcomes and regulatory statements require direct source verification. Distinguish binding requirements from regulator guidance and architecture recommendations.
+
 > *Every industry thinks its AI challenges are unique. Some of them are right. This chapter covers the three sectors that are furthest along in enterprise AI deployment — with the honest account of what works, what doesn't, and what the regulatory environment actually requires.*
 
 > **Related:** [../02-AI-Strategy/01-Business-Value.md](01-Business-Value.md) | [../02-AI-Strategy/04-Indian-Enterprise-Context.md](04-Indian-Enterprise-Context.md) | [../01-AI-Governance/03-Responsible-AI.md](../01-AI-Governance/03-Responsible-AI.md)
@@ -210,4 +214,4 @@ After reviewing BFSI, Healthcare, and Manufacturing, three patterns hold across 
 
 ---
 
-*Sources: EICTA Consortium AI in Fintech 2026, IJRASET AI in Indian Banking Review, HDFC Bank and SBI public disclosures, InfluxMD Healthcare AI evidence review 2026, DeepMind diabetic retinopathy papers, CDSCO Medical Device Rules 2017, NHA ABDM programme documentation, Deloitte Manufacturing AI unplanned downtime study, Bharat Forge and Tata Steel public AI case studies, Siemens supply chain AI reporting, Stanford HAI AI Index 2025.*
+*Source leads (not publication-grade citations; verify exact title, edition, URL, page/section, methodology, and date under the [Editorial and Citation Policy](../EDITORIAL-AND-CITATION-POLICY.md)): EICTA Consortium AI in Fintech 2026, IJRASET AI in Indian Banking Review, HDFC Bank and SBI public disclosures, InfluxMD Healthcare AI evidence review 2026, DeepMind diabetic retinopathy papers, CDSCO Medical Device Rules 2017, NHA ABDM programme documentation, Deloitte Manufacturing AI unplanned downtime study, Bharat Forge and Tata Steel public AI case studies, Siemens supply chain AI reporting, Stanford HAI AI Index 2025.*

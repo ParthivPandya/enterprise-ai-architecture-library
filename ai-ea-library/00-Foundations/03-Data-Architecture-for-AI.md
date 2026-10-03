@@ -278,4 +278,4 @@ A document summarisation AI produces a summary. The user edits parts of it befor
 
 ---
 
-*Sources: Gartner Data Quality Cost Report 2025, Databricks Lakehouse Architecture Guide 2026, Feast Feature Store documentation, Weaviate and Qdrant technical documentation, Pinecone Enterprise RAG Guide, AWS SageMaker Feature Store documentation, Great Expectations data quality framework, dbt Data Contracts guide, Atlan Data Lineage for AI 2025, Analyticsvidhya RAG Architecture Patterns 2026, NIST AI RMF MAP function data requirements.*
+*Source leads (not publication-grade citations; verify exact title, edition, URL, page/section, methodology, and date under the [Editorial and Citation Policy](../EDITORIAL-AND-CITATION-POLICY.md)): Gartner Data Quality Cost Report 2025, Databricks Lakehouse Architecture Guide 2026, Feast Feature Store documentation, Weaviate and Qdrant technical documentation, Pinecone Enterprise RAG Guide, AWS SageMaker Feature Store documentation, Great Expectations data quality framework, dbt Data Contracts guide, Atlan Data Lineage for AI 2025, Analyticsvidhya RAG Architecture Patterns 2026, NIST AI RMF MAP function data requirements.*

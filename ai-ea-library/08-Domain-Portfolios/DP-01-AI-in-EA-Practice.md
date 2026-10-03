@@ -147,4 +147,4 @@ To ensure that DP-01 provides comprehensive coverage without operational gaps, w
 4. **Present the Technical Strategy**: Present **[AIEA-TK-11: Slide Deck](../07-Toolkits-and-Playbooks/11-AI-in-EA-Practice-Slide-Deck.md)** to the Architecture Review Board.
 
 ---
-*AIEA® Domain Portfolios. Published under Open Framework Licence for organizational adoption.*
+*AIEA Domain Portfolios. Independent practitioner guidance; see the Legal Notice.*

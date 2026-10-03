@@ -1,5 +1,8 @@
 # AI Observability and Monitoring: Keeping AI Systems Reliable in Production
 
+> **Document type:** Informative Guide
+> **Threshold note:** Alert and service-level thresholds are examples. Calibrate them from system risk, user impact, baseline distributions, contracts, and operational capacity.
+
 > *Deploying an AI system without observability is like flying without instruments — you know you're in the air, but you don't know your altitude, speed, or heading until you crash. This chapter builds the instrumentation that keeps AI systems healthy, accurate, and accountable in production.*
 
 > **Related:** [05-LLMOps.md](05-LLMOps.md) | [09-AI-Testing-and-Evaluation.md](09-AI-Testing-and-Evaluation.md) | [../01-AI-Governance/01-FinOps.md](../01-AI-Governance/01-FinOps.md)
@@ -265,4 +268,4 @@ AI systems require on-call engineers who understand both software operations AND
 
 ---
 
-*Sources: OpenTelemetry AI Semantic Conventions 2025, Langfuse documentation 2026, Arize AI LLM Observability Guide 2026, Google SRE Handbook (adapted for AI), Datadog AI Monitoring documentation, Helicone cost attribution guide 2026, NIST AI RMF MEASURE function requirements.*
+*Source leads (not publication-grade citations; verify exact title, edition, URL, page/section, methodology, and date under the [Editorial and Citation Policy](../EDITORIAL-AND-CITATION-POLICY.md)): OpenTelemetry AI Semantic Conventions 2025, Langfuse documentation 2026, Arize AI LLM Observability Guide 2026, Google SRE Handbook (adapted for AI), Datadog AI Monitoring documentation, Helicone cost attribution guide 2026, NIST AI RMF MEASURE function requirements.*

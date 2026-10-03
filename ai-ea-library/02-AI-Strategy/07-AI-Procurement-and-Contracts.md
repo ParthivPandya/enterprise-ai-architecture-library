@@ -1,5 +1,10 @@
 # AI Procurement and Contracts: What Every Enterprise Buyer Must Know
 
+> **Document type:** Informative Guide
+> **Primary audience:** Enterprise Architects, Procurement, Legal, Security, and Vendor Management
+> **Last verified:** October 2026
+> **Authority:** Architecture and procurement guidance, not legal advice. Verify vendor terms, regions, and applicable law before contracting.
+
 > *You've evaluated the technology. You've run the pilot. The vendor has been enthusiastic, the demo was excellent, and now someone sends you a 47-page Master Service Agreement. This chapter is about what happens next — and why getting it wrong is expensive in ways that won't show up for eighteen months.*
 
 > **Related:** [03-Strategic-Runbooks.md](../03-EA-Practice/03-Strategic-Runbooks.md) | [01-FinOps.md](../01-AI-Governance/01-FinOps.md) | [04-Indian-Enterprise-Context.md](04-Indian-Enterprise-Context.md)
@@ -202,4 +207,4 @@ Beyond the global hyperscalers, several vendors are specifically relevant for In
 
 ---
 
-*Sources: Thomson Reuters Legal Guide to AI Contracts 2025, Forrester AI Vendor Evaluation Guidance 2025, NASSCOM AI Contract Best Practices for Indian Enterprises 2025, Clifford Chance AI Contracting Guide 2025, New York Times v. OpenAI lawsuit filings, Microsoft Copilot Copyright Commitment documentation, AWS AI Service Terms updated 2025, IAPP AI Contract Guidance 2026, Sarvam AI and Krutrim product documentation 2026.*
+*Source leads (not publication-grade citations; verify exact title, edition, URL, page/section, methodology, and date under the [Editorial and Citation Policy](../EDITORIAL-AND-CITATION-POLICY.md)): Thomson Reuters Legal Guide to AI Contracts 2025, Forrester AI Vendor Evaluation Guidance 2025, NASSCOM AI Contract Best Practices for Indian Enterprises 2025, Clifford Chance AI Contracting Guide 2025, New York Times v. OpenAI lawsuit filings, Microsoft Copilot Copyright Commitment documentation, AWS AI Service Terms updated 2025, IAPP AI Contract Guidance 2026, Sarvam AI and Krutrim product documentation 2026.*

@@ -1,5 +1,10 @@
 # Sovereign AI and Geopolitics: The Dimension Enterprises Can't Ignore
 
+> **Document type:** Informative Foresight Guide
+> **Primary audience:** Enterprise Architects, Policy, Risk, and Technology Leaders
+> **Last verified:** October 2026
+> **Evidence note:** Distinguish binding law from policy direction, strategic scenarios, and author recommendations.
+
 > *AI is not just a technology story. It's a geopolitical story. The decisions being made right now about who builds AI, who controls AI infrastructure, and who sets AI standards will shape the competitive and regulatory environment for enterprise AI for decades. Enterprise architects who understand this context will make better technology decisions. Those who don't will find themselves surprised by constraints they could have anticipated.*
 
 > **Related:** [../02-AI-Strategy/04-Indian-Enterprise-Context.md](../02-AI-Strategy/04-Indian-Enterprise-Context.md) | [../00-Foundations/02-Foundation-Model-Landscape.md](../00-Foundations/02-Foundation-Model-Landscape.md) | [../03-EA-Practice/08-AI-Reference-Architectures.md](../03-EA-Practice/08-AI-Reference-Architectures.md)
@@ -113,4 +118,4 @@ India's articulation of its AI approach — innovation-first, light-touch regula
 
 ---
 
-*Sources: US National Security Council AI Executive Order 14110 2023, US Department of Commerce AI chip export controls 2023/2024, EU AI Act text 2024, China CAC Generative AI Regulations 2023, MeitY AI Governance Guidelines 2025, IndiaAI Mission documentation, UAE G42 and TII reports, French Mistral AI and national AI strategy, UNESCO Global AI Governance Report 2025, OECD AI Policy Observatory, WEF Global AI Governance Initiative 2026, Atlantic Council AI Governance and Geopolitics 2025.*
+*Source leads (not publication-grade citations; verify exact title, edition, URL, page/section, methodology, and date under the [Editorial and Citation Policy](../EDITORIAL-AND-CITATION-POLICY.md)): US National Security Council AI Executive Order 14110 2023, US Department of Commerce AI chip export controls 2023/2024, EU AI Act text 2024, China CAC Generative AI Regulations 2023, MeitY AI Governance Guidelines 2025, IndiaAI Mission documentation, UAE G42 and TII reports, French Mistral AI and national AI strategy, UNESCO Global AI Governance Report 2025, OECD AI Policy Observatory, WEF Global AI Governance Initiative 2026, Atlantic Council AI Governance and Geopolitics 2025.*

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model xmlns="http://www.opengroup.org/xsd/archimate/3.0/"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.opengroup.org/xsd/archimate/3.0/ http://www.opengroup.org/xsd/archimate/3.1/archimate3_Model.xsd"
+       identifier="id-ea-ai-ref-arch">
+  <name xml:lang="en">EA-AI Reference Architecture</name>
+  <documentation xml:lang="en">Enterprise AI reference architecture for the AI Enterprise Architecture Library. Business, Application, and Technology layers with the AI Gateway as the single interface between applications and model providers (AIEA-101 Principle D1).</documentation>
+
+  <elements>
+    <!-- Business / Strategy layer -->
+    <element identifier="el-biz-strategy" xsi:type="BusinessFunction">
+      <name xml:lang="en">AI Strategy and Value Management</name>
+    </element>
+    <element identifier="el-biz-governance" xsi:type="BusinessFunction">
+      <name xml:lang="en">AI Governance and Compliance</name>
+    </element>
+    <element identifier="el-biz-coe" xsi:type="BusinessRole">
+      <name xml:lang="en">AI Center of Excellence</name>
+    </element>
+    <element identifier="el-biz-usecase" xsi:type="BusinessService">
+      <name xml:lang="en">AI-Enabled Business Service</name>
+    </element>
+
+    <!-- Application layer -->
+    <element identifier="el-app-gateway" xsi:type="ApplicationComponent">
+      <name xml:lang="en">AI Gateway (model abstraction, cost attribution, logging)</name>
+    </element>
+    <element identifier="el-app-orchestrator" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Agent Orchestrator</name>
+    </element>
+    <element identifier="el-app-rag" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Retrieval-Augmented Generation Service</name>
+    </element>
+    <element identifier="el-app-modelserving" xsi:type="ApplicationComponent">
+      <name xml:lang="en">Model Serving / Inference</name>
+    </element>
+    <element identifier="el-app-observability" xsi:type="ApplicationComponent">
+      <name xml:lang="en">AI Observability and Monitoring</name>
+    </element>
+    <element identifier="el-app-registry" xsi:type="ApplicationComponent">
+      <name xml:lang="en">AI System Registry</name>
+    </element>
+
+    <!-- Technology layer -->
+    <element identifier="el-tech-vectordb" xsi:type="TechnologyService">
+      <name xml:lang="en">Vector Database</name>
+    </element>
+    <element identifier="el-tech-fmprovider" xsi:type="TechnologyService">
+      <name xml:lang="en">Foundation Model Provider</name>
+    </element>
+    <element identifier="el-tech-compute" xsi:type="Node">
+      <name xml:lang="en">AI Compute Platform (GPU/CPU)</name>
+    </element>
+    <element identifier="el-tech-datalake" xsi:type="TechnologyService">
+      <name xml:lang="en">Enterprise Data Platform</name>
+    </element>
+  </elements>
+
+  <relationships>
+    <relationship identifier="rel-1" source="el-biz-coe" target="el-biz-governance" xsi:type="Assignment"/>
+    <relationship identifier="rel-2" source="el-biz-coe" target="el-biz-strategy" xsi:type="Assignment"/>
+    <relationship identifier="rel-3" source="el-app-gateway" target="el-biz-usecase" xsi:type="Serving"/>
+    <relationship identifier="rel-4" source="el-app-orchestrator" target="el-app-gateway" xsi:type="Serving"/>
+    <relationship identifier="rel-5" source="el-app-rag" target="el-app-gateway" xsi:type="Serving"/>
+    <relationship identifier="rel-6" source="el-app-gateway" target="el-app-modelserving" xsi:type="Serving"/>
+    <relationship identifier="rel-7" source="el-app-gateway" target="el-tech-fmprovider" xsi:type="Serving"/>
+    <relationship identifier="rel-8" source="el-app-rag" target="el-tech-vectordb" xsi:type="Serving"/>
+    <relationship identifier="rel-9" source="el-app-modelserving" target="el-tech-compute" xsi:type="Serving"/>
+    <relationship identifier="rel-10" source="el-app-observability" target="el-app-gateway" xsi:type="Serving"/>
+    <relationship identifier="rel-11" source="el-app-registry" target="el-biz-governance" xsi:type="Serving"/>
+    <relationship identifier="rel-12" source="el-tech-datalake" target="el-app-rag" xsi:type="Serving"/>
+    <relationship identifier="rel-13" source="el-biz-governance" target="el-app-registry" xsi:type="Access"/>
+  </relationships>
+
+  <organizations>
+    <item>
+      <label xml:lang="en">Business Layer</label>
+      <item identifierRef="el-biz-strategy"/>
+      <item identifierRef="el-biz-governance"/>
+      <item identifierRef="el-biz-coe"/>
+      <item identifierRef="el-biz-usecase"/>
+    </item>
+    <item>
+      <label xml:lang="en">Application Layer</label>
+      <item identifierRef="el-app-gateway"/>
+      <item identifierRef="el-app-orchestrator"/>
+      <item identifierRef="el-app-rag"/>
+      <item identifierRef="el-app-modelserving"/>
+      <item identifierRef="el-app-observability"/>
+      <item identifierRef="el-app-registry"/>
+    </item>
+    <item>
+      <label xml:lang="en">Technology Layer</label>
+      <item identifierRef="el-tech-vectordb"/>
+      <item identifierRef="el-tech-fmprovider"/>
+      <item identifierRef="el-tech-compute"/>
+      <item identifierRef="el-tech-datalake"/>
+    </item>
+  </organizations>
+</model>

@@ -68,8 +68,10 @@ To understand how strategic architecture overcomes regulatory and scale challeng
 ### The Strategic Imperative
 BharatHealth required an AI clinical intake assistant to transcribe patient consultations across six Indic languages (Hindi, Tamil, Telugu, Bengali, Marathi, and English), extract symptoms, and integrate summaries into the national Ayushman Bharat Digital Mission (ABDM) electronic health records.
 
+> **Illustrative worked example:** The following scenario and figures demonstrate how to apply the architecture method. They are not reported outcomes from a named organisation and must not be used as external benchmarks.
+
 ### The Architectural Challenges
-- **Data Sovereignty**: Under the Digital Personal Data Protection (DPDP) Act 2023, patient health data cannot be processed on cloud infrastructure located outside the territory of India.
+- **Data Sovereignty**: The DPDP Act does not impose blanket localisation of patient data. The architecture nevertheless requires India-region processing because of the organisation's risk policy, contractual commitments, and any applicable health-sector or government requirements.
 - **Multilingual Latency**: Commercial global frontier models exhibited poor accuracy and excessive token generation latencies on Indic scripts.
 - **Connectivity Constraints**: Rural clinics experienced intermittent internet bandwidth.
 
@@ -79,10 +81,10 @@ The Enterprise Architecture team designed a **Sovereign Hybrid AI Platform**:
 2. **Edge Hybrid Inference**: Standard consultation speech recognition was deployed on local edge appliances in clinics, caching audio transcripts locally and synchronizing during active connectivity.
 3. **Unified Consent Gateway**: Integrated consent verification directly into the Ayushman Bharat Health Account (ABHA) API before any clinical notes were processed.
 
-### Outcomes & Business Impact
-- **Consultation Velocity**: Physician documentation time reduced from 14 minutes to **3 minutes per patient**.
-- **Data Sovereignty**: 100% of patient data remained on Indian soil, fully compliant with DPDP mandates.
-- **Cost Efficiency**: Inference costs per consultation totaled **₹0.42 ($0.005)**, compared to an estimated ₹14.50 using global proprietary APIs—a **97% cost reduction**.
+### Illustrative Acceptance Targets
+- **Consultation Velocity**: Validate whether documentation time can be reduced from a measured baseline of 14 minutes towards a target of 3 minutes per patient.
+- **Data Location**: Verify through architecture evidence that all in-scope patient data remains in approved India-region environments where organisational or sector requirements demand it.
+- **Cost Efficiency**: Measure cost per consultation against the approved baseline; example values such as ₹0.42 versus ₹14.50 are modelling inputs, not claimed results.
 
 ---
 

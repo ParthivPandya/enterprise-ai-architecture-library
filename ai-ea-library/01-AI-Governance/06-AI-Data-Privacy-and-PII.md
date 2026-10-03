@@ -40,11 +40,11 @@ AI systems introduce privacy risks that traditional data protection controls wer
 
 ## Regulatory Landscape for AI Privacy
 
-### India — DPDPA 2023
+### India — DPDP Act 2023 and Rules 2025
 
-The Digital Personal Data Protection Act (DPDPA) is India's primary data protection law. Key implications for AI:
+The Digital Personal Data Protection Act is India's primary cross-sector digital personal-data law. The Rules and Act have phased commencement; verify which provision is in force before describing it as a current obligation. Key architecture implications include:
 
-**Consent and purpose limitation (Section 6):** Personal data may only be processed for the purpose for which consent was obtained. Using customer support data to fine-tune a sales AI is a purpose change requiring fresh consent.
+**Processing ground and purpose:** Document whether processing relies on consent or a certain legitimate use recognised by the Act. Using customer-support data to fine-tune a sales AI requires a separate purpose and processing-ground assessment rather than an assumption that the original collection covers it.
 
 **Data principal rights (Sections 11–14):**
 - Right to access — users can request what personal data the AI system holds
@@ -52,13 +52,13 @@ The Digital Personal Data Protection Act (DPDPA) is India's primary data protect
 - Right to erasure — users can request deletion of their data
 - **AI implication:** If personal data is embedded in model weights (via fine-tuning), satisfying erasure requests may require model retraining or "machine unlearning" techniques
 
-**Data fiduciary obligations (Sections 8–10):**
+**Data fiduciary obligations:**
 - Implement "reasonable security safeguards" for personal data
-- Report data breaches to the Data Protection Board within 72 hours
+- Support applicable breach-notification duties and evidence; verify the current notification sequence and timing against commenced Rules
 - Appoint a Data Protection Officer (DPO) for Significant Data Fiduciaries
 - **AI implication:** The DPO must have visibility into how AI systems process personal data
 
-**Cross-border transfer (Section 16):** The Central Government may restrict transfer of personal data to certain jurisdictions. AI systems processing Indian residents' data on US-hosted APIs face potential restrictions.
+**Cross-border transfer (Section 16):** The Central Government may restrict transfer of personal data to notified countries or territories. The Act does not impose blanket localisation; sector rules, contracts, or later notifications may add stricter conditions.
 
 ### EU — GDPR + AI Act Intersection
 
@@ -173,7 +173,7 @@ Synthetic data must be validated before use:
 
 ## Machine Unlearning: The Right to Erasure for AI
 
-When a data principal exercises their right to erasure (DPDPA Section 13, GDPR Article 17), the enterprise must remove their personal data. For AI systems, this raises a unique challenge: **if the model was fine-tuned on that individual's data, is retraining required?**
+When an applicable erasure right is exercised (including DPDP Act correction/erasure provisions when commenced, or GDPR Article 17), the organisation must determine what data must be erased and which lawful retention exceptions apply. For AI systems, this raises a unique challenge: **if personal data influenced model weights or derived artifacts, what remediation is technically and legally appropriate?** Neither framework creates a universal rule that every request requires full model retraining.
 
 ### Current Approaches
 
@@ -216,4 +216,11 @@ When a data principal exercises their right to erasure (DPDPA Section 13, GDPR A
 
 ---
 
-*Sources: DPDPA 2023 full text, GDPR Articles 17/22/35, EU AI Act transparency and documentation requirements, NIST Privacy Framework 2.0, Microsoft Presidio PII detection documentation, Google Differential Privacy library, Synthetic Data Vault documentation, IAPP AI Privacy Guidance 2026, Gretel.ai enterprise synthetic data whitepaper 2025.*
+## References
+
+1. Ministry of Electronics and Information Technology, [Digital Personal Data Protection Act, Rules, and notifications](https://www.meity.gov.in/documents/act-and-policies), verify commencement status before use.
+2. European Union, [General Data Protection Regulation](https://eur-lex.europa.eu/eli/reg/2016/679/oj).
+3. European Commission, [Rules on international data transfers](https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection/rules-international-data-transfers_en).
+4. NIST, [Privacy Framework](https://www.nist.gov/privacy-framework).
+5. Microsoft, [Presidio documentation](https://microsoft.github.io/presidio/).
+6. OpenDP, [open-source differential privacy tools](https://opendp.org/).

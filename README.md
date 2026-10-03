@@ -1,23 +1,33 @@
 # AI Enterprise Architecture Library
 
 ![Enterprise AI Architecture](enterprise_ai_architecture.jpg)
-> A practitioner-grade, research-backed reference for Enterprise Architects, Chief AI Officers, Strategy Leaders, and Governance professionals building and scaling AI in large organisations — written to be used, not just read.
+> A practitioner-focused reference for Enterprise Architects, Chief AI Officers, Strategy Leaders, and Governance professionals building and scaling AI in large organisations — written to be used, tested, and independently verified.
+
+---
+
+## Start Here
+
+- **Choose a path by role or task:** [Start Here](ai-ea-library/START-HERE.md)
+- **Understand document authority:** [Document Types](ai-ea-library/DOCUMENT-TYPES.md)
+- **Validate legal and standards claims:** [Primary Source Register](ai-ea-library/SOURCE-REGISTER.md)
+- **Cite the library:** [How to Cite](ai-ea-library/HOW-TO-CITE.md)
+- **Understand independent status and trademarks:** [Legal Notice](LEGAL-NOTICE.md)
 
 ---
 
 ## About This Library
 
-This library was built to close the gap between AI hype and enterprise reality. Every section is grounded in real-world case studies, established frameworks, and actionable architectural patterns. It comprises four primary pillars:
+This library was built to close the gap between AI hype and enterprise reality. It combines established frameworks, independently developed architecture guidance, worked examples, and actionable patterns. Verified case studies are distinguished from illustrative examples, and volatile claims should be checked against linked primary sources. The library comprises five primary pillars:
 
 ### 1. The Core Architecture Library (Sections 00–04)
 - **[Section 00 — Foundations](ai-ea-library/00-Foundations/README.md):** How AI actually works, foundation model landscape, data architecture, and multi-agent topologies.
 - **[Section 01 — AI Governance & Responsible AI](ai-ea-library/01-AI-Governance/README.md):** How to govern AI spend (FinOps), quality, ethics, data privacy (PII/DPDP/GDPR), risk mitigation, and postmortems of AI failures.
 - **[Section 02 — AI Strategy & Enterprise Adoption](ai-ea-library/02-AI-Strategy/README.md):** How to create measurable business value, 45+ enterprise use cases, industry vertical playbooks, change management, and procurement contracts.
-- **[Section 03 — AI in EA Practice](ai-ea-library/03-EA-Practice/README.md):** How Enterprise Architects must evolve their practice, tools, testing & evaluation, observability, prompt engineering, CoE models, and reference architectures.
+- **[Section 03 — AI in EA Practice](ai-ea-library/03-EA-Practice/README.md):** How Enterprise Architects evolve their practice, including testing, observability, LLMOps, agent identity/interoperability, AI supply-chain governance, context engineering, resilience, CoE models, and reference architectures.
 - **[Section 04 — Future of AI](ai-ea-library/04-Future/README.md):** Sovereign AI, geopolitics, and future workforce transformation.
 
-### 2. The Official [AIEA® Standard](ai-ea-library/05-Standards/README.md) & [Series Guides](ai-ea-library/06-Series%20Guide/README.md) (Sections 05–06)
-A comprehensive, formal standard for AI Enterprise Architecture extending TOGAF® with normative precision:
+### 2. The Independent [AIEA Reference Framework](ai-ea-library/05-Standards/README.md) & [Series Guides](ai-ea-library/06-Series%20Guide/README.md) (Sections 05–06)
+An independently developed framework for AI Enterprise Architecture, with conceptual mappings to established architecture and governance frameworks:
 - **Part 1 (AIEA-101):** [Introduction and Core Concepts](ai-ea-library/05-Standards/AIEA-101-Introduction-Core-Concepts.md)
 - **Part 2 (AIEA-201):** [AI Architecture Development Method (AI-ADM)](ai-ea-library/05-Standards/AIEA-201-AI-ADM.md)
 - **Part 3 (AIEA-301):** [AI Architecture Content Framework](ai-ea-library/05-Standards/AIEA-301-Content-Framework.md)
@@ -25,7 +35,8 @@ A comprehensive, formal standard for AI Enterprise Architecture extending TOGAF�
 - **Part 5 (AIEA-501):** [AI Reference Models & Technical Standards](ai-ea-library/05-Standards/AIEA-501-Reference-Models.md)
 - **Part 6 (AIEA-601):** [Definitions and Glossary](ai-ea-library/05-Standards/AIEA-601-Definitions-Glossary.md)
 - **Part 7 (AIEA-701):** [A Practitioner's Approach to Developing AI Enterprise Architecture](ai-ea-library/05-Standards/AIEA-701-Practitioners-Guide.md)
-- **Specialized Series Guides (Section 06):** [AIEA-G01: Financial Services](ai-ea-library/06-Series%20Guide/AIEA-G01-Financial-Services.md) | [AIEA-G02: Healthcare](ai-ea-library/06-Series%20Guide/AIEA-G02-Healthcare.md) | [AIEA-G03: Indian Enterprises](ai-ea-library/06-Series%20Guide/AIEA-G03-Indian-Enterprises.md) | [AIEA-G04: Responsible AI](ai-ea-library/06-Series%20Guide/AIEA-G04-Responsible-AI-in-Practice.md) | [AIEA-G05: Agentic AI](ai-ea-library/06-Series%20Guide/AIEA-G05-Agentic-AI-Architecture.md) | [AIEA-G06: Sovereign AI](ai-ea-library/06-Series%20Guide/AIEA-G06-Sovereign-AI.md) | [AIEA-G07: AI FinOps](ai-ea-library/06-Series%20Guide/AIEA-G07-AI-FinOps.md) | [AIEA-G08: LLMOps](ai-ea-library/06-Series%20Guide/AIEA-G08-LLMOps-Enterprise.md)
+- **Specialized Series Guides (Section 06):** [AIEA-G01: Financial Services](ai-ea-library/06-Series%20Guide/AIEA-G01-Financial-Services.md) | [AIEA-G02: Healthcare](ai-ea-library/06-Series%20Guide/AIEA-G02-Healthcare.md) | [AIEA-G03: Indian Enterprises](ai-ea-library/06-Series%20Guide/AIEA-G03-Indian-Enterprises.md) | [AIEA-G04: Responsible AI](ai-ea-library/06-Series%20Guide/AIEA-G04-Responsible-AI-in-Practice.md) | [AIEA-G05: Agentic AI](ai-ea-library/06-Series%20Guide/AIEA-G05-Agentic-AI-Architecture.md) | [AIEA-G06: Sovereign AI](ai-ea-library/06-Series%20Guide/AIEA-G06-Sovereign-AI.md) | [AIEA-G07: AI FinOps](ai-ea-library/06-Series%20Guide/AIEA-G07-AI-FinOps.md) | [AIEA-G08: LLMOps](ai-ea-library/06-Series%20Guide/AIEA-G08-LLMOps-Enterprise.md) | [AIEA-G09: Manufacturing](ai-ea-library/06-Series%20Guide/AIEA-G09-Manufacturing-Industrial-AI.md) | [AIEA-G10: Government](ai-ea-library/06-Series%20Guide/AIEA-G10-Government-Public-Sector-AI.md) | [AIEA-G11: SMEs](ai-ea-library/06-Series%20Guide/AIEA-G11-AI-for-SMEs.md) | [AIEA-G12: Defence & Education](ai-ea-library/06-Series%20Guide/AIEA-G12-Defence-and-Education-AI.md)
+- **Alignment and Evidence Workbook (AIEA-CW01):** [AI Regulatory and Management-System Evidence Checklists](ai-ea-library/05-Standards/AIEA-CW01-Compliance-Workbook.md) — NIST AI RMF, EU AI Act, ISO/IEC 42001, and India DPDP framework
 
 ### 3. [Practitioner Toolkits & Playbooks](ai-ea-library/07-Toolkits-and-Playbooks/README.md) (Section 07)
 Twelve actionable execution toolkits, diagnostic surveys, modeling catalogs, checklists, and presentation decks:
@@ -52,6 +63,15 @@ Dedicated portfolio documents organizing the library across 3 core architecture 
   - [WP-02: Architecting the AI-First Enterprise](ai-ea-library/08-Domain-Portfolios/WP-02-Architecting-the-AI-First-Enterprise.md)
   - [WP-03: Reusable AI Governance Patterns](ai-ea-library/08-Domain-Portfolios/WP-03-Reusable-AI-Governance-Patterns.md)
 
+### 5. Operational Guides & Reusable Assets (Sections 09–12)
+Field-ready operational guidance and reusable implementation assets:
+- **[Section 09 — Operational Guide Outputs](ai-ea-library/09-WG-Outputs/README.md):** Governance, AI-native EA, AI-enhanced EA practice, maturity assessment, and agentic scaling guidance grouped by topic.
+- **[Section 10 — Use Cases & Worked Examples](ai-ea-library/10-Use-Cases-and-Case-Studies/README.md):** Detailed forward-looking use cases and clearly labelled illustrative worked examples.
+- **[Section 11 — Architecture Diagrams](ai-ea-library/11-Architecture-Diagrams/README.md):** Importable ArchiMate models and rendered SVG reference views.
+- **[Section 12 — Templates](ai-ea-library/12-Templates/README.md):** Ten fillable templates with completed examples — System Card, Data Contract, ADR, Business Case, Red-Team Log, Tool/Permission Matrix, Vendor Assessment, Incident Report, DPDP Alignment Checklist, and Pre-Deployment Launch Gate.
+
+Repository history is tracked in [`CHANGELOG.md`](CHANGELOG.md), with GitHub issue templates and a MkDocs documentation site ([`mkdocs.yml`](mkdocs.yml)).
+
 ---
 
 ## Repository Structure & Hierarchy
@@ -65,16 +85,17 @@ AI Enterprise Architecture/
     ├── 02-AI-Strategy/                     <-- Value realization, use cases, verticals, change, procurement
     ├── 03-EA-Practice/                     <-- AI-ADM, tools, testing & eval, observability, LLMOps, CoE
     ├── 04-Future/                          <-- Future of work, sovereign AI & geopolitics
-    ├── 05-Standards/                       <-- The Core AIEA® Standards Specification (Parts 1–7)
-    │   ├── README.md                       <-- AIEA-001 Official Standard Charter
+    ├── 05-Standards/                       <-- AIEA Reference Framework (Parts 1–7)
+    │   ├── README.md                       <-- Independent AIEA Reference Framework index
     │   ├── AIEA-101-Introduction-Core-Concepts.md
     │   ├── AIEA-201-AI-ADM.md
     │   ├── AIEA-301-Content-Framework.md
     │   ├── AIEA-401-Capability-Governance.md
     │   ├── AIEA-501-Reference-Models.md
     │   ├── AIEA-601-Definitions-Glossary.md
-    │   └── AIEA-701-Practitioners-Guide.md
-    ├── 06-Series Guide/                    <-- Specialized Implementation Manuals (AIEA-G01 to G08)
+    │   ├── AIEA-701-Practitioners-Guide.md
+    │   └── AIEA-CW01-Compliance-Workbook.md
+    ├── 06-Series Guide/                    <-- Specialized Implementation Manuals (AIEA-G01 to G12)
     │   ├── AIEA-G01-Financial-Services.md
     │   ├── AIEA-G02-Healthcare.md
     │   ├── AIEA-G03-Indian-Enterprises.md
@@ -82,7 +103,11 @@ AI Enterprise Architecture/
     │   ├── AIEA-G05-Agentic-AI-Architecture.md
     │   ├── AIEA-G06-Sovereign-AI.md
     │   ├── AIEA-G07-AI-FinOps.md
-    │   └── AIEA-G08-LLMOps-Enterprise.md
+    │   ├── AIEA-G08-LLMOps-Enterprise.md
+    │   ├── AIEA-G09-Manufacturing-Industrial-AI.md
+    │   ├── AIEA-G10-Government-Public-Sector-AI.md
+    │   ├── AIEA-G11-AI-for-SMEs.md
+    │   └── AIEA-G12-Defence-and-Education-AI.md
     ├── 07-Toolkits-and-Playbooks/          <-- Practitioner Toolkits & Playbooks (AIEA-TK-01 to TK-12)
     │   ├── README.md                       <-- Toolkits Catalog & Workflow Map
     │   ├── 01-AI-Readiness-Assessment-Toolkit.md
@@ -97,14 +122,21 @@ AI Enterprise Architecture/
     │   ├── 10-Executive-AI-Pitch-Deck.md
     │   ├── 11-AI-in-EA-Practice-Slide-Deck.md
     │   └── 12-AI-Governance-and-Guardrails-Deck.md
-    └── 08-Domain-Portfolios/               <-- Enterprise Architecture Domain Portfolios & White Papers
-        ├── README.md                       <-- Master Domain Directory & 3 Domains × 8 Asset Types Matrix
-        ├── DP-01-AI-in-EA-Practice.md      <-- Dedicated Portfolio: Methods, Tools, Skills
-        ├── DP-02-AI-Strategy-and-Enterprise-Adoption.md
-        ├── DP-03-AI-Governance.md          <-- Dedicated Portfolio: Reusable Governance
-        ├── WP-01-Modernizing-EA-with-AI.md
-        ├── WP-02-Architecting-the-AI-First-Enterprise.md
-        └── WP-03-Reusable-AI-Governance-Patterns.md
+    ├── 08-Domain-Portfolios/               <-- Enterprise Architecture Domain Portfolios & White Papers
+    │   ├── README.md                       <-- Master Domain Directory & 3 Domains × 8 Asset Types Matrix
+    │   ├── DP-01-AI-in-EA-Practice.md      <-- Dedicated Portfolio: Methods, Tools, Skills
+    │   ├── DP-02-AI-Strategy-and-Enterprise-Adoption.md
+    │   ├── DP-03-AI-Governance.md          <-- Dedicated Portfolio: Reusable Governance
+    │   ├── WP-01-Modernizing-EA-with-AI.md
+    │   ├── WP-02-Architecting-the-AI-First-Enterprise.md
+    │   └── WP-03-Reusable-AI-Governance-Patterns.md
+    ├── 09-WG-Outputs/                       <-- Completed operational guides grouped by five topics
+    │   ├── README.md                       <-- Operational guide directory
+    │   ├── WG-Charters/                     <-- Reader-facing scope notes retained for traceability
+    │   └── WG1–WG5 topic folders/           <-- 20 completed guides, playbooks, and instruments
+    ├── 10-Use-Cases-and-Case-Studies/       <-- Detailed use cases (UC-01..05) & worked examples
+    ├── 11-Architecture-Diagrams/            <-- ArchiMate (.archimate) models & rendered SVG views
+    └── 12-Templates/                        <-- Fillable templates plus completed examples
 ```
 
 ---
@@ -281,4 +313,4 @@ Every required asset type is explicitly instantiated with dedicated, production-
 
 ---
 
-*Library version: 1.0 | 53 documents | ~160,000 words | 9 sections | Research current as of September 2026 | Built for practitioners, not consultants.*
+*Library version: 1.1 | 149 library documents | ~177,000 words | 13 numbered sections | Volatile content carries document-level verification dates | Independent practitioner reference.*

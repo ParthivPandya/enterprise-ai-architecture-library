@@ -1,12 +1,16 @@
-# AIEA® Series Guide
+# AIEA Series Guide
 ## AIEA-G08: LLMOps for Enterprise
 ### Document Number: AIEA-G08 | Version 1.0 | 2026
+
+> **Document type:** Informative Series Guide
+> **Last verified:** October 2026
+> **Volatility notice:** Tool and platform examples illustrate capabilities, not endorsed products; verify current versions and support status.
 
 ---
 
 ## Preface
 
-This document is an official AIEA Series Guide supplementing the core AIEA Standard. It defines the operational engineering discipline, automation pipelines, continuous testing frameworks, and telemetry architectures required to deliver **Large Language Model Operations (LLMOps)** in production.
+This document is an independent AIEA Series Guide supplementing the core AIEA Reference Framework. It defines the operational engineering discipline, automation pipelines, continuous testing frameworks, and telemetry architectures required to deliver **Large Language Model Operations (LLMOps)** in production.
 
 Deploying foundation model applications is fundamentally different from traditional DevOps or classical MLOps. Non-deterministic model completions, prompt drift, sudden API deprecations, and token cost escalation require specialized operational controls.
 
@@ -14,7 +18,7 @@ This guide MUST be read by LLMOps Engineers, MLOps Architects, Platform Engineer
 
 ---
 
-# Chapter 1: The Enterprise LLMOps Lifecycle
+## Chapter 1: The Enterprise LLMOps Lifecycle
 
 The enterprise LLMOps lifecycle operates as a continuous, closed-loop feedback system:
 
@@ -51,17 +55,17 @@ The enterprise LLMOps lifecycle operates as a continuous, closed-loop feedback s
 
 ---
 
-# Chapter 2: Automated Evaluation Harnesses & CI/CD Gates
+## Chapter 2: Automated Evaluation Harnesses & CI/CD Gates
 
 Enterprises MUST NOT deploy prompt updates or model changes to production based on subjective human impressions. Deployments MUST pass automated test harnesses in CI/CD:
 
-## 2.1 The Evaluation Golden Set
+### 2.1 The Evaluation Golden Set
 Every production application MUST maintain a version-controlled **Golden Evaluation Set** of at least 200 representative query-completion pairs covering:
 - Standard corporate use cases (70%)
 - Edge cases and complex formatting requests (20%)
 - Adversarial attacks and prompt injection attempts (10%)
 
-## 2.2 Automated Scoring Frameworks
+### 2.2 Automated Scoring Frameworks
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
@@ -74,7 +78,7 @@ Every production application MUST maintain a version-controlled **Golden Evaluat
 └───────────────────────┴───────────────────────┴─────────────────────────┘
 ```
 
-### 2.2.1 LLM-as-a-Judge Implementation
+#### 2.2.1 LLM-as-a-Judge Implementation
 For qualitative evaluation, an automated judge model (e.g., GPT-4o or Claude 3.5 Sonnet) evaluates candidate model outputs against strict rubric prompts:
 
 ```
@@ -90,9 +94,9 @@ Output JSON: {"score": int, "rationale": str}
 
 ---
 
-# Chapter 3: Prompt-as-Code & Model Registry Standards
+## Chapter 3: Prompt-as-Code & Model Registry Standards
 
-## 3.1 Prompt-as-Code (PaC)
+### 3.1 Prompt-as-Code (PaC)
 System prompts MUST NOT be edited manually within web consoles. They MUST be managed like source code:
 - Stored in Git repositories with semantic version tags (`prompts/customer-support-v2.1.0.yaml`).
 - Managed via structured metadata schemas:
@@ -114,16 +118,16 @@ system_instruction: |
   Answer strictly using the retrieved context provided below.
 ```
 
-## 3.2 Model Registry & Checkpoint Governance
+### 3.2 Model Registry & Checkpoint Governance
 For custom or fine-tuned models:
 - All model weights (`.safetensors`), LoRA adapters, tokenizer configurations, and evaluation reports MUST be registered in an enterprise Model Registry (MLflow or Hugging Face Enterprise).
 - Every model checkpoint is tagged with its training dataset commit hash, base model version, and legal compliance sign-off.
 
 ---
 
-# Chapter 4: Progressive Delivery & Distributed Tracing
+## Chapter 4: Progressive Delivery & Distributed Tracing
 
-## 4.1 Canary & Blue-Green Staging Strategy
+### 4.1 Canary & Blue-Green Staging Strategy
 
 Model upgrades MUST follow progressive delivery patterns enforced by the AI Gateway:
 
@@ -142,7 +146,7 @@ Step 3: Gateway Health Check (Over 24 Hours):
 Step 4: Promote to 100% Traffic OR Automated Rollback
 ```
 
-## 4.2 Distributed Tracing with OpenTelemetry
+### 4.2 Distributed Tracing with OpenTelemetry
 
 Every AI interaction produces an OpenTelemetry trace capturing the nested lifecycle of a request:
 
@@ -165,4 +169,4 @@ Distributed tracing allows platform engineers to pinpoint the exact root cause o
 ---
 
 *AIEA Series Guide AIEA-G08: LLMOps for Enterprise. Document AIEA-G08, Version 1.0, 2026.*  
-*AI Enterprise Architecture Forum (AIEAF).*
+*AIEA Reference Library.*

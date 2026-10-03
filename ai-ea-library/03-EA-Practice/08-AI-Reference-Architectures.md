@@ -363,4 +363,4 @@ Any AI Application
 
 ---
 
-*Sources: AWS AI Reference Architectures, Azure OpenAI Solution Architectures, Google Cloud GenAI Reference Architectures, LangChain RAG tutorial and production patterns, Weaviate Enterprise RAG Architecture Guide, Databricks LLM Architecture Best Practices 2026, vLLM production deployment guide, NIC MeghRaj Government Cloud documentation, IndiaAI Mission compute platform specifications, Bhashini API documentation.*
+*Source leads (not publication-grade citations; verify exact title, edition, URL, page/section, methodology, and date under the [Editorial and Citation Policy](../EDITORIAL-AND-CITATION-POLICY.md)): AWS AI Reference Architectures, Azure OpenAI Solution Architectures, Google Cloud GenAI Reference Architectures, LangChain RAG tutorial and production patterns, Weaviate Enterprise RAG Architecture Guide, Databricks LLM Architecture Best Practices 2026, vLLM production deployment guide, NIC MeghRaj Government Cloud documentation, IndiaAI Mission compute platform specifications, Bhashini API documentation.*

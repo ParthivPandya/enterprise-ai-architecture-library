@@ -1,5 +1,10 @@
 # The Foundation Model Landscape: Navigating the Ecosystem
 
+> **Document type:** Informative Guide
+> **Primary audience:** Enterprise and AI Architects
+> **Last verified:** October 2026
+> **Volatility notice:** Model versions, licences, regions, prices, and benchmark positions change rapidly. Verify provider documentation before selection or procurement.
+
 > *Every six months the landscape shifts enough to invalidate whatever chart you drew last time. This chapter won't give you a static comparison table that's already out of date. It gives you the mental model to evaluate any model, from any provider, at any point in time.*
 
 > **Related:** [01-How-LLMs-Work.md](01-How-LLMs-Work.md) | [../03-EA-Practice/03-Strategic-Runbooks.md](../03-EA-Practice/03-Strategic-Runbooks.md)
@@ -48,12 +53,12 @@ Open-weight models give you the model weights — you can download them, run the
 **Meta Llama (3.1, 4, and beyond)**
 Meta's decision to release Llama as open-weight triggered what DataCamp called an "open-weights revolution." Llama 3.1 405B (the largest variant) approaches frontier model performance on many benchmarks. Llama 3 70B punches well above its size. The Llama 4 series (released 2025) extended multimodal capabilities to open-weight models.
 
-For Indian enterprises: Llama is available for deployment on-premises, in NIC's MeghRaj Government Cloud, or in India-region private cloud. This matters enormously for DPDPA compliance and data residency requirements. An enterprise that processes sensitive financial or healthcare data and can't send it to a US-based API can still access near-frontier capability by self-hosting Llama.
+For Indian enterprises: open-weight models can be deployed on-premises or in approved India-region environments. This can support organisational sovereignty policies, sector-specific residency obligations, and controlled cross-border-transfer decisions. The DPDP Act does not impose blanket localisation for every category of personal data, so the legal and contractual basis for local deployment must be documented rather than assumed.
 
 **Mistral (Mistral 7B, Mixtral, Mistral Large)**
 Mistral AI (France) built its reputation on efficiency — Mistral 7B outperformed models twice its size when it launched. The Mixtral architecture (Mixture of Experts) gets large-model capability at smaller-model inference cost by routing each token to a subset of specialised "expert" sub-networks. This is production-relevant: Mixtral 8x7B delivers GPT-3.5-class performance at significantly lower inference cost.
 
-For European enterprises: Mistral is a French company with European data processing infrastructure — directly relevant to EU AI Act compliance and GDPR data residency.
+For European enterprises: a provider with European processing options may simplify particular transfer-risk and procurement decisions. GDPR does not impose universal EU data residency, and the EU AI Act does not create a blanket localisation rule; architecture teams must evaluate the provider's actual processing locations, transfer mechanism, subprocessors, and contractual safeguards.
 
 **DeepSeek (R1, V3)**
 DeepSeek's January 2025 release sent shockwaves through the industry. R1 matched OpenAI o1 on reasoning benchmarks at a fraction of the training cost, and the model was released as open-weight. V3, released December 2024, demonstrated that Chinese open-weight models had reached genuine frontier capability. DeepSeek proved that the capital advantage of US frontier labs was not as durable as assumed.
@@ -182,4 +187,4 @@ The architectural implication: you need a model abstraction layer and an AI gate
 
 ---
 
-*Sources: Stanford HAI AI Index 2025, DataCamp Transformer Model Landscape 2026, OpenAI Enterprise Product documentation, Anthropic Claude Enterprise documentation, Meta Llama 4 release notes, Mistral AI model documentation, DeepSeek R1 technical report January 2025, Google Gemini 2.0 release documentation, Microsoft Phi-3 technical report, CNBC JPMorgan LLM Suite reporting September 2025, Gartner AI Model Selection Framework 2026.*
+*Source leads (not publication-grade citations; verify exact title, edition, URL, page/section, methodology, and date under the [Editorial and Citation Policy](../EDITORIAL-AND-CITATION-POLICY.md)): Stanford HAI AI Index 2025, DataCamp Transformer Model Landscape 2026, OpenAI Enterprise Product documentation, Anthropic Claude Enterprise documentation, Meta Llama 4 release notes, Mistral AI model documentation, DeepSeek R1 technical report January 2025, Google Gemini 2.0 release documentation, Microsoft Phi-3 technical report, CNBC JPMorgan LLM Suite reporting September 2025, Gartner AI Model Selection Framework 2026.*

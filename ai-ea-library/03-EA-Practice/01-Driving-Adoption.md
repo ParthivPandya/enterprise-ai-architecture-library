@@ -197,4 +197,4 @@ The paper recommends creating hybrid roles — "AI-EA strategists" — and embed
 
 ---
 
-*Sources: BDAT Academy TOGAF for AI Adoption 2025, Intelance Future of EA in AI Era 2026, Belski TOGAF ADM for AI Adoption 2025, Staunstender Future of EA in AI Age 2025, University of Melbourne paper Modifying TOGAF for AI 2025, Forrester Enterprise Architecture Management Suite Landscape Q4 2025, Forrester How Agentic AI Elevates EA Role 2025, CIO.com TOGAF for AI 2026.*
+*Source leads (not publication-grade citations; verify exact title, edition, URL, page/section, methodology, and date under the [Editorial and Citation Policy](../EDITORIAL-AND-CITATION-POLICY.md)): BDAT Academy TOGAF for AI Adoption 2025, Intelance Future of EA in AI Era 2026, Belski TOGAF ADM for AI Adoption 2025, Staunstender Future of EA in AI Age 2025, University of Melbourne paper Modifying TOGAF for AI 2025, Forrester Enterprise Architecture Management Suite Landscape Q4 2025, Forrester How Agentic AI Elevates EA Role 2025, CIO.com TOGAF for AI 2026.*

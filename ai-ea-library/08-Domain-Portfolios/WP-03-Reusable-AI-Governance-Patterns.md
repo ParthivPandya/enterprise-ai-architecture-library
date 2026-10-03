@@ -111,9 +111,9 @@ When deploying autonomous or semi-autonomous AI agents, organizations cannot rel
 
 ---
 
-## 4. Practical Scenarios: Reusable Governance in Action
+## 4. Illustrative Worked Scenarios
 
-To demonstrate the real-world application of reusable governance, consider three enterprise scenarios:
+The following composite scenarios demonstrate how reusable governance patterns can be applied. Organisations, durations, volumes, and target metrics are illustrative; they are not reported results from named deployments.
 
 ### Scenario 1: Tier-1 Wealth Management Financial Advisory
 - **The Context**: An investment advisory firm deploying a GenAI assistant to synthesize market research and recommend portfolio rebalancing for high-net-worth clients.
@@ -122,7 +122,7 @@ To demonstrate the real-world application of reusable governance, consider three
   - *Blueprint*: Azure OpenAI GPT-4o private instance + Qdrant vector database indexing SEC filings and approved research reports.
   - *Boundary Conditions*: Strictly read-only; output persona restricted to financial summarizing; prohibited from generating return forecasts.
   - *Embedded Controls*: Automated NeMo Guardrail blocking out-of-scope queries; mandatory citation engine requiring source document ID, page, and paragraph for every factual claim.
-- **Result**: Approved in **48 hours**. Over 250,000 portfolio reviews conducted with zero compliance infractions.
+- **Acceptance Targets**: Complete the bounded-use review within two business days; achieve complete source attribution; record and investigate every policy exception. Deployment volume and incident-rate targets must be established from the organisation's own baseline.
 
 ### Scenario 2: Hospital Emergency Triage and Clinical Summarization
 - **The Context**: A healthcare network deploying an ambient clinical scribe in emergency rooms to capture physician-patient dialogue and generate EHR encounter notes.
@@ -131,7 +131,7 @@ To demonstrate the real-world application of reusable governance, consider three
   - *Blueprint*: Self-hosted Llama-3-70B running on an air-gapped on-premise GPU cluster.
   - *Boundary Conditions*: No external internet egress permitted; medical record write access restricted to draft encounter notes.
   - *Embedded Controls*: In-line Presidio tokenization engine replacing patient names, dates of birth, and social security numbers with cryptographic tokens before LLM ingestion; mandatory attending physician digital signature before EHR commit.
-- **Result**: Immediate certification; zero data egress; physician documentation time reduced by 62%.
+- **Acceptance Targets**: Demonstrate through network and audit evidence that no prohibited data egress occurs; require clinician approval before record commit; measure documentation-time change against a controlled baseline. This pattern does not provide certification.
 
 ### Scenario 3: Global E-Commerce Autonomous Refund Concierge
 - **The Context**: An e-commerce platform authorizing an autonomous agent to issue refunds, cancel subscriptions, and issue discount vouchers.
@@ -140,7 +140,7 @@ To demonstrate the real-world application of reusable governance, consider three
   - *Blueprint*: Enterprise AI Gateway routing to Claude 3.5 Haiku.
   - *Boundary Conditions*: Autonomous refund capability hard-capped at **$50.00 max per transaction**; maximum of **1 refund per customer every 90 days**; lifetime user refund cap enforced at the API layer.
   - *Embedded Controls*: Cryptographic HMAC validation on all refund tool calls; instantaneous alert trigger if customer attempts jailbreak or prompt injection patterns.
-- **Result**: Successfully handles 65% of customer return volume autonomously without human intervention, with zero financial leak incidents.
+- **Acceptance Targets**: Define an eligible-return automation target from historical data; enforce financial caps deterministically; measure incorrect-refund and escalation rates; maintain a tested manual fallback. No zero-incident guarantee is implied.
 
 ---
 
@@ -182,13 +182,13 @@ FINAL RESPONSE TO USER
 
 ## 6. Multi-Standard Regulatory Alignment
 
-Adopting reusable governance patterns provides turn-key compliance with major global AI regulations:
+Reusable governance patterns can reduce duplicated evidence work across frameworks. They do not provide turn-key compliance; applicability, implementation, and assurance remain organisation- and system-specific:
 
-| Regulatory Standard | Traditional Review Approach | Reusable Pattern Compliance |
+| Regulatory or Framework Reference | Traditional Review Approach | Reusable Evidence Pattern |
 | :--- | :--- | :--- |
-| **EU AI Act (2024)** | Manual drafting of 100-page conformity assessments per project. | Automated compliance dossier generated from Enterprise Metamodel ([AIEA-TK-02](../07-Toolkits-and-Playbooks/02-Enterprise-AI-Metamodel-Catalog.md)) and Model Registry. |
+| **EU AI Act (2024)** | Recreating technical and governance evidence per project. | Evidence dossier assembled from the Enterprise Metamodel ([AIEA-TK-02](../07-Toolkits-and-Playbooks/02-Enterprise-AI-Metamodel-Catalog.md)) and Model Registry, followed by role- and system-specific legal review. |
 | **India DPDP Act (2023)** | Point-in-time legal reviews of consent clauses. | Architectural enforcement of Zero Data Retention (ZDR) and local sovereign VPC boundaries. |
-| **NIST AI RMF 1.0** | Subjective risk committee scorecards. | Quantitative evaluation telemetry (Ragas, TruLens) streamed continuously to enterprise SIEM/Arize. |
+| **NIST AI RMF 1.0** | Subjective risk committee scorecards. | Quantitative evaluation telemetry and governance evidence streamed to approved monitoring and evidence systems. |
 
 ---
 

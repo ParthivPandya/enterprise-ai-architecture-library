@@ -8,7 +8,7 @@
 
 Enterprise Architecture relies on a shared semantic model. When architects model traditional systems, they map Business Actors, Application Services, Data Objects, and Technology Nodes. When modeling Artificial Intelligence, classical metamodels break down because they lack constructs for non-deterministic model checkpoints, token gateways, vector embeddings, prompt templates, and autonomous agent loops.
 
-This toolkit defines the **AIEA Core AI Metamodel** and provides the official **ArchiMate 3.2 Mapping Specification** for modeling AI-enabled architectures in enterprise tools (Ardoq, LeanIX, Sparx Enterprise Architect, BiZZdesign, or Alfabet).
+This toolkit defines the **AIEA Core AI Metamodel** and provides an independent **ArchiMate 3.2 mapping guide** for modelling AI-enabled architectures in enterprise tools. It is not an official publication of, or endorsed mapping from, The Open Group. Validate notation and exchange behaviour against the current ArchiMate specification and the selected modelling tool.
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
@@ -42,7 +42,7 @@ This toolkit defines the **AIEA Core AI Metamodel** and provides the official **
 
 ---
 
-# Chapter 1: Core AI Metamodel Entity Dictionary
+## Chapter 1: Core AI Metamodel Entity Dictionary
 
 The AIEA Metamodel establishes ten normative entities that MUST be tracked within the Enterprise Architecture Repository:
 
@@ -61,7 +61,7 @@ The AIEA Metamodel establishes ten normative entities that MUST be tracked withi
 
 ---
 
-# Chapter 2: ArchiMate 3.2 Notation Mapping Specification
+## Chapter 2: ArchiMate 3.2 Notation Mapping Specification
 
 Architects modeling AI architectures MUST apply the following standardized ArchiMate element types and stereotypes:
 
@@ -93,7 +93,7 @@ Architects modeling AI architectures MUST apply the following standardized Archi
 
 ---
 
-# Chapter 3: Enterprise Architecture Repository JSON Schema
+## Chapter 3: Enterprise Architecture Repository JSON Schema
 
 To integrate AI systems into programmatic architecture repositories (CMDBs / EA catalogs), systems MUST emit metadata conforming to the **AIEA Metamodel JSON Schema**:
 
@@ -130,4 +130,4 @@ To integrate AI systems into programmatic architecture repositories (CMDBs / EA 
 ---
 
 *AIEA Toolkit AIEA-TK-02: Enterprise AI Metamodel Catalog. Version 1.0, 2026.*  
-*AI Enterprise Architecture Forum (AIEAF).*
+*AIEA Reference Library.*

@@ -33,5 +33,5 @@ This section primarily supports **Phase G: Implementation Governance** and the *
 
 ---
 
-> **Previous:** [00-Foundations](../00-Foundations/) — Technical knowledge base  
-> **Next:** [02-AI-Strategy](../02-AI-Strategy/) — Connecting AI to business value
+> **Previous:** [00-Foundations](../00-Foundations/README.md) — Technical knowledge base
+> **Next:** [02-AI-Strategy](../02-AI-Strategy/README.md) — Connecting AI to business value

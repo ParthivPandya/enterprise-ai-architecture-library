@@ -1,5 +1,8 @@
 # AI Testing and Evaluation: The Quality Gate Every AI System Must Pass
 
+> **Document type:** Informative Guide
+> **Threshold note:** Numerical thresholds are examples unless tied to an approved risk decision, user need, regulation, contract, or measured baseline. Define thresholds for each system and context.
+
 > *You wouldn't deploy a traditional application without a test suite. You wouldn't release a financial system without an audit trail. Yet most enterprises deploy AI systems with no systematic evaluation beyond "it seemed to work in the demo." This chapter is about building the test infrastructure that makes AI deployments defensible.*
 
 > **Related:** [05-LLMOps.md](05-LLMOps.md) | [08-AI-Reference-Architectures.md](08-AI-Reference-Architectures.md) | [../01-AI-Governance/04-Risk-Mitigation.md](../01-AI-Governance/04-Risk-Mitigation.md)
@@ -324,4 +327,4 @@ For many evaluation criteria (coherence, helpfulness, tone), an LLM can serve as
 
 ---
 
-*Sources: Stanford HELM Benchmark documentation 2025, Ragas RAG Evaluation Framework 2025, Promptfoo documentation 2026, DeepEval documentation 2026, Arize Phoenix evaluation guide 2026, Microsoft PyRIT documentation, Eleuther AI LM Evaluation Harness, Google Vertex AI Model Evaluation, NIST AI 600-1 evaluation requirements.*
+*Source leads (not publication-grade citations; verify exact title, edition, URL, page/section, methodology, and date under the [Editorial and Citation Policy](../EDITORIAL-AND-CITATION-POLICY.md)): Stanford HELM Benchmark documentation 2025, Ragas RAG Evaluation Framework 2025, Promptfoo documentation 2026, DeepEval documentation 2026, Arize Phoenix evaluation guide 2026, Microsoft PyRIT documentation, Eleuther AI LM Evaluation Harness, Google Vertex AI Model Evaluation, NIST AI 600-1 evaluation requirements.*
